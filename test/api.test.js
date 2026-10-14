@@ -47,7 +47,7 @@ test('a tampered or garbage cookie is treated as signed out', async () => {
 test('save and load progress; sanitises junk', async () => {
   const c = await login('a@example.com');
   assert.deepEqual(await (await call(c, 'GET', '/api/progress')).json(), { data: null, updatedAt: 0 });
-  const payload = { done: { t1: true, bad: 'yes' }, solved: { q1: true }, bookmarks: {}, added: {}, responses: { q1: 'B', q2: 'Z', q3: '<script>' },
+  const payload = { done: { t1: true, bad: 'yes' }, solved: { q1: true }, bookmarks: {}, added: {}, responses: { q1: 'B', q2: 'Z', q3: '<script>' }, reattempt: { q1: true, q2: 'no' }, results: { q3: true }, revealed: { q1: true },
     exams: [{ id: 'ex-1', qids: ['q1'], answers: {} }, { nope: 1 }], session: { qids: ['q1'], idx: 0 }, evil: { x: 1 } };
   const put = await call(c, 'PUT', '/api/progress', { data: payload, updatedAt: 1000 });
   assert.equal(put.status, 200);
@@ -55,6 +55,9 @@ test('save and load progress; sanitises junk', async () => {
   assert.equal(got.updatedAt, 1000);
   assert.deepEqual(got.data.done, { t1: true });
   assert.deepEqual(got.data.responses, { q1: 'B' });
+  assert.deepEqual(got.data.reattempt, { q1: true });
+  assert.deepEqual(got.data.results, { q3: true });
+  assert.deepEqual(got.data.revealed, { q1: true });
   assert.equal(got.data.exams.length, 1);
   assert.equal(got.data.evil, undefined);
   assert.equal((await call(c, 'GET', '/api/me')).status, 200);

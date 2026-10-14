@@ -72,11 +72,23 @@ export function OptionList({ q, selected, onSelect, correct, showCorrect }) {
   );
 }
 
-// Practice-mode card: choose an option (saved automatically), reveal the answer when verified.
-export default function QuestionCard({ q, subjectName, state, toggle, setResponse }) {
-  const [reveal, setReveal] = useState(false);
+// Practice-mode card: choose an option (saved automatically), then check it.
+// Correct -> the answer, solution and concept are shown. Wrong -> nothing is revealed and the
+// question is sent to the Reattempt list until it is answered correctly.
+export default function QuestionCard({ q, subjectName, state, toggle, setResponse, recordResult }) {
   const selected = state.responses[q.id] || null;
-  const verdict = reveal && q.answer && selected ? (selected === q.answer ? 'correct' : 'wrong') : null;
+  const passed = !!state.results[q.id] && selected === q.answer;
+  const [tried, setTried] = useState(false); // a wrong check on the currently selected option
+  const unlocked = !passed && !!state.revealed[q.id]; // wrong again on a reattempt
+  const wrong = tried && !passed && !!selected && selected !== q.answer;
+  const showSolution = passed || unlocked;
+
+  const check = () => {
+    if (!selected || !q.answer) return;
+    setTried(true);
+    recordResult(q.id, selected === q.answer);
+  };
+  const choose = (L) => { setTried(false); setResponse(q.id, selected === L ? null : L); };
 
   return (
     <article className="qcard" id={`q-${q.number}`}>
@@ -84,6 +96,7 @@ export default function QuestionCard({ q, subjectName, state, toggle, setRespons
         <h3 className="qnum">{q.number}</h3>
         {q.year && <span className="yearchip">ESE-{q.year}</span>}
         <span className="qpath">{subjectName}{q.topic ? ` · ${q.topic}` : ''}</span>
+        {state.reattempt[q.id] && <span className="rechip">Reattempt</span>}
         <label className={`addpill ${state.added[q.id] ? 'on' : ''}`}>
           <input type="checkbox" checked={!!state.added[q.id]} onChange={() => toggle('added', q.id)} />
           Add
@@ -94,26 +107,53 @@ export default function QuestionCard({ q, subjectName, state, toggle, setRespons
       <OptionList
         q={q}
         selected={selected}
-        onSelect={(L) => setResponse(q.id, selected === L ? null : L)}
+        onSelect={choose}
         correct={q.answer}
-        showCorrect={reveal}
+        showCorrect={showSolution}
       />
+
+      {wrong && !unlocked && (
+        <p className="verdict-note bad">Incorrect. This question has been added to <a href="#reattempt">Reattempt questions</a>. Pick another option and check again.</p>
+      )}
+      {unlocked && !passed && (
+        <p className="verdict-note bad">Still incorrect on the reattempt, so the correct answer ({q.answer.toLowerCase()}) and solution are unlocked below. It stays in Reattempt until you answer it correctly.</p>
+      )}
+
+      {showSolution && (q.solution || q.concept) && (
+        <div className="explain">
+          {q.concept && (
+            <div className="concept">
+              <div className="explain-title">Concept</div>
+              <RichText text={q.concept} />
+            </div>
+          )}
+          {q.solution && (
+            <div className="solution">
+              <div className="explain-title">Solution</div>
+              <RichText text={q.solution} />
+            </div>
+          )}
+        </div>
+      )}
+      {showSolution && q.answerSource === 'derived' && (
+        <p className="muted small-note">This answer was worked out in the solution above; the source book has no printed answer key for it.</p>
+      )}
+      {showSolution && !q.solution && !q.concept && <p className="muted">No written solution has been added for this question yet.</p>}
 
       <footer className="qfoot">
         <div className="qfoot-left">
           {q.answer ? (
-            <button className="linkbtn" onClick={() => setReveal(!reveal)}>
-              {reveal ? `Answer: (${q.answer.toLowerCase()})` : 'Show answer'}
-            </button>
+            passed ? (
+              <span className="saved">✓ Correct · answer ({q.answer.toLowerCase()})</span>
+            ) : (
+              <button className="primary small" disabled={!selected} onClick={check}>Check answer</button>
+            )
           ) : (
             <span className="muted" title="The answer key for this question hasn't been added yet">Answer not verified yet</span>
           )}
+          {selected && !passed && !wrong && !q.answer && <span className="saved">✓ Saved ({selected.toLowerCase()})</span>}
           {selected && (
-            <span className={`saved ${verdict || ''}`}>
-              {verdict === 'correct' ? '✓ Correct' : verdict === 'wrong' ? '✗ Incorrect' : `✓ Saved (${selected.toLowerCase()})`}
-              {' · '}
-              <button className="linkbtn small" onClick={() => setResponse(q.id, null)}>clear</button>
-            </span>
+            <button className="linkbtn small" onClick={() => { setTried(false); setResponse(q.id, null); }}>clear</button>
           )}
           <button className={`iconbtn ${state.solved[q.id] ? 'on' : ''}`} onClick={() => toggle('solved', q.id)}>
             {state.solved[q.id] ? '✓ Solved' : 'Mark solved'}

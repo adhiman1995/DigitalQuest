@@ -9,11 +9,14 @@ const EMPTY = {
   bookmarks: {},  // question id -> true
   added: {},      // question id -> true (practice set)
   responses: {},  // question id -> 'A'..'D' (option chosen in practice mode)
+  results: {},    // question id -> true once the chosen option was checked and is correct
+  revealed: {},   // question id -> true when a reattempt was wrong again: solution unlocked anyway
+  reattempt: {},  // question id -> true when answered wrongly and not yet answered correctly
   exams: [],      // finished exam attempts
   session: null,  // exam currently in progress
   prefs: {},      // { prelimsDate, mainsDate } overrides (YYYY-MM-DD)
 };
-const MAPS = ['done', 'solved', 'bookmarks', 'added', 'responses'];
+const MAPS = ['done', 'solved', 'bookmarks', 'added', 'responses', 'results', 'reattempt', 'revealed'];
 
 const load = () => {
   try {
@@ -168,7 +171,26 @@ export function useProgress(user) {
       const next = { ...s.responses };
       if (letter) next[id] = letter;
       else delete next[id];
-      return { ...s, responses: next };
+      // a changed choice has to be checked again before the solution is shown
+      const results = { ...s.results };
+      delete results[id];
+      return { ...s, responses: next, results };
+    });
+  }, [update]);
+
+  // Check the chosen option: correct -> solution unlocked and removed from Reattempt; wrong -> sent to Reattempt.
+  const recordResult = useCallback((id, correct) => {
+    update((s) => {
+      const results = { ...s.results };
+      const reattempt = { ...s.reattempt };
+      const revealed = { ...s.revealed };
+      if (correct) { results[id] = true; delete reattempt[id]; }
+      else {
+        delete results[id];
+        if (reattempt[id]) revealed[id] = true; // wrong again on a reattempt: unlock the solution
+        reattempt[id] = true;
+      }
+      return { ...s, results, reattempt, revealed };
     });
   }, [update]);
 
@@ -180,7 +202,12 @@ export function useProgress(user) {
   }), [update]);
 
   const setSession = useCallback((session) => update((s) => ({ ...s, session })), [update]);
-  const addExam = useCallback((exam) => update((s) => ({ ...s, exams: [...s.exams.filter((e) => e.id !== exam.id), exam] })), [update]);
+  // wrongIds: questions answered incorrectly in this exam; they join the Reattempt list
+  const addExam = useCallback((exam, wrongIds = []) => update((s) => {
+    const reattempt = { ...s.reattempt };
+    for (const id of wrongIds) if (!s.results[id]) reattempt[id] = true;
+    return { ...s, reattempt, exams: [...s.exams.filter((e) => e.id !== exam.id), exam] };
+  }), [update]);
   const deleteExam = useCallback((id) => update((s) => ({ ...s, exams: s.exams.filter((e) => e.id !== id) })), [update]);
 
   const exportData = useCallback(() => {
@@ -209,5 +236,5 @@ export function useProgress(user) {
     setStateRaw({ ...EMPTY });
   }, [push]);
 
-  return { state, sync, toggle, setMany, setResponse, setPref, setSession, addExam, deleteExam, exportData, importData, clearLocalAfterFlush };
+  return { state, sync, toggle, setMany, setResponse, recordResult, setPref, setSession, addExam, deleteExam, exportData, importData, clearLocalAfterFlush };
 }

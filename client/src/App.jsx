@@ -3,6 +3,8 @@ import Dashboard from './Dashboard.jsx';
 import Tracker from './Tracker.jsx';
 import Library from './Library.jsx';
 import Exam from './Exam.jsx';
+import ThemeSwitch from './Theme.jsx';
+import Reattempt from './Reattempt.jsx';
 import Login, { Brand } from './Login.jsx';
 import Icon from './Icons.jsx';
 import { useProgress } from './useProgress.js';
@@ -12,6 +14,7 @@ const VIEWS = [
   ['dashboard', 'Dashboard', 'dashboard'],
   ['tracker', 'Coverage tracker', 'tracker'],
   ['library', 'Question library', 'library'],
+  ['reattempt', 'Reattempt questions', 'retry'],
   ['exam', 'Exam mode', 'exam'],
 ];
 const viewFromHash = () => VIEWS.find(([id]) => location.hash.startsWith(`#${id}`))?.[0] || 'dashboard';
@@ -58,6 +61,7 @@ export default function App() {
   if (!auth.user) return <Login auth={auth} stats={stats} />;
 
   const inExam = !!progress.state.session;
+  const reCount = Object.keys(progress.state.reattempt).length;
 
   return (
     <div className="shell">
@@ -68,10 +72,12 @@ export default function App() {
             <button key={id} className={view === id ? 'on' : ''} onClick={() => go(id)} aria-current={view === id ? 'page' : undefined}>
               <Icon name={icon} />
               <span>{label}</span>
+              {id === 'reattempt' && reCount > 0 && <span className="navcount">{reCount}</span>}
               {id === 'exam' && inExam && <span className="live-dot" title="Exam in progress" />}
             </button>
           ))}
         </nav>
+        <ThemeSwitch />
         <UserCard user={auth.user} sync={progress.sync} onLogout={signOut} />
       </aside>
 
@@ -87,6 +93,12 @@ export default function App() {
           <>
             <PageHead title="Question library" sub="Previous-year questions, filterable by subject, chapter, topic and year." />
             <Library syllabus={syllabus} questions={questions} progress={progress} />
+          </>
+        )}
+        {view === 'reattempt' && (
+          <>
+            <PageHead title="Reattempt questions" sub="Questions you answered incorrectly. Get one right to unlock its solution and concept." />
+            <Reattempt syllabus={syllabus} questions={questions} progress={progress} />
           </>
         )}
         {view === 'exam' && (

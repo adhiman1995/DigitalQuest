@@ -11,6 +11,8 @@
 //   figure?: { type: 'block' | 'plot' | 'grid', ... }     // vector diagram spec, see scripts/authoring/
 //   after?:  "text shown below the figure/table",
 //   answer?: "B"      // ONLY when verified against a printed answer key
+//   solution?: "worked solution, LaTeX/markdown; shown to the student only after a correct answer"
+//   concept?:  "the key idea/formula behind the question; shown only after a correct answer"
 //   marked?: "B"      // pen mark seen on the source page (NOT a verified answer)
 //   folder?: "<chapter dir relative to question-bank/>"   // when a page mixes chapters, overrides the image's folder
 // }
@@ -55,6 +57,8 @@ for (const item of batch) {
       ...(q.figure && { figure: q.figure }),
       ...(q.after && { after: q.after }),
       options: q.options,
+      ...(q.solution && { solution: q.solution }),
+      ...(q.concept && { concept: q.concept }),
       answer: q.answer || null,
       marked: q.marked || null,
     });

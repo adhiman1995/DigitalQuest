@@ -134,6 +134,13 @@ function Setup({ syllabus, questions, progress, onStart, onReview }) {
 }
 
 // ------------------------------------------------------------------ runner
+// ids of answered questions whose chosen option differs from the verified answer key
+const wrongOf = (exam, byId) => exam.qids.filter((id) => {
+  const a = exam.answers[id];
+  const q = byId[id];
+  return a?.status === 'answered' && q?.answer && a.chosen !== q.answer;
+});
+
 function Runner({ session, byId, progress, onDone }) {
   const { setSession, addExam } = progress;
   const sessionRef = useRef(session);
@@ -141,7 +148,7 @@ function Runner({ session, byId, progress, onDone }) {
   const [now, setNow] = useState(Date.now());
 
   const apply = (r) => {
-    if (r.exam) { addExam(r.exam); setSession(null); onDone(r.exam.id); }
+    if (r.exam) { addExam(r.exam, wrongOf(r.exam, byId)); setSession(null); onDone(r.exam.id); }
     else setSession(r.session);
   };
 

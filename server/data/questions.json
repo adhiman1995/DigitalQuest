@@ -16,7 +16,9 @@
     ],
     "answer": "A",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "concept": "Overshoots and undershoots of an underdamped second-order step response.",
+    "solution": "Successive extrema of the step response occur at $t=n\\pi/\\omega_d$ with magnitude $e^{-n\\xi\\pi/\\sqrt{1-\\xi^2}}$. Odd $n$ are overshoots and even $n$ are undershoots.\n\nThe largest undershoot is $n=2$: $e^{-2\\xi\\pi/\\sqrt{1-\\xi^2}}$, so (A) is true. (R) is the general formula that gives (A).\n\nBoth true and (R) explains (A): **(a)**."
   },
   {
     "id": "0653e48e50-2",
@@ -35,7 +37,9 @@
     ],
     "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "concept": "Critical damping needs $\\xi=1$, i.e. a repeated real pole.",
+    "solution": "Compare with $s^2+2\\xi\\omega_ns+\\omega_n^2$.\n$H_1$: $\\omega_n=2$, $2\\xi\\omega_n=4\\Rightarrow\\xi=1$.\n$H_2$: $\\xi=0.75$; $H_3$: $\\xi=0.5$; $H_4$: $\\xi=0.25$.\n\nCritically damped is $H_1$: **(a)**."
   },
   {
     "id": "0653e48e50-3",
@@ -54,7 +58,9 @@
     ],
     "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "concept": "Settling time of a second-order system.",
+    "solution": "The envelope $e^{-\\xi\\omega_nt}$ falls to 2% at $\\xi\\omega_nt\\approx4$. So $t_s=\\dfrac{4}{\\xi\\omega_n}$ (2%) and $\\dfrac{3}{\\xi\\omega_n}$ (5%): **(c)**."
   },
   {
     "id": "0653e48e50-4",
@@ -73,7 +79,9 @@
     ],
     "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "concept": "Non-interacting cascade of two identical first-order lags.",
+    "solution": "$G(s)=\\left(\\dfrac1{\\tau s+1}\\right)^2$ has a repeated real pole at $-1/\\tau$. That is $\\xi=1$, so the step response is critically damped: **(d)**."
   },
   {
     "id": "0653e48e50-5",
@@ -92,7 +100,9 @@
     ],
     "answer": "A",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "concept": "$Y=H\\cdot X$, then inverse Laplace transform.",
+    "solution": "$X(s)=\\dfrac1{s+1}$ and $H(s)=\\dfrac{s+1}{(s+1)^2+1}$.\n$Y(s)=\\dfrac{1}{(s+1)^2+1}\\Rightarrow y(t)=e^{-t}\\sin t\\,u(t)$: **(a)**."
   },
   {
     "id": "0653e48e50-6",
@@ -111,7 +121,9 @@
     ],
     "answer": "B",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "concept": "Position error constant $K_p=\\lim_{s\\to0}G(s)$; $e_{ss}=\\dfrac1{1+K_p}$.",
+    "solution": "$K_p=\\dfrac{10}{50}=0.2$, so the system is type 0.\n$e_{ss}=\\dfrac{1}{1+0.2}=0.833$: **(b)**."
   },
   {
     "id": "0653e48e50-7",
@@ -130,7 +142,9 @@
     ],
     "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "concept": "Step response $\\to T(s)=sC(s)$.",
+    "solution": "$C(s)=\\dfrac1s-\\dfrac{10}{s+1}=\\dfrac{1-9s}{s(s+1)}$.\n$T(s)=sC(s)=\\dfrac{1-9s}{s+1}$: **(c)**."
   },
   {
     "id": "0653e48e50-8",
@@ -149,7 +163,9 @@
     ],
     "answer": null,
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "concept": "Order reduction by neglecting a fast (non-dominant) pole.",
+    "solution": "Dropping a non-dominant pole removes a small lag, so with the DC gain preserved the reduced model responds somewhat faster to a step. This points to a smaller rise time, but the options say \"for any input\" and \"depending on the input\", and rise time is only defined for a step. The wording is ambiguous, so no answer key has been set for this question."
   },
   {
     "id": "0653e48e50-9",
@@ -534,9 +550,12 @@
       "A–3, B–4, C–2, D–1",
       "A–3, B–4, C–1, D–2"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Pole location decides the response: $\\sigma<0$ decays, $\\sigma=0$ sustains, $\\sigma>0$ grows.",
+    "solution": "- **A**: all poles real, two in the right half-plane $\\Rightarrow$ non-oscillatory, unbounded response: **4**.\n- **B**: poles at $\\pm j\\omega$ $\\Rightarrow$ sustained oscillation, constant amplitude: **3**.\n- **C**: complex pair in the right half-plane $\\Rightarrow$ growing oscillation: **2**.\n- **D**: complex pair in the left half-plane $\\Rightarrow$ decaying oscillation: **1**.\n\nA–4, B–3, C–2, D–1: **(b)**."
   },
   {
     "id": "0653e48e50-10",
@@ -553,9 +572,12 @@
       "decaying exponential",
       "oscillatory"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Impulse response of $1/s$.",
+    "solution": "A single pole at the origin gives $G(s)=\\dfrac Ks$, so $g(t)=Ku(t)$, a constant: **(a)**."
   },
   {
     "id": "0653e48e50-11",
@@ -688,9 +710,12 @@
       "$1,\\ 0$",
       "$0,\\ 1$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Steady-state error sensitivity: $S_x^{e}=\\dfrac{x}{e}\\dfrac{\\partial e}{\\partial x}$.",
+    "solution": "For a ramp, $K_v=\\lim_{s\\to0}sG=\\dfrac Ka$, so $e_{ss}=\\dfrac1{K_v}=\\dfrac aK$.\n$S_K=\\dfrac{K}{e}\\cdot\\left(-\\dfrac a{K^2}\\right)=-1$ and $S_a=\\dfrac ae\\cdot\\dfrac1K=+1$.\n\n$(-1,\\ 1)$: **(b)**."
   },
   {
     "id": "0653e48e50-12",
@@ -707,9 +732,12 @@
       "$\\dfrac{1}{s^2(s+1)}$",
       "$\\dfrac{2}{s(s+1)^2}$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$H(s)=sY(s)$ for a unit step input.",
+    "solution": "$Y(s)=\\mathcal L\\{t^2e^{-t}\\}=\\dfrac{2}{(s+1)^3}$.\n$H(s)=sY(s)=\\dfrac{2s}{(s+1)^3}$: **(b)**."
   },
   {
     "id": "0653e48e50-13",
@@ -770,9 +798,12 @@
       "A–2, B–1, C–4, D–3",
       "A–1, B–2, C–4, D–3"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Ramp error by system type: $e_{ss}=\\infty,\\ 1/K_v,\\ 0$ for types 0, 1, $\\ge2$.",
+    "solution": "- Type 0: the error grows without bound $\\Rightarrow\\infty$ (2).\n- Type 1: $e_{ss}=1/K$ (4).\n- Type 2: $0$ (3).\n- Type 3: $0$ (3).\n\nA–2, B–4, C–3, D–3: **(a)**."
   },
   {
     "id": "0653e48e50-14",
@@ -789,9 +820,12 @@
       "Half-power error",
       "Position error constant"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Definition of steady-state error.",
+    "solution": "The error that remains after the transient has died out, i.e. for a large observation time, is the steady-state error: **(b)**."
   },
   {
     "id": "0653e48e50-15",
@@ -875,9 +909,12 @@
       "$t_2$",
       "$\\dfrac{1}{t_2}$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "First-order impulse response $Ke^{-\\alpha t}$ falls to $0.37K$ at $t=1/\\alpha$.",
+    "solution": "$g(t)=Ke^{-\\alpha t}$. At $t=1/\\alpha$ it equals $Ke^{-1}=0.37K$.\nThe figure shows the $0.37K$ point at $t_2$, so $t_2=1/\\alpha$ and $\\alpha=\\dfrac1{t_2}$: **(d)**."
   },
   {
     "id": "0653e48e50-16",
@@ -894,9 +931,12 @@
       "Underdamped",
       "Undamped oscillatory"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Discriminant of the characteristic equation.",
+    "solution": "$1+G=0\\Rightarrow s^2+18s+80=(s+8)(s+10)=0$.\nThe roots are real and distinct ($\\xi=9/\\sqrt{80}\\approx1.006>1$), so the step response is overdamped: **(a)**.\n\nIt is very close to critical damping, but not equal to it."
   },
   {
     "id": "91aaf4e474-1",
@@ -913,9 +953,12 @@
       "2 and 3",
       "1 and 3"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "What feedback does.",
+    "solution": "1. Reduces sensitivity to parameter variation and disturbances: true.\n2. Moves the poles, so it changes the time constant: true.\n3. Feedback does not increase the loop gain, it uses the loop gain: false.\n\nOnly 1 and 2: **(b)**."
   },
   {
     "id": "91aaf4e474-2",
@@ -932,9 +975,12 @@
       "negative, real and equal",
       "positive, real and equal"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Critical damping is a repeated real negative root.",
+    "solution": "$\\xi=1$ gives $s=-\\omega_n$ twice: negative, real and equal: **(c)**."
   },
   {
     "id": "91aaf4e474-3",
@@ -968,9 +1014,12 @@
       "$2$ and $2$",
       "$1$ and $3$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Pole-zero cancellation and DC gain.",
+    "solution": "From the step response the poles are at $-1$ and $-3$, so $a,b=1,3$.\nThe response to $e^{-2t}u(t)$ has no $e^{-2t}$ term, so the zero must cancel the input pole: $c=2$.\nThe step response's constant term is $H(0)=\\dfrac{Hc}{ab}=\\dfrac{2H}{3}=2\\Rightarrow H=3$.\n\n$c=2,\\ H=3$: **(a)**."
   },
   {
     "id": "91aaf4e474-4",
@@ -1174,9 +1223,12 @@
       "By increasing dc gain of $G_1(s)$",
       "By removing the feedback"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Disturbance rejection: raise the gain before the disturbance enters.",
+    "solution": "With $R=0$: $\\dfrac{C}{D}=\\dfrac{G_2}{1+G_1G_2}$. At DC with large $G_1G_2$ this is about $\\dfrac1{G_1}$.\nRaising only $G_2$ cannot reduce this below $1/G_1$, but raising the DC gain of $G_1$ (the block *ahead* of the disturbance) drives the error towards zero: **(c)**."
   },
   {
     "id": "91aaf4e474-5",
@@ -1193,9 +1245,12 @@
       "$\\dfrac{3\\pi}{\\omega_n\\sqrt{1-\\xi^2}}$",
       "$\\dfrac{\\pi}{\\sqrt{1-\\xi^2}}$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Extrema of the step response occur at $t=n\\pi/\\omega_d$.",
+    "solution": "$\\omega_d=\\omega_n\\sqrt{1-\\xi^2}$. The overshoots are at odd $n$: the first peak is at $\\pi/\\omega_d$ and the second peak at $3\\pi/\\omega_d$. (The minima in between at even $n$ are undershoots.)\n\n$t=\\dfrac{3\\pi}{\\omega_n\\sqrt{1-\\xi^2}}$: **(c)**."
   },
   {
     "id": "91aaf4e474-6",
@@ -1212,9 +1267,12 @@
       "Becomes zero",
       "Becomes infinite"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Negative feedback reduces sensitivity.",
+    "solution": "$S=\\dfrac1{1+GH}<1$ for $|1+GH|>1$, so the sensitivity to parameter variations decreases: **(b)**."
   },
   {
     "id": "91aaf4e474-7",
@@ -1231,9 +1289,12 @@
       "On the right hand side of complex plane as complex conjugates",
       "On the positive real axis as real roots"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Negative damping puts the poles in the right half-plane.",
+    "solution": "Underdamped means complex-conjugate poles. Negative damping makes the real part $-\\xi\\omega_n$ positive, so the poles are complex conjugates in the right half-plane: **(c)**."
   },
   {
     "id": "91aaf4e474-8",
@@ -1294,9 +1355,12 @@
       "A–3, B–4, C–2, D–1",
       "A–2, B–1, C–3, D–4"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Classify by $\\xi=\\dfrac{b}{2\\sqrt c}$ for $s^2+bs+c$.",
+    "solution": "- A: $\\omega_n=20,\\ \\xi=12/40=0.3$: underdamped (3).\n- B: $\\omega_n=30,\\ \\xi=90/60=1.5$: overdamped (4).\n- C: $\\omega_n=15,\\ \\xi=30/30=1$: critically damped (2).\n- D: $\\xi=0$: undamped (1).\n\nA–3, B–4, C–2, D–1: **(c)**."
   },
   {
     "id": "91aaf4e474-9",
@@ -1313,9 +1377,12 @@
       "$4$",
       "$2$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Match $s^2+2\\xi\\omega_ns+\\omega_n^2$.",
+    "solution": "$1+G=0\\Rightarrow s^2+4s+K$. So $\\omega_n=\\sqrt K$ and $2\\xi\\omega_n=4$.\n$\\xi=\\dfrac2{\\sqrt K}=0.5\\Rightarrow\\sqrt K=4\\Rightarrow K=16$: **(b)**."
   },
   {
     "id": "91aaf4e474-10",
@@ -1332,9 +1399,12 @@
       "$0.25$",
       "$\\sqrt{0.5}$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Ramp error constant $K_v=\\lim_{s\\to0}sG$.",
+    "solution": "$K_v=\\lim_{s\\to0}\\dfrac{s}{s(s+1)}=1$.\n$e_{ss}=\\dfrac1{K_v}=1$: **(a)**."
   },
   {
     "id": "91aaf4e474-11",
@@ -1351,9 +1421,12 @@
       "$0.6$",
       "$0.047$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Peak overshoot gives $\\xi$; then $K=\\omega_n^2$.",
+    "solution": "$M_p=e^{-\\pi\\xi/\\sqrt{1-\\xi^2}}=0.5\\Rightarrow\\dfrac{\\pi\\xi}{\\sqrt{1-\\xi^2}}=\\ln2=0.693\\Rightarrow\\xi\\approx0.2155$.\nCharacteristic equation $s^2+s+K$: $2\\xi\\omega_n=1\\Rightarrow\\omega_n=2.32$.\n$K=\\omega_n^2\\approx5.4\\approx5.3$: **(b)**."
   },
   {
     "id": "91aaf4e474-12",
@@ -1370,9 +1443,12 @@
       "Only 3 and 4",
       "1, 2, 3 and 4"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "First-order time constant.",
+    "solution": "1. A transient-response specification: true.\n2. $\\tau=1/|p|$, the reciprocal of the pole on the real axis: true.\n3. Accuracy relates to steady-state error, not $\\tau$: false.\n4. A smaller $\\tau$ means a faster response: true.\n\nOnly 1, 2 and 4: **(b)**."
   },
   {
     "id": "91aaf4e474-13",
@@ -1389,9 +1465,12 @@
       "Only 1 and 3",
       "1, 2 and 3"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Compare with the critically damped step response.",
+    "solution": "$C(s)=\\dfrac{25}{s(s+5)^2}$, so $\\omega_n=5$ rad/s and $\\xi=1$ (statements 1 and 2 true).\nImpulse response $=\\dfrac{d}{dt}$(step response) $=5e^{-5t}-5e^{-5t}+25te^{-5t}=25te^{-5t}$ (statement 3 true).\n\nAll three: **(d)**."
   },
   {
     "id": "91aaf4e474-14",
@@ -1408,9 +1487,12 @@
       "Critically stable",
       "Oscillatory"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Stability from pole locations.",
+    "solution": "$C(s)=\\dfrac1s-\\dfrac1{s+1}-\\dfrac1{(s+1)^2}=\\dfrac{1}{s(s+1)^2}$, so $T(s)=\\dfrac1{(s+1)^2}$.\nBoth poles are at $-1$ (left half-plane), so the system is stable: **(b)**."
   },
   {
     "id": "91aaf4e474-15",
@@ -1427,9 +1509,12 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Impulse response is the derivative of the step response.",
+    "solution": "The step response is natural response + a constant particular term. Differentiating removes the constant and only rescales the exponential terms, so the impulse response contains only natural-response terms. (A) is true and (R) is the reason.\n\n**(a)**."
   },
   {
     "id": "91aaf4e474-16",
@@ -1446,9 +1531,12 @@
       "$3k$",
       "$0$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Forced response for constant input.",
+    "solution": "For $x=k$ the forced (steady) response has $\\dot y=0$: $3y=k\\Rightarrow y=\\dfrac k3$: **(b)**."
   },
   {
     "id": "91aaf4e474-17",
@@ -1465,9 +1553,12 @@
       "By decreasing the static error constant",
       "By increasing the input"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Steady-state error falls as the error constants rise.",
+    "solution": "$e_{ss}\\propto\\dfrac1{1+K}$ or $\\dfrac1{K_v}$, so increasing the system gain reduces it: **(b)**. Reducing the type or the error constant would increase it."
   },
   {
     "id": "91aaf4e474-18",
@@ -1484,9 +1575,12 @@
       "$0.333$",
       "$0.5$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Normalise to standard form.",
+    "solution": "$2\\ddot y+4\\dot y+8y=8x\\Rightarrow\\ddot y+2\\dot y+4y=4x$.\n$\\omega_n^2=4\\Rightarrow\\omega_n=2$ and $2\\xi\\omega_n=2\\Rightarrow\\xi=0.5$: **(d)**."
   },
   {
     "id": "91aaf4e474-19",
@@ -1503,9 +1597,12 @@
       "Closed-loop poles are real, equal and negative",
       "Closed-loop poles are real, unequal and negative"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Poles for $\\xi=0$.",
+    "solution": "$s^2+\\omega_n^2=0\\Rightarrow s=\\pm j\\omega_n$: purely imaginary: **(b)**."
   },
   {
     "id": "91aaf4e474-20",
@@ -1522,9 +1619,12 @@
       "Zero",
       "$1$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Type 2 system with a ramp input.",
+    "solution": "$G=\\dfrac{10}{s^2(s+4)}$ is type 2, so $K_v=\\infty$ and the ramp error is zero (for any ramp slope): **(c)**."
   },
   {
     "id": "68f0803b5a-1",
@@ -1541,9 +1641,12 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Check $\\xi$ from the characteristic equation.",
+    "solution": "$4s^2+6s+1=0\\Rightarrow s^2+1.5s+0.25=0$.\n$\\omega_n=0.5$ rad/s (so (R) is true), and $2\\xi\\omega_n=1.5\\Rightarrow\\xi=1.5>1$: overdamped, so (A) is false.\n\n**(d)**."
   },
   {
     "id": "68f0803b5a-2",
@@ -1639,9 +1742,12 @@
       "$0.707$",
       "$1$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "DC gain of a second-order all-pole model.",
+    "solution": "Poles at $-1\\pm j1$, no finite zeros: $H(s)=\\dfrac{1}{(s+1)^2+1}=\\dfrac1{s^2+2s+2}$ (taking a numerator of 1).\nSteady-state value for a unit step $=H(0)=\\dfrac12=0.5$: **(b)**."
   },
   {
     "id": "68f0803b5a-3",
@@ -1658,9 +1764,12 @@
       "$\\dfrac{\\pi}{2\\sqrt3}\\ \\mathrm{s}$",
       "$\\dfrac{\\pi}{4\\sqrt3}\\ \\mathrm{s}$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Peak time $t_p=\\pi/\\omega_d$.",
+    "solution": "$\\omega_n=4,\\ 2\\xi\\omega_n=4\\Rightarrow\\xi=0.5$.\n$\\omega_d=4\\sqrt{1-0.25}=2\\sqrt3$.\n$t_p=\\dfrac{\\pi}{2\\sqrt3}$ s: **(c)**."
   },
   {
     "id": "68f0803b5a-4",
@@ -1702,9 +1811,12 @@
       "$p_3$ and $z_1$",
       "$p_4$ and $z_2$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Dominant poles are the ones closest to the $j\\omega$ axis.",
+    "solution": "The poles at $-0.5$ and $-1$ are slow; those at $-5$ and $-10$ decay at least 5 times faster. The zeros at $-6$ and $-8$ are far away and have little influence on the slow part.\nThe response is closely approximated by $p_1$ and $p_2$: **(a)**."
   },
   {
     "id": "68f0803b5a-5",
@@ -1721,9 +1833,12 @@
       "Two",
       "A value between $-1$ and $+1$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Sustained oscillation has no steady-state value.",
+    "solution": "$f(t)=\\sin\\omega t$, which keeps oscillating between $-1$ and $+1$, so there is no steady-state limit. The final value theorem fails because the poles are on the imaginary axis.\n\nThe value stays between $-1$ and $+1$: **(d)**."
   },
   {
     "id": "68f0803b5a-6",
@@ -1740,9 +1855,12 @@
       "10 sec",
       "20 sec"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s=4/(\\xi\\omega_n)$ for the 2% band.",
+    "solution": "$1+G=0\\Rightarrow s^2+0.4s+4=0$, so $\\omega_n=2$ and $\\xi\\omega_n=0.2$.\n$t_s=\\dfrac4{0.2}=20$ s: **(d)**."
   },
   {
     "id": "68f0803b5a-7",
@@ -1963,9 +2081,12 @@
       "Plot (c)",
       "Plot (d)"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "An underdamped response is a decaying oscillation.",
+    "solution": "(a) and (b) are not oscillatory. (c) is an oscillation whose envelope *grows*, which is an unstable system. (d) is an oscillation with a decaying envelope, i.e. a damped oscillation: **(d)**."
   },
   {
     "id": "68f0803b5a-8",
@@ -1982,9 +2103,12 @@
       "$0.8$ to $1.0$",
       "$1.1$ to $1.5$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Trade-off between overshoot and speed.",
+    "solution": "Very small $\\xi$ gives a lightly damped, oscillatory response. $\\xi>1$ gives a sluggish one. A good compromise between stability and speed is $\\xi\\approx0.4$ to $0.7$: **(b)**."
   },
   {
     "id": "68f0803b5a-9",
@@ -2001,9 +2125,12 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Effects of integral and derivative action.",
+    "solution": "(A) Integral action raises the type, so steady-state error falls: true.\n(R) Derivative action adds damping, which reduces overshoot: true.\nThe two are unrelated, so (R) does not explain (A): **(b)**."
   },
   {
     "id": "68f0803b5a-10",
@@ -2022,7 +2149,9 @@
     ],
     "answer": null,
     "marked": null,
-    "marks": null
+    "marks": null,
+    "concept": "BIBO stability.",
+    "solution": "(R) is the condition for stability: roots in the left half-plane and decaying initial-condition response. (A) holds only for *stable* linear systems, since a linear integrator gives an unbounded output for a bounded step. Whether the intended reading of (A) is \"every linear system\" or \"a stable linear system\" is unclear, so no answer key has been set."
   },
   {
     "id": "68f0803b5a-11",
@@ -2199,9 +2328,12 @@
       "$2$",
       "$\\infty$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Closed-loop transfer function and final value.",
+    "solution": "Forward gain $\\dfrac{10}{s+1}$ with feedback $\\dfrac1s$:\n$T=\\dfrac{10/(s+1)}{1+10/[s(s+1)]}=\\dfrac{10s}{s^2+s+10}$.\nUnit step: $C(s)=\\dfrac{10}{s^2+s+10}$, and the final value is $\\lim_{s\\to0}sC(s)=0$: **(b)**."
   },
   {
     "id": "68f0803b5a-12",
@@ -2356,9 +2488,12 @@
       "Two",
       "Three"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "System type counts the integrators in $G(s)H(s)$.",
+    "solution": "$G(s)H(s)=\\dfrac{2}{s^2+2s+2}\\cdot\\dfrac1s=\\dfrac{2}{s(s^2+2s+2)}$.\nOne pole at the origin: type 1: **(b)**."
   },
   {
     "id": "68f0803b5a-13",
@@ -2375,9 +2510,12 @@
       "$\\dfrac{1}{10}$",
       "$4$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "First-order form $\\tau\\dot x+x=Kf$.",
+    "solution": "$40\\dot x+2x=f\\Rightarrow20\\dot x+x=\\tfrac12f$. So $\\tau=20$: **(b)**."
   },
   {
     "id": "68f0803b5a-14",
@@ -2394,9 +2532,12 @@
       "$-4\\pm j5\\sqrt{2}$",
       "$-4\\pm j7$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Settling time and damping ratio fix the pole location.",
+    "solution": "$t_s(5\\%)=\\dfrac{3}{\\xi\\omega_n}=0.6\\Rightarrow\\xi\\omega_n=5$.\n$\\xi=0.707\\Rightarrow\\omega_n=7.07$, so $\\omega_d=\\omega_n\\sqrt{1-\\xi^2}=5$.\nPoles: $-5\\pm j5$: **(b)**."
   },
   {
     "id": "68f0803b5a-15",
@@ -2413,9 +2554,12 @@
       "$16$",
       "$64$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Match $s^2+2\\xi\\omega_ns+\\omega_n^2$.",
+    "solution": "$s^2+6s+K=0\\Rightarrow\\omega_n=\\sqrt K,\\ 2\\xi\\omega_n=6$.\n$\\xi=\\dfrac3{\\sqrt K}=0.75\\Rightarrow\\sqrt K=4\\Rightarrow K=16$: **(c)**."
   },
   {
     "id": "68f0803b5a-16",
@@ -2432,9 +2576,12 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Impulse response of an underdamped second-order system.",
+    "solution": "The impulse response $\\propto e^{-\\xi\\omega_nt}\\sin\\omega_dt$ rings at the system's own (natural) oscillation frequency, so (I) holds in the loose sense. (II) is true: an impulse has a flat spectrum. The impulse excites every mode, but (II) alone does not determine which frequency the system rings at.\n\nBoth true, (II) not the explanation: **(b)**."
   },
   {
     "id": "68f0803b5a-17",
@@ -2451,9 +2598,12 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_r\\approx\\dfrac{1.8}{\\omega_n}$ and bandwidth $\\propto\\omega_n$.",
+    "solution": "In a prototype second-order system $t_r\\propto1/\\omega_n$ and bandwidth $\\propto\\omega_n$, so they are inversely proportional (I). Increasing $\\omega_n$ raises the bandwidth and lowers $t_r$ (II), which is the reason for (I).\n\n**(a)**."
   },
   {
     "id": "ef7abf3d66-1",
@@ -2470,9 +2620,12 @@
       "Zeros at origin for closed loop transfer function.",
       "Poles at origin for closed loop transfer function."
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "System type = number of integrators in the loop.",
+    "solution": "The type is the number of poles at the origin of the *open-loop* transfer function $G(s)H(s)$, and the static error constants ($K_p,K_v,K_a$) follow from it: **(b)**."
   },
   {
     "id": "ef7abf3d66-2",
@@ -2489,9 +2642,12 @@
       "$2.0\\ \\mathrm{s}$",
       "$0.4\\ \\mathrm{s}$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s(2\\%)=4/(\\xi\\omega_n)$.",
+    "solution": "$\\omega_n=5,\\ 2\\xi\\omega_n=5\\Rightarrow\\xi=0.5$, so $\\xi\\omega_n=2.5$.\n$t_s=\\dfrac4{2.5}=1.6$ s: **(b)**."
   },
   {
     "id": "ef7abf3d66-3",
@@ -2508,9 +2664,12 @@
       "2, 4 and 6",
       "1, 4 and 5"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Transient specifications for a step input.",
+    "solution": "The standard transient measures are maximum overshoot, delay time, rise time, peak time and settling time. Overall gain is steady-state, and undershoot and fall time are not standard specifications.\n\nSo 1, 4 and 5: **(d)**."
   },
   {
     "id": "ef7abf3d66-4",
@@ -2527,9 +2686,12 @@
       "$1$",
       "$0$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Type of the open-loop function $GH$.",
+    "solution": "$GH=\\dfrac4{s(s+3)}\\cdot\\dfrac1s=\\dfrac{4}{s^2(s+3)}$: two poles at the origin, so type 2: **(b)**."
   },
   {
     "id": "ef7abf3d66-5",
@@ -2546,9 +2708,12 @@
       "equal, negative and real",
       "negative and real"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$\\xi=1$ gives a repeated real pole.",
+    "solution": "$s=-\\omega_n$ twice, so the poles are equal, negative and real: **(c)**."
   },
   {
     "id": "ef7abf3d66-6",
@@ -2567,7 +2732,9 @@
     ],
     "answer": null,
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "concept": "Order reduction by neglecting a fast pole.",
+    "solution": "Same question as 2.8. Removing the non-dominant pole removes a small lag and tends to give a smaller step rise time, but the options say \"for any input\" and rise time is only defined for a step, so the wording is ambiguous and no answer key has been set."
   },
   {
     "id": "ef7abf3d66-7",
@@ -2584,9 +2751,12 @@
       "$1$",
       "$\\infty$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "DC gain is $G(0)$.",
+    "solution": "$G(0)=\\dfrac{5}{5\\cdot4}=0.25$: **(a)**."
   },
   {
     "id": "ef7abf3d66-8",
@@ -2603,9 +2773,12 @@
       "$\\dfrac{2K}{3+10K+8K^2}$",
       "$\\dfrac{4K}{2+5K+7K^2}$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Sensitivity $S_K^T=\\dfrac KT\\dfrac{dT}{dK}$.",
+    "solution": "$\\dfrac{dT}{dK}=\\dfrac{2(3+4K)-4(1+2K)}{(3+4K)^2}=\\dfrac{2}{(3+4K)^2}$.\n$S=\\dfrac{K(3+4K)}{1+2K}\\cdot\\dfrac2{(3+4K)^2}=\\dfrac{2K}{(1+2K)(3+4K)}=\\dfrac{2K}{3+10K+8K^2}$: **(c)**."
   },
   {
     "id": "ef7abf3d66-9",
@@ -2622,9 +2795,12 @@
       "0.336 sec",
       "0.633 sec"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "From overshoot get $\\xi$; then $t_p=\\pi/\\omega_d$.",
+    "solution": "$M_p=0.3\\Rightarrow\\xi=\\dfrac{\\ln(1/0.3)}{\\sqrt{\\pi^2+\\ln^2(1/0.3)}}=\\dfrac{1.204}{3.364}=0.358$.\n$\\omega_d=10\\sqrt{1-0.358^2}=9.34$ rad/s.\n$t_p=\\dfrac\\pi{9.34}=0.336$ s: **(c)**."
   },
   {
     "id": "ef7abf3d66-10",
@@ -2641,9 +2817,12 @@
       "$\\dfrac{25}{s^2+2s+25}$",
       "$\\dfrac{36}{s^2+2s+36}$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Overshoot grows as $\\xi$ falls.",
+    "solution": "Here $2\\xi\\omega_n=2$, so $\\xi=1/\\omega_n$: $0.33,\\ 0.25,\\ 0.2,\\ 0.167$ for $\\omega_n=3,4,5,6$.\nThe smallest damping ratio gives the largest overshoot: $\\dfrac{36}{s^2+2s+36}$, **(d)**."
   },
   {
     "id": "ef7abf3d66-11",
@@ -2660,9 +2839,12 @@
       "$-2,\\ +2$",
       "$-2\\pm j1$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Closed-loop poles: $1+G=0$.",
+    "solution": "$(s+2)^2+1=0\\Rightarrow s^2+4s+5=0\\Rightarrow s=-2\\pm j1$: **(d)**."
   },
   {
     "id": "ef7abf3d66-12",
@@ -2679,9 +2861,12 @@
       "0.8 sec",
       "1.5 sec"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s=4/(\\xi\\omega_n)$.",
+    "solution": "$\\omega_n=10$ and $2\\xi\\omega_n=10\\Rightarrow\\xi=0.5$, so $\\xi\\omega_n=5$.\n$t_s=\\dfrac45=0.8$ s: **(c)**."
   },
   {
     "id": "ef7abf3d66-13",
@@ -2698,9 +2883,12 @@
       "$1$ and $0$",
       "$0$ and $0$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "DC gain $=G(0)$, step error $=1-G(0)$ for a closed-loop transfer function.",
+    "solution": "$G(0)=1$. Treating $G(s)$ as the system transfer function, the final value of the step response is 1, so the steady-state error is $1-1=0$.\n\nDC gain 1 and error 0: **(c)**."
   },
   {
     "id": "ef7abf3d66-14",
@@ -2717,9 +2905,12 @@
       "$1$ rad/sec and $\\sqrt{7}$",
       "$\\sqrt{7}$ rad/sec and $0.94$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Normalise to standard form.",
+    "solution": "$\\ddot x+5\\dot x+7x=7y$: $\\omega_n^2=7\\Rightarrow\\omega_n=\\sqrt7=2.65$ rad/s.\n$2\\xi\\omega_n=5\\Rightarrow\\xi=\\dfrac5{2\\sqrt7}=0.945\\approx0.94$: **(d)**."
   },
   {
     "id": "ef7abf3d66-15",
@@ -2736,9 +2927,12 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Zero-input vs zero-state response.",
+    "solution": "(I) is false: the zero-*input* response is the response to the initial conditions with the input set to zero, not with zero initial conditions.\n(II) is true: the zero-*state* response is the response to the input with zero initial conditions.\n\n**(d)**."
   },
   {
     "id": "ef7abf3d66-16",
@@ -2755,9 +2949,12 @@
       "more than natural frequency",
       "less than natural frequency"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$\\omega_d=\\omega_n\\sqrt{1-\\xi^2}$.",
+    "solution": "With $\\xi=0$, $\\omega_d=\\omega_n$: **(a)**."
   },
   {
     "id": "ef7abf3d66-17",
@@ -2774,9 +2971,12 @@
       "$100$",
       "$21$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Type 0: $e_{ss}=\\dfrac1{1+K_p}$.",
+    "solution": "$K_p=G(0)=\\dfrac{12K}{14\\cdot18}=\\dfrac K{21}$.\n$e_{ss}=\\dfrac1{1+K_p}=0.1\\Rightarrow K_p=9\\Rightarrow K=189$: **(b)**."
   },
   {
     "id": "ef7abf3d66-18",
@@ -2793,9 +2993,12 @@
       "$50$",
       "$10$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Match $s^2+2\\xi\\omega_ns+\\omega_n^2$.",
+    "solution": "$s^2+10s+K$: $2\\xi\\omega_n=10$ with $\\xi=0.5$ gives $\\omega_n=10$.\n$K=\\omega_n^2=100$: **(b)**."
   },
   {
     "id": "ef7abf3d66-19",
@@ -2812,9 +3015,12 @@
       "$1$ rad/s and $1$",
       "$0.64$ rad/s and $1$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Impulse response $\\dfrac{\\omega_n}{\\sqrt{1-\\xi^2}}e^{-\\xi\\omega_nt}\\sin\\omega_dt$.",
+    "solution": "Reading off: $\\xi\\omega_n=0.8$ and $\\omega_d=0.6$.\n$\\omega_n=\\sqrt{0.8^2+0.6^2}=1$ rad/s and $\\xi=0.8$: **(a)**."
   },
   {
     "id": "ef7abf3d66-20",
@@ -2831,9 +3037,12 @@
       "$1.6\\ \\mathrm{s}$",
       "$0.4\\ \\mathrm{s}$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s(2\\%)=4/(\\xi\\omega_n)$.",
+    "solution": "$\\omega_n=5,\\ \\xi=0.5\\Rightarrow\\xi\\omega_n=2.5$.\n$t_s=\\dfrac4{2.5}=1.6$ s: **(c)**."
   },
   {
     "id": "ef7abf3d66-21",
@@ -2850,9 +3059,12 @@
       "Lag time",
       "Settling time"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Definition of settling time.",
+    "solution": "The time for the response to reach and stay within a specified percentage of its final value is the settling time: **(d)**."
   },
   {
     "id": "ef7abf3d66-22",
@@ -2869,9 +3081,12 @@
       "Half the value of the band width",
       "$\\dfrac{1}{\\sqrt{2}}$ of the band width"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_r\\cdot BW\\approx$ constant.",
+    "solution": "For a low-pass system $t_r\\approx\\dfrac{0.35}{f_H}$, so rise time is inversely proportional to bandwidth: **(b)**."
   },
   {
     "id": "ef7abf3d66-23",
@@ -2888,9 +3103,12 @@
       "dc gain 1 and high frequency gain 0",
       "dc gain 0 and high frequency gain 1"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Low-pass first-order system.",
+    "solution": "DC gain $=G(0)=1$. As $s\\to\\infty$, $\\dfrac1{2s+1}\\to0$: **(c)**."
   },
   {
     "id": "da2a1c629a-1",
@@ -2907,9 +3125,12 @@
       "$1.5\\ \\mathrm{s}$",
       "$2.1\\ \\mathrm{s}$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s=4/(\\xi\\omega_n)$.",
+    "solution": "$\\omega_n=10,\\ 2\\xi\\omega_n=10\\Rightarrow\\xi\\omega_n=5$.\n$t_s=\\dfrac45=0.8$ s: **(a)**."
   },
   {
     "id": "da2a1c629a-2",
@@ -2926,9 +3147,12 @@
       "$24.5$ and $1.43$",
       "$33.5$ and $1.43$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Overdamped step response with poles $-10$ and $-60$.",
+    "solution": "The poles give $(s+10)(s+60)=s^2+70s+600$, and the DC gain is 1 (steady value 1).\n$\\omega_n=\\sqrt{600}=24.5$ rad/s.\n$\\xi=\\dfrac{70}{2\\cdot24.5}=1.43$: **(c)**."
   },
   {
     "id": "da2a1c629a-3",
@@ -2945,9 +3169,12 @@
       "$0.79\\ \\mathrm{s}$",
       "$1.57\\ \\mathrm{s}$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_p=\\pi/\\omega_d$.",
+    "solution": "$s^2+6s+25$: $\\omega_n=5,\\ \\xi=0.6,\\ \\omega_d=5\\sqrt{1-0.36}=4$.\n$t_p=\\dfrac\\pi4=0.785$ s: **(c)**."
   },
   {
     "id": "da2a1c629a-4",
@@ -2964,9 +3191,12 @@
       "$\\dfrac{2\\omega_n}{\\xi}$",
       "$\\dfrac{3\\omega_n}{2\\xi}$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Recover $G$ from $T$: $G=\\dfrac T{1-T}$.",
+    "solution": "$G(s)=\\dfrac{\\omega_n^2}{s^2+2\\xi\\omega_ns}=\\dfrac{\\omega_n^2}{s(s+2\\xi\\omega_n)}$.\n$K_v=\\lim_{s\\to0}sG=\\dfrac{\\omega_n^2}{2\\xi\\omega_n}=\\dfrac{\\omega_n}{2\\xi}$: **(a)**."
   },
   {
     "id": "da2a1c629a-5",
@@ -2983,9 +3213,12 @@
       "The poles are equal, negative and real",
       "Both the poles are unequal, negative and real"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$\\xi=1$: repeated real pole.",
+    "solution": "Both poles are at $-\\omega_n$: equal, negative and real: **(c)**."
   },
   {
     "id": "da2a1c629a-6",
@@ -3002,9 +3235,12 @@
       "peak overshoot",
       "transient deviation"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Maximum overshoot definition.",
+    "solution": "The largest deviation of the output from the final value during the transient period is the peak (maximum) overshoot: **(c)**."
   },
   {
     "id": "da2a1c629a-7",
@@ -3023,7 +3259,9 @@
     ],
     "answer": null,
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "concept": "Error constants of a type-1 system.",
+    "solution": "For a type-1 unity-feedback system $K_p=\\infty$ (not zero), $K_v$ is finite, $K_a=0$, and the step error is $\\dfrac1{1+K_p}=0$ (not 1).\nSo only statement 2 is correct. That is not offered in the options, so the question as transcribed has an error and no answer key has been set."
   },
   {
     "id": "da2a1c629a-8",
@@ -3042,7 +3280,9 @@
     ],
     "answer": null,
     "marked": null,
-    "marks": null
+    "marks": null,
+    "concept": "Steady-state error with non-unity feedback.",
+    "solution": "With an integrator in $G$, the output settles at $c_{ss}=1/K$ for a unit step, so $e_{ss}=\\left|1-\\dfrac1K\\right|<0.05$ gives $0.9524<K<1.0526$.\nBoth $0.953$ and $1.050$ satisfy this, so the question has two valid options and no answer key has been set."
   },
   {
     "id": "da2a1c629a-9",
@@ -3061,7 +3301,9 @@
     ],
     "answer": null,
     "marked": null,
-    "marks": null
+    "marks": null,
+    "concept": "Settling time from the dominant pole.",
+    "solution": "The poles are at $-10$ and $-100$, so the slow pole dominates with $\\tau=0.1$ s. The 2% settling time is about $4\\tau=0.4$ s (exact calculation: $0.40$ s).\nNone of the options (20, 2, 0.2, 0.02 s) matches, so no answer key has been set."
   },
   {
     "id": "da2a1c629a-10",
@@ -3078,9 +3320,12 @@
       "underdamped",
       "undamped"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Damping ratio from the characteristic equation.",
+    "solution": "$2s^2+6s+6=0\\Rightarrow s^2+3s+3=0$: $\\omega_n=\\sqrt3$ and $\\xi=\\dfrac3{2\\sqrt3}=0.866<1$.\nThe system is underdamped: **(c)**."
   },
   {
     "id": "da2a1c629a-11",
@@ -3097,9 +3342,12 @@
       "$\\dfrac{K}{6},\\ 0$ and $0$",
       "$\\dfrac{K}{6},\\ \\infty$ and $\\infty$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Error constants from the number of integrators.",
+    "solution": "$G$ has two poles at the origin: type 2, so $K_p=\\infty$ and $K_v=\\infty$.\n$K_a=\\lim_{s\\to0}s^2G=\\dfrac{2K}{12}=\\dfrac K6$.\n\n**(a)**."
   },
   {
     "id": "da2a1c629a-12",
@@ -3116,9 +3364,12 @@
       "input amplitude value",
       "transient error value"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Definition of settling time.",
+    "solution": "Settling time is the time for the response to settle within a tolerance band (2% or 5%) of the *final value*: **(b)**."
   },
   {
     "id": "da2a1c629a-13",
@@ -3251,9 +3502,12 @@
       "$K<\\dfrac{a^2}{4}$",
       "$K>\\dfrac{a^2}{4}$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Underdamped means complex poles.",
+    "solution": "$s^2+as+K=0$ has complex roots when $a^2-4K<0$, i.e. $K>\\dfrac{a^2}{4}$: **(d)**."
   },
   {
     "id": "da2a1c629a-14",
@@ -3386,9 +3640,12 @@
       "$2.33\\ \\mathrm{s}$",
       "$3.33\\ \\mathrm{s}$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s=4/(\\xi\\omega_n)$.",
+    "solution": "$s^2+6s+25$: $\\omega_n=5$, $\\xi\\omega_n=3$.\n$t_s=\\dfrac43=1.33$ s: **(b)**."
   },
   {
     "id": "da2a1c629a-15",
@@ -3492,7 +3749,9 @@
     ],
     "answer": null,
     "marked": null,
-    "marks": null
+    "marks": null,
+    "concept": "First-order step response $c(t)=\\dfrac Ka(1-e^{-at})$.",
+    "solution": "The figure gives a final value of 5 and a time constant $\\tau=1/a=0.1$ s, so $a=10$ and $K=5a=50$ (equal to the initial slope of 50).\nThe pair $(K,a)=(50,10)$ is not among the options, so the question as transcribed has an error and no answer key has been set."
   },
   {
     "id": "da2a1c629a-16",
@@ -3509,9 +3768,12 @@
       "integrator; $0.20$",
       "differentiator; $0.20$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Add an integrator to remove the step error.",
+    "solution": "Type 0: $e_{ss}=\\dfrac1{1+K_p}=0.2\\Rightarrow K_p=4$.\nAn integrator ($1/s$) makes the system type 1, so the step error vanishes.\nThe new $K_v=K_p\\cdot1=4$, so the ramp error is $\\dfrac1{K_v}=0.25$: **(a)**."
   },
   {
     "id": "da2a1c629a-17",
@@ -3528,9 +3790,12 @@
       "$8e^{-t}-8e^{-2t}$",
       "$e^{-t}-4e^{-2t}$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Step response is the integral of the impulse response.",
+    "solution": "$G(s)=\\dfrac{16}{s+2}-\\dfrac8{s+1}$.\n$C(s)=\\dfrac{G}{s}=\\dfrac8s-\\dfrac8{s+2}-\\dfrac8s+\\dfrac8{s+1}=\\dfrac8{s+1}-\\dfrac8{s+2}$.\n$c(t)=8e^{-t}-8e^{-2t}$: **(c)**."
   },
   {
     "id": "da2a1c629a-18",
@@ -3548,9 +3813,12 @@
       "$\\left[\\dfrac{5}{2}+\\dfrac{5}{2}e^{-2t}\\right]u(t)$",
       "$\\left[-5e^{-t}+\\dfrac{5}{2}e^{-2t}\\right]u(t)$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Partial fractions.",
+    "solution": "$Y(s)=\\dfrac5{s(s+1)(s+2)}=\\dfrac{5/2}{s}-\\dfrac5{s+1}+\\dfrac{5/2}{s+2}$.\n$y(t)=\\left[\\dfrac52-5e^{-t}+\\dfrac52e^{-2t}\\right]u(t)$: **(a)**."
   },
   {
     "id": "da2a1c629a-19",
@@ -3567,9 +3835,12 @@
       "$0$ and $0$",
       "$\\infty$ and $\\infty$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Type 2: zero error for step and ramp.",
+    "solution": "A type-2 system has $K_p=K_v=\\infty$, so both the step and ramp errors are zero: **(c)**."
   },
   {
     "id": "da2a1c629a-20",
@@ -3586,9 +3857,12 @@
       "2 and 3 only",
       "1, 2 and 3"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Parabolic input.",
+    "solution": "1. A parabola ($t^2/2$) is one degree faster than a ramp: true.\n2. The unit parabolic function is $t^2/2$ for $t>0$: true.\n3. $\\mathcal L\\{t^2/2\\}=\\dfrac1{s^3}$: true.\n\nAll three: **(d)**."
   },
   {
     "id": "820b11170e-1",
@@ -3605,9 +3879,12 @@
       "$1+e^{t/\\tau}$",
       "$1-e^{t/\\tau}$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "First-order step response.",
+    "solution": "$C(s)=\\dfrac1{s(1+\\tau s)}=\\dfrac1s-\\dfrac{\\tau}{1+\\tau s}$.\n$c(t)=1-e^{-t/\\tau}$: **(a)**."
   },
   {
     "id": "820b11170e-2",
@@ -3624,9 +3901,12 @@
       "2 and 3 only",
       "1, 2 and 3"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Step response vs impulse response.",
+    "solution": "1. The output due to a unit step: true.\n2. A running *sum* applies to discrete-time systems, so for a continuous system it is false.\n3. The running integral of the impulse response for a continuous-time system: true.\n\n1 and 3 only: **(b)**."
   },
   {
     "id": "820b11170e-3",
@@ -3643,9 +3923,12 @@
       "$1$ and $0$",
       "$1$ and $1$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Error constants of a type-1 system.",
+    "solution": "One integrator: type 1. $K_p=\\infty$, so the step error is 0.\n$K_v=\\lim_{s\\to0}sG=1$, so the ramp error is $\\dfrac1{K_v}=1$.\n\n$0$ and $1$: **(b)**."
   },
   {
     "id": "820b11170e-4",
@@ -3662,9 +3945,12 @@
       "$\\dfrac{\\pi}{2\\omega_d}$",
       "$\\dfrac{2\\omega_d}{\\pi}$"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Extrema of the step response occur at $n\\pi/\\omega_d$.",
+    "solution": "The response first overshoots at $\\pi/\\omega_d$ and then undershoots at $2\\pi/\\omega_d$: **(b)**."
   },
   {
     "id": "820b11170e-5",
@@ -3681,9 +3967,12 @@
       "$1$",
       "$\\infty$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "A type-1 system cannot follow a parabola.",
+    "solution": "A parabolic input needs $K_a=\\lim_{s\\to0}s^2G$. For a type-1 system $K_a=0$, so $e_{ss}=\\dfrac1{K_a}=\\infty$: **(d)**."
   },
   {
     "id": "820b11170e-6",
@@ -3700,9 +3989,12 @@
       "Closed-loop zeros near the closed-loop second-order pole pair are not cancelled by the close proximity of higher-order closed-loop poles.",
       "Closed-loop zeros cancelled by the close proximity of higher-order closed-loop poles are far removed from the closed-loop second-order zero pair."
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "When a lower-order approximation is valid.",
+    "solution": "A second-order approximation is justified when no uncancelled zero sits near the dominant pole pair, i.e. a zero near the pair is nearly cancelled by a close higher-order pole, and the remaining higher-order poles do not matter: **(a)**."
   },
   {
     "id": "820b11170e-7",
@@ -3719,9 +4011,12 @@
       "$11<K<40$",
       "$K>50$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Superposition: step part $+$ ramp part.",
+    "solution": "Type 1: $K_v=\\lim_{s\\to0}sG=K$ and $K_p=\\infty$.\nFor $r=1+5t$: $e_{ss}=\\dfrac1{1+K_p}+\\dfrac5{K_v}=0+\\dfrac5K<0.1\\Rightarrow K>50$: **(d)**."
   },
   {
     "id": "820b11170e-8",
@@ -3861,9 +4156,12 @@
       "$572$",
       "$672$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Type 1: the error is for a unit ramp, $e_{ss}=1/K_v$.",
+    "solution": "$K_v=\\lim_{s\\to0}sG=\\dfrac{5K}{6\\cdot7\\cdot8}=\\dfrac{5K}{336}$.\n$e_{ss}=\\dfrac1{K_v}=0.1\\Rightarrow K_v=10\\Rightarrow K=\\dfrac{3360}{5}=672$: **(d)**."
   },
   {
     "id": "820b11170e-9",
@@ -3880,9 +4178,12 @@
       "settling time",
       "final time"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Definition of rise time.",
+    "solution": "The time to go from 10% to 90% of the final value (0 to 100% for underdamped systems) is the rise time: **(a)**."
   },
   {
     "id": "820b11170e-10",
@@ -3899,9 +4200,12 @@
       "$0.3333$",
       "$3.3333$"
     ],
-    "answer": null,
+    "answer": "A",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Damping ratio varies as $1/\\sqrt K$.",
+    "solution": "$1+G=0\\Rightarrow\\tau s^2+s+K=0$, so $\\omega_n^2=K/\\tau$ and $2\\xi\\omega_n=1/\\tau$.\n$\\xi=\\dfrac1{2\\sqrt{K\\tau}}\\propto\\dfrac1{\\sqrt K}$.\n$\\dfrac{\\xi_2}{\\xi_1}=3=\\sqrt{K_1/K_2}\\Rightarrow\\dfrac{K_2}{K_1}=\\dfrac19=0.1111$: **(a)**."
   },
   {
     "id": "820b11170e-11",
@@ -4182,9 +4486,12 @@
       "$10$",
       "$14$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "D",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Reduce the inner loop, then use $K_v$.",
+    "solution": "Inner loop: $\\dfrac{10/s}{1+0.1\\cdot10/s}=\\dfrac{10}{s+1}$.\nOuter loop (tachometer gain 1): $G(s)=\\dfrac Ks\\cdot\\dfrac{10}{s+1}$, a type-1 system with $K_v=10K$.\nRamp error $\\dfrac1{10K}<0.01\\Rightarrow K>10$.\n\nOf the options only $14$ satisfies this: **(d)**."
   },
   {
     "id": "820b11170e-12",
@@ -4201,9 +4508,12 @@
       "2 and 3 only",
       "1, 2 and 3"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "C",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Definitions of the time-response specifications.",
+    "solution": "1. This describes *rise time*, not delay time: incorrect.\n2. Peak time is the time to the first peak overshoot: correct.\n3. Settling time uses a 2% or 5% band of the *final* value, not 3% or 5% of the initial value: incorrect.\n\nNot correct: 1 and 3: **(b)**."
   },
   {
     "id": "820b11170e-13",
@@ -4220,9 +4530,12 @@
       "$2$ sec",
       "$4$ sec"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": "B",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_s(5\\%)=3/(\\xi\\omega_n)$.",
+    "solution": "$\\omega_n=5,\\ 2\\xi\\omega_n=8\\Rightarrow\\xi\\omega_n=4$.\n$t_s=\\dfrac34$ s: **(b)**."
   },
   {
     "id": "820b11170e-14",
@@ -4239,9 +4552,12 @@
       "$\\dfrac{3}{s^2+2s+3}$",
       "$\\dfrac{4}{s^2+2s+4}$"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": "A",
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Read $\\sigma$ and $\\omega_d$ from the response.",
+    "solution": "The decay rate is $\\xi\\omega_n=1$ and $\\omega_d=\\sqrt3$, so $\\omega_n^2=1+3=4$ and $\\xi=0.5$.\nThe amplitude $\\dfrac{1}{\\sqrt{1-\\xi^2}}=\\dfrac2{\\sqrt3}$ and phase $\\cos^{-1}\\xi=60^\\circ$ confirm it.\n\n$T(s)=\\dfrac4{s^2+2s+4}$: **(d)**."
   },
   {
     "id": "820b11170e-15",
@@ -4258,9 +4574,12 @@
       "$4.50$",
       "$3.89$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Critically damped step response $c=1-(1+t)e^{-t}$.",
+    "solution": "$G=\\dfrac1{(s+1)^2}$ gives $c(t)=1-(1+t)e^{-t}$.\nSet $c=0.94$: $(1+t)e^{-t}=0.06$. Solving, $t\\approx4.52$ s.\n\nThe nearest option is $4.50$: **(c)**."
   },
   {
     "id": "820b11170e-16",
@@ -4277,9 +4596,12 @@
       "$\\dfrac{\\pi}{2}$ sec",
       "$\\pi$ sec"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Peaks (maxima) of the step response occur at $\\pi/\\omega_d,\\ 3\\pi/\\omega_d,\\dots$",
+    "solution": "$\\omega_n=5,\\ \\xi=0.8,\\ \\omega_d=5\\sqrt{1-0.64}=3$ rad/s.\nFirst peak: $\\pi/3$; second peak: $3\\pi/3=\\pi$ s: **(d)**."
   },
   {
     "id": "820b11170e-17",
@@ -4296,9 +4618,12 @@
       "$0,\\ 10,\\ \\infty$",
       "$\\infty,\\ 1,\\ 10$"
     ],
-    "answer": null,
+    "answer": "C",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Error constants of $\\dfrac{10}{s(1+0.1s)}$.",
+    "solution": "$K_p=\\infty$ (one integrator), $K_v=\\lim sG=10$, $K_a=\\lim s^2G=0$.\nIn the order acceleration, velocity, position: $0,\\ 10,\\ \\infty$: **(c)**."
   },
   {
     "id": "820b11170e-18",
@@ -4315,9 +4640,12 @@
       "0.254 sec",
       "0.363 sec"
     ],
-    "answer": null,
+    "answer": "D",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "$t_p=\\pi/\\omega_d$.",
+    "solution": "$s^2+10s+K$: $2\\xi\\omega_n=10$ with $\\xi=0.5$ gives $\\omega_n=10$.\n$\\omega_d=10\\sqrt{1-0.25}=8.66$ rad/s.\n$t_p=\\dfrac\\pi{8.66}=0.363$ s: **(d)**."
   },
   {
     "id": "b6a3830d6d-1",
@@ -4334,9 +4662,12 @@
       "2 and 3 only",
       "1, 2 and 3"
     ],
-    "answer": null,
+    "answer": "B",
     "marked": null,
-    "marks": null
+    "marks": null,
+    "answerSource": "derived",
+    "concept": "Definitions of the time-response specifications.",
+    "solution": "1. Rise time is 10% to 90% (or 0 to 100% for underdamped systems), not 5% to 95%: incorrect.\n2. Maximum overshoot indicates relative stability: correct.\n3. The settling band is 2% or 5% of the final value, not 3% or 6%: incorrect.\n\nNot correct: 1 and 3: **(b)**."
   },
   {
     "id": "fbf23b6700-1",
@@ -4354,7 +4685,9 @@
       "$\\dfrac{2s}{(s-2)^2+2\\omega^2}$"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "Laplace transform with frequency shifting.",
+    "solution": "$\\mathcal L\\{\\sin at\\}=\\dfrac a{s^2+a^2}$ with $a=2\\omega$, and $e^{-2t}$ shifts $s\\to s+2$.\n$\\mathcal L=\\dfrac{2\\omega}{(s+2)^2+4\\omega^2}$: **(c)**."
   },
   {
     "id": "fbf23b6700-2",
@@ -4372,7 +4705,9 @@
       "Limit the acceleration of the motor"
     ],
     "answer": "A",
-    "marked": null
+    "marked": null,
+    "concept": "Rate (derivative) feedback on the output.",
+    "solution": "Feeding back the rate of the output measured by a tachogenerator gives velocity feedback, which is used to limit the speed of the motor, per the standard key: **(a)**."
   },
   {
     "id": "fbf23b6700-3",
@@ -4390,7 +4725,9 @@
       "Techogenerator"
     ],
     "answer": "D",
-    "marked": null
+    "marked": null,
+    "concept": "A tachogenerator measures speed.",
+    "solution": "A tachogenerator produces a voltage proportional to shaft speed, i.e. the derivative of position. It is the device used for derivative (velocity) feedback in a servo system: **(d)**."
   },
   {
     "id": "fbf23b6700-4",
@@ -4408,7 +4745,9 @@
       "Minimum gain transfer function"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Minimum-phase systems.",
+    "solution": "A stable system whose poles and zeros all lie in the left half of the $s$-plane is a minimum-phase transfer function: **(a)**."
   },
   {
     "id": "fbf23b6700-5",
@@ -4426,7 +4765,9 @@
       "the highest frequency pole at least two octaves higher than other poles."
     ],
     "answer": "C",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Dominant poles lie closest to the $j\\omega$ axis.",
+    "solution": "The dominant pole is the one nearest the origin, i.e. the lowest-frequency pole, because its response decays slowest and controls the transient. Among the options this is **(c)**."
   },
   {
     "id": "fbf23b6700-6",
@@ -4444,7 +4785,9 @@
       "Neither 1 nor 2"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Signal flow graphs apply to linear systems only and are not unique.",
+    "solution": "1. A signal flow graph represents *linear* systems only: false.\n2. Different sets of equations (and node choices) give different graphs for the same system: true.\n\nOnly 2: **(b)**."
   },
   {
     "id": "fbf23b6700-7",
@@ -4462,7 +4805,9 @@
       "$1.0$"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Closed-loop time constant from a first-order loop.",
+    "solution": "$\\dfrac{C}{R}=\\dfrac{10K}{1+10s+10K}=\\dfrac{10K/(1+10K)}{1+\\frac{10}{1+10K}s}$.\nTime constant $\\tau_{cl}=\\dfrac{10}{1+10K}$. It must be $10/20=0.5$.\n$1+10K=20\\Rightarrow K=1.9$: **(a)**."
   },
   {
     "id": "fbf23b6700-8",
@@ -4668,7 +5013,9 @@
       "$1$"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Reduce the diagram; check the feedback signal.",
+    "solution": "Let $e=R-F$. The forward path gives $C=\\dfrac{e}{s+1}$, and the lower path gives $\\dfrac{e}{s+1}$ too.\nThe lower summing junction forms $F=C-\\dfrac{e}{s+1}=0$.\nSo $e=R$ and $\\dfrac CR=\\dfrac1{s+1}$: **(b)**."
   },
   {
     "id": "fbf23b6700-9",
@@ -4686,7 +5033,9 @@
       "poor transient response"
     ],
     "answer": "A",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Feedback trades gain for sensitivity.",
+    "solution": "The closed-loop gain is $G/(1+GH)$, lower than the open-loop gain by $1+GH$. Better sensitivity is paid for by loss of gain: **(a)**."
   },
   {
     "id": "fbf23b6700-10",
@@ -4704,7 +5053,9 @@
       "$(s+2)(s+4)+K(s+1)=0$"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Characteristic equation: $1+G(s)H(s)=0$.",
+    "solution": "$1+\\dfrac{K(s+2)}{(s+1)(s+4)}=0\\Rightarrow(s+1)(s+4)+K(s+2)=0$: **(a)**."
   },
   {
     "id": "fbf23b6700-11",
@@ -4722,7 +5073,9 @@
       "Differential equations through the cause-and-effect relations"
     ],
     "answer": "C",
-    "marked": null
+    "marked": null,
+    "concept": "Signal flow graphs come from algebraic equations.",
+    "solution": "A signal flow graph is drawn from the set of algebraic equations (in the Laplace domain) that express cause-and-effect between variables: **(c)**."
   },
   {
     "id": "fbf23b6700-12",
@@ -4740,7 +5093,9 @@
       "1, 2 and 3"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "What feedback is used to control.",
+    "solution": "Feedback is used to control sensitivity to parameter changes, the effect of internal disturbances, and distortion in nonlinear systems. All three: **(d)**."
   },
   {
     "id": "fbf23b6700-13",
@@ -4758,7 +5113,9 @@
       "compensator"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Control system terminology.",
+    "solution": "The subsystem that produces the input to the plant is the controller: **(a)**."
   },
   {
     "id": "fbf23b6700-14",
@@ -4776,7 +5133,9 @@
       "$\\dfrac{4}{9}$"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Open-loop from closed-loop: $G=\\dfrac{T}{1-T}$.",
+    "solution": "$G=\\dfrac{s+4}{s^2+7s+13-s-4}=\\dfrac{s+4}{s^2+6s+9}$.\nDC gain $G(0)=\\dfrac49$: **(d)**."
   },
   {
     "id": "52977e49a8-1",
@@ -4794,7 +5153,9 @@
       "A is false but R is true"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Feedback compares output with input and corrects the error.",
+    "solution": "Closed-loop systems are more accurate than open-loop ones because the feedback path feeds the output back to be compared with the input, and the resulting error is corrected. So $A$ is true, and $R$ is exactly why.\n\nBoth true and $R$ explains $A$: **(a)**."
   },
   {
     "id": "52977e49a8-2",
@@ -4812,7 +5173,9 @@
       "1 and 3"
     ],
     "answer": "A",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Effects of feedback: reduces error, changes gain with frequency, can destabilise.",
+    "solution": "1. Negative feedback reduces the error: true.\n2. Loop gain varies with frequency, so feedback raises the effective gain in some bands and lowers it in others: true.\n3. A stable open-loop system can become unstable once the loop is closed (high gain, delay): true.\n\nAll three are correct: **(a)**."
   },
   {
     "id": "52977e49a8-3",
@@ -5054,7 +5417,9 @@
       "$\\dfrac{rst}{1-eh}+\\dfrac{rsu}{1-st}$"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Mason's gain formula $T=\\frac{1}{\\Delta}\\sum P_k\\Delta_k$.",
+    "solution": "Forward paths: $P_1=rsu$ and $P_2=efh$.\nLoops: $L_1=st$ and $L_2=fg$, which do not touch each other.\n\n$\\Delta=1-st-fg+stfg=(1-st)(1-fg)$.\n$P_1$ touches $L_1$ only, so $\\Delta_1=1-fg$. $P_2$ touches $L_2$ only, so $\\Delta_2=1-st$.\n\n$T=\\dfrac{rsu(1-fg)+efh(1-st)}{(1-st)(1-fg)}=\\dfrac{rsu}{1-st}+\\dfrac{efh}{1-fg}$, which is **(a)**."
   },
   {
     "id": "52977e49a8-4",
@@ -5072,7 +5437,9 @@
       "Only 2, 3 and 4"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Properties of feedback.",
+    "solution": "1. Accuracy *can* be improved by adjusting the loop gain: statement is false.\n2. Overall gain becomes $G/(1+GH)$, which is lower: true.\n3. Sensor noise enters the loop and reduces accuracy: true.\n4. Feedback can cause instability: true.\n\nOnly 2, 3 and 4: **(d)**."
   },
   {
     "id": "52977e49a8-5",
@@ -5090,7 +5457,9 @@
       "$\\dfrac{0.5}{(s+1)(s+2)}$"
     ],
     "answer": null,
-    "marked": null
+    "marked": null,
+    "concept": "Step response $\\to$ transfer function: $G=sC(s)$; cascade means multiply.",
+    "solution": "$C(s)=-0.5\\left(\\dfrac1s+\\dfrac1{s+2}\\right)$, so $G_1=sC(s)=-\\dfrac{s+1}{s+2}$.\nCascading with $G_2=\\dfrac1{s+1}$ gives $G_1G_2=\\dfrac{-1}{s+2}$.\n\n**This result is not among the options**, so the question as transcribed has an error (probably in the step response, e.g. $0.5(1-e^{-2t})$ would give option (a)). The answer key is therefore left unset for this question."
   },
   {
     "id": "52977e49a8-6",
@@ -5108,7 +5477,9 @@
       "The system is working with zero reference input"
     ],
     "answer": "C",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Zero initial conditions mean no stored energy.",
+    "solution": "Initial conditions are the energy stored in the system at $t=0$. Zero initial conditions mean the system is at rest with no energy stored in any element: **(c)**."
   },
   {
     "id": "52977e49a8-7",
@@ -5126,7 +5497,9 @@
       "$s/(s+1)$"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "$\\mathcal L\\{g(t)\\}=G(s)$.",
+    "solution": "The transfer function is the Laplace transform of the impulse response:\n$G(s)=\\mathcal L\\{e^{-t}\\}=\\dfrac1{s+1}$, which is **(c)**."
   },
   {
     "id": "52977e49a8-8",
@@ -5144,7 +5517,9 @@
       "have no effect on stability"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Back-emf adds damping.",
+    "solution": "Back-emf is proportional to speed and opposes the applied voltage, like viscous friction without the energy being stored. It adds damping, so it improves stability: **(a)**."
   },
   {
     "id": "52977e49a8-9",
@@ -5162,7 +5537,9 @@
       "Infinite"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Final value theorem / decay of a stable impulse response.",
+    "solution": "$g(t)=e^{-t}\\to0$ as $t\\to\\infty$. Equivalently $\\lim_{s\\to0}s\\cdot\\frac1{s+1}=0$. So the steady-state value is **zero (a)**."
   },
   {
     "id": "52977e49a8-10",
@@ -5180,7 +5557,9 @@
       "$\\dfrac{G(s)}{1+G(s)}$"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Sensitivity of closed-loop gain to $G$.",
+    "solution": "$M=\\dfrac{G}{1+GH}$.\n$S_G^M=\\dfrac{\\partial M/M}{\\partial G/G}=\\dfrac{1}{1+GH}$, which is **(a)**."
   },
   {
     "id": "52977e49a8-11",
@@ -5198,7 +5577,9 @@
       "$\\dfrac{1}{s+1}$"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "$Y(s)=H(s)\\cdot\\frac1s$ for a unit step.",
+    "solution": "$Y(s)=\\mathcal L\\{te^{-t}\\}=\\dfrac1{(s+1)^2}$.\n$H(s)=sY(s)=\\dfrac{s}{(s+1)^2}$, which is **(c)**."
   },
   {
     "id": "52977e49a8-12",
@@ -5216,7 +5597,9 @@
       "$0$"
     ],
     "answer": "D",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Initial value theorem: $f(0^+)=\\lim_{s\\to\\infty}sF(s)$.",
+    "solution": "$sF(s)=\\dfrac5{s^2+3s+2}\\to0$ as $s\\to\\infty$. So $f(0^+)=0$: **(d)**."
   },
   {
     "id": "52977e49a8-13",
@@ -5421,7 +5804,9 @@
       "$\\dfrac{2}{3s+6}$"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Superposition: set $R=0$ and find $Y/d$.",
+    "solution": "With $R=0$ the error signal is $-Y$. The summing junction output is $-3Y+d$.\n$Y=\\dfrac{2}{3s+1}(d-3Y)\\Rightarrow Y\\left(1+\\dfrac{6}{3s+1}\\right)=\\dfrac{2d}{3s+1}$.\n$\\dfrac{Y}{d}=\\dfrac{2}{3s+7}$, which is **(a)**."
   },
   {
     "id": "52977e49a8-14",
@@ -5521,7 +5906,9 @@
       "$-e^{-t}$"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Impulse response is the inverse Laplace transform of the transfer function.",
+    "solution": "$\\dfrac{C}{R}=\\dfrac1{s(s+1)}=\\dfrac1s-\\dfrac1{s+1}$.\n$c(t)=1-e^{-t}$ for $t\\ge0$: **(b)**."
   },
   {
     "id": "52977e49a8-15",
@@ -5539,7 +5926,9 @@
       "90 N-m"
     ],
     "answer": "A",
-    "marked": null
+    "marked": null,
+    "concept": "Torque $T=P/\\omega$.",
+    "solution": "$\\omega=\\dfrac{2\\pi\\cdot900}{60}=94.25$ rad/s.\n$T=\\dfrac{10\\,000}{94.25}\\approx106$ N-m: **(a)**."
   },
   {
     "id": "52977e49a8-16",
@@ -5557,7 +5946,9 @@
       "Statement (I) is false but Statement (II) is true"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Minimum-phase transfer functions have no RHP poles or zeros.",
+    "solution": "A transfer function with no poles or zeros in the right half of the $s$-plane is *by definition* called minimum phase. Statement (I) describes the property and (II) names it, so (II) correctly explains (I): **(a)**."
   },
   {
     "id": "52977e49a8-17",
@@ -5575,7 +5966,9 @@
       "48 V/rad/sec"
     ],
     "answer": "B",
-    "marked": null
+    "marked": null,
+    "concept": "Unit conversion between rpm and rad/s.",
+    "solution": "$1000\\ \\text{rpm}=\\dfrac{2\\pi\\cdot1000}{60}=104.72$ rad/s.\n$K_t=\\dfrac{5}{104.72}=0.0477\\approx0.048$ V/(rad/s): **(b)**."
   },
   {
     "id": "52977e49a8-18",
@@ -5593,7 +5986,9 @@
       "$\\dfrac{100}{s^2+8s}$"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Unity feedback: $T=\\dfrac{G}{1+G}\\Rightarrow G=\\dfrac{T}{1-T}$.",
+    "solution": "$G=\\dfrac{100}{s^2+8s+100-100}=\\dfrac{100}{s^2+8s}$: **(d)**."
   },
   {
     "id": "a5722caa1e-1",
@@ -5611,7 +6006,9 @@
       "an unstable system having two poles in the right half of the s-plane."
     ],
     "answer": "D",
-    "marked": null
+    "marked": null,
+    "concept": "Routh array: sign changes in the first column count the RHP roots.",
+    "solution": "| $s^6$ | 5 | 12 | 100 | 200 |\n|---|---|---|---|---|\n| $s^5$ | 8 | 20 | 150 | |\n| $s^4$ | $-0.5$ | 6.25 | 200 | |\n| $s^3$ | 120 | 3350 | | |\n| $s^2$ | 20.2 | 200 | | |\n| $s^1$ | 2162 | | | |\n| $s^0$ | 200 | | | |\n\nFirst column: $5,\\ 8,\\ -0.5,\\ 120,\\ 20.2,\\ 2162,\\ 200$. There are two sign changes, so two poles are in the right half-plane and the system is unstable: **(d)**."
   },
   {
     "id": "a5722caa1e-2",
@@ -5629,7 +6026,9 @@
       "$1<K<6$"
     ],
     "answer": "C",
-    "marked": null
+    "marked": null,
+    "concept": "Routh criterion on $s^3+3s^2+2s+K$.",
+    "solution": "The $s^1$ element is $\\dfrac{3\\cdot2-K}{3}>0\\Rightarrow K<6$, and $K>0$.\n\n$0<K<6$: **(c)**."
   },
   {
     "id": "04573f692d-1",
@@ -5647,7 +6046,9 @@
       "$\\dfrac{39}{16}$"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Routh array: marginal stability when the $s^1$ element is zero.",
+    "solution": "| $s^4$ | 1 | 4 | $K$ |\n|---|---|---|---|\n| $s^3$ | 4 | 3 | |\n| $s^2$ | $13/4$ | $K$ | |\n| $s^1$ | $\\dfrac{39/4-4K}{13/4}$ | | |\n\nMarginal stability: the $s^1$ term is zero: $4K=\\dfrac{39}{4}\\Rightarrow K=\\dfrac{39}{16}$: **(d)**."
   },
   {
     "id": "04573f692d-2",
@@ -5825,7 +6226,9 @@
       "$s^2+10s+12=0$"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Characteristic equation: $1+G(s)H(s)=0$.",
+    "solution": "Forward path: $4\\cdot\\dfrac3{s+1}=\\dfrac{12}{s+1}$; feedback $H=\\dfrac{10}{s+10}$.\n$1+\\dfrac{120}{(s+1)(s+10)}=0\\Rightarrow s^2+11s+10+120=0$, i.e. $s^2+11s+130=0$: **(b)**."
   },
   {
     "id": "04573f692d-3",
@@ -5843,7 +6246,9 @@
       "$100$"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Routh array: the $s^1$ element must be positive.",
+    "solution": "| $s^4$ | 1 | 24 | $K$ |\n|---|---|---|---|\n| $s^3$ | 8 | 32 | |\n| $s^2$ | 20 | $K$ | |\n| $s^1$ | $32-0.4K$ | | |\n\nStable for $0<K<80$. For $K=100$ the $s^1$ element is negative: unstable: **(d)**."
   },
   {
     "id": "04573f692d-4",
@@ -5861,7 +6266,9 @@
       "$\\delta>1$"
     ],
     "answer": "A",
-    "marked": "B"
+    "marked": "B",
+    "concept": "A zero row in the Routh array gives imaginary roots.",
+    "solution": "| $s^3$ | 1 | 6 |\n|---|---|---|\n| $s^2$ | 2 | 12 |\n| $s^1$ | 0 | |\n\nThe auxiliary equation $2s^2+12=0$ gives $s=\\pm j\\sqrt6$, a purely imaginary pair, so $\\delta=0$: **(a)**."
   },
   {
     "id": "04573f692d-5",
@@ -5879,7 +6286,9 @@
       "$0>K>3$"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Routh criterion on $s^3+3s^2+2s+K$.",
+    "solution": "$1+G=0\\Rightarrow s^3+3s^2+2s+K=0$.\nThe $s^1$ element is $\\dfrac{6-K}{3}>0\\Rightarrow K<6$, and $K>0$.\n\n$0<K<6$: **(b)**."
   },
   {
     "id": "04573f692d-6",
@@ -5897,7 +6306,9 @@
       "4 dB"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "Gain margin $=20\\log\\dfrac{K_{crit}}{K}$.",
+    "solution": "$GM=20\\log\\dfrac{40}{20}=20\\log2=6$ dB: **(c)**."
   },
   {
     "id": "04573f692d-7",
@@ -5915,7 +6326,9 @@
       "Unstable for all values of $K$"
     ],
     "answer": "D",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Routh array with a gain-dependent term.",
+    "solution": "| $s^4$ | 1 | 5 | 15 |\n|---|---|---|---|\n| $s^3$ | $20K$ | 10 | |\n| $s^2$ | $5-\\dfrac{0.5}{K}$ | 15 | |\n| $s^1$ | $10-\\dfrac{300K}{b}$ | | |\n\nwhere $b=5-\\dfrac{0.5}{K}$. Positivity of the first column needs $b>0$ ($K>0.1$) and $300K^2-50K+5<0$, whose discriminant is $2500-6000<0$, so that never holds.\n\nThe system is unstable for all $K$: **(d)**."
   },
   {
     "id": "04573f692d-8",
@@ -5932,8 +6345,11 @@
       "$6<K<10$",
       "$0<K<10$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Routh criterion on $s^3+4s^2+s+(K-6)$.",
+    "solution": "Conditions: $K-6>0$ and $4\\cdot1>K-6\\Rightarrow K<10$.\n\n$6<K<10$: **(c)**."
   },
   {
     "id": "04573f692d-9",
@@ -5950,8 +6366,11 @@
       "$30$",
       "$45$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Sustained oscillation means marginal stability.",
+    "solution": "$s^3+6s^2+5s+K=0$. The $s^1$ element is $\\dfrac{30-K}{6}$; it is zero at $K=30$, where the poles are on the $j\\omega$ axis ($\\omega=\\sqrt5$): **(c)**."
   },
   {
     "id": "04573f692d-10",
@@ -5968,8 +6387,11 @@
       "$2$",
       "$3$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Routh array: sign changes equal RHP roots.",
+    "solution": "| $s^4$ | 2 | 3 | 7 |\n|---|---|---|---|\n| $s^3$ | 1 | 5 | |\n| $s^2$ | $-7$ | 7 | |\n| $s^1$ | 6 | | |\n| $s^0$ | 7 | | |\n\nFirst column: $2,\\ 1,\\ -7,\\ 6,\\ 7$ has two sign changes, so two roots lie in the right half-plane: **(c)**."
   },
   {
     "id": "04573f692d-11",
@@ -5986,8 +6408,11 @@
       "Phase margin can be negative or positive for stable feedback system.",
       "None of the above"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Phase margin and stability.",
+    "solution": "For a stable feedback system (the usual minimum-phase case) the phase margin is positive. A negative phase margin indicates instability: **(a)**."
   },
   {
     "id": "04573f692d-12",
@@ -6004,8 +6429,11 @@
       "Feedback does not affect stability and system response is sensitive to disturbances and parameter variations",
       "Negative feedback affects stability and system response is more sensitive to disturbances and parameter variations"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Effects of negative feedback.",
+    "solution": "Negative feedback can improve stability and reduces the sensitivity of the response to parameter variations and external disturbances: **(a)**."
   },
   {
     "id": "04573f692d-13",
@@ -6022,8 +6450,11 @@
       "2 and 3",
       "3 and 3"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Type = number of poles at the origin; order = highest power of $s$.",
+    "solution": "$G=\\dfrac K{s^2(1+sT)}$ has two poles at the origin: type 2.\nThe denominator is third degree: order 3.\n\n**(c)**."
   },
   {
     "id": "04573f692d-14",
@@ -6040,8 +6471,11 @@
       "$j1$ radian/sec",
       "$-j1$ radian/sec"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Auxiliary equation gives the oscillation frequency.",
+    "solution": "The Routh array gives a zero row at $s^3$. The auxiliary equation from the $s^4$ row is $s^4+2s^2+1=(s^2+1)^2=0$, so $s=\\pm j1$ (repeated).\nThe oscillation frequency is 1 rad/s, i.e. the roots $\\pm j1$: **(c)**."
   },
   {
     "id": "04573f692d-15",
@@ -6058,8 +6492,11 @@
       "Stable for $7.0<K<\\infty$",
       "Unstable for any value of $K$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Same characteristic equation as 3.27.",
+    "solution": "The Routh array has first-column entries $20K,\\ 5-\\dfrac{0.5}{K},\\ 10-\\dfrac{300K}{5-0.5/K}$. Requiring all to be positive needs $300K^2-50K+5<0$, which has no real solution.\n\nUnstable for any $K$: **(d)**."
   },
   {
     "id": "04573f692d-16",
@@ -6076,8 +6513,11 @@
       "$0<K<36$",
       "$13<K<36$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Routh criterion on $s^4+4s^3+13s^2+36s+K$.",
+    "solution": "| $s^4$ | 1 | 13 | $K$ |\n|---|---|---|---|\n| $s^3$ | 4 | 36 | |\n| $s^2$ | 4 | $K$ | |\n| $s^1$ | $36-K$ | | |\n\nStable for $K>0$ and $36-K>0$: $0<K<36$: **(c)**."
   },
   {
     "id": "04573f692d-17",
@@ -6094,8 +6534,11 @@
       "$0.05<K<0.3$",
       "$K>0$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Characteristic equation of $G=\\dfrac{K(s+1)(s+2)}{(s+0.1)(s-1)}$.",
+    "solution": "$(s+0.1)(s-1)+K(s^2+3s+2)=(1+K)s^2+(3K-0.9)s+(2K-0.1)=0$.\nThe constant term is negative for $K<0.05$, so the product of the roots is negative: one positive real root and one negative one.\nFor $0.05<K<0.3$ the middle coefficient is negative, so both roots are in the RHP, and for $K>0.3$ the system is stable.\n\nExactly one RHP pole: $K<0.05$: **(b)**."
   },
   {
     "id": "04573f692d-18",
@@ -6112,8 +6555,11 @@
       "$K>1$",
       "$K>1.45$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Routh criterion on $s^3+(2+K)s^2+2Ks+10$.",
+    "solution": "Conditions: $2+K>0$, $K>0$, and $(2+K)(2K)>10\\Rightarrow K^2+2K-5>0\\Rightarrow K>-1+\\sqrt6=1.449$.\n\nStable for $K>1.45$: **(d)**."
   },
   {
     "id": "04573f692d-19",
@@ -6247,8 +6693,11 @@
       "1 is unstable and 2 is stable",
       "Both 1 and 2 are unstable"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Open loop has a double pole at the origin; check the closed loop with Routh.",
+    "solution": "1. Open loop: $\\dfrac{K(s+1)}{s^2(s+2)}$ has a repeated pole at the origin, so it is unstable.\n2. Closed loop: $s^3+2s^2+Ks+K=0$. The $s^1$ element is $\\dfrac{2K-K}{2}=\\dfrac K2>0$, so it is stable for $K>0$.\n\n1 is unstable and 2 is stable: **(c)**."
   },
   {
     "id": "04573f692d-20",
@@ -6265,8 +6714,11 @@
       "$1<K<4.49$",
       "$0<K<3.49$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Routh criterion on $s^4+20s^3+15s^2+2s+K$.",
+    "solution": "| $s^4$ | 1 | 15 | $K$ |\n|---|---|---|---|\n| $s^3$ | 20 | 2 | |\n| $s^2$ | 14.9 | $K$ | |\n| $s^1$ | $2-\\dfrac{20K}{14.9}$ | | |\n\n$s^1>0\\Rightarrow K<1.49$, and $K>0$.\n\n$0<K<1.49$: **(b)**."
   },
   {
     "id": "04573f692d-21",
@@ -6283,8 +6735,11 @@
       "Marginally stable",
       "Conditionally stable"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Stability definition.",
+    "solution": "All characteristic roots in the left half-plane means the system is stable: **(a)**."
   },
   {
     "id": "04573f692d-22",
@@ -6301,8 +6756,11 @@
       "Stable",
       "Unstable"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Instability conditions.",
+    "solution": "A root in the right half-plane, or repeated roots on the $j\\omega$ axis, makes the response grow without bound: unstable: **(d)**."
   },
   {
     "id": "04573f692d-23",
@@ -6320,7 +6778,9 @@
       "$9$"
     ],
     "answer": "C",
-    "marked": null
+    "marked": null,
+    "concept": "Characteristic equation and the Routh condition.",
+    "solution": "$s(s^2+5s+9)+K(1-s)=s^3+5s^2+(9-K)s+K=0$.\nThe $s^1$ element is $\\dfrac{5(9-K)-K}{5}>0\\Rightarrow K<7.5$, and $K>0$.\n\nThe maximum $K$ is $7.5$: **(c)**."
   },
   {
     "id": "04573f692d-24",
@@ -6338,7 +6798,9 @@
       "$7.5$"
     ],
     "answer": "D",
-    "marked": "D"
+    "marked": "D",
+    "concept": "Routh criterion with a zero in the loop gain.",
+    "solution": "$s(s^2+5s+9)+K(1-s)=s^3+5s^2+(9-K)s+K=0$.\n$s^1$ element: $\\dfrac{5(9-K)-K}{5}>0\\Rightarrow K<7.5$, and $K>0$.\n\nMaximum $K=7.5$: **(d)**."
   },
   {
     "id": "2b96072268-1",
@@ -6355,8 +6817,11 @@
       "dBase",
       "Oracle"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Software for accurate root locus.",
+    "solution": "MATLAB (`rlocus`) draws an accurate root locus: **(b)**."
   },
   {
     "id": "2b96072268-2",
@@ -6373,8 +6838,11 @@
       "Nichol's criterion",
       "Bode technique"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Imaginary-axis crossing from Routh.",
+    "solution": "Setting the $s^1$ row of the Routh array to zero gives the gain at which the locus crosses the $j\\omega$ axis, and the auxiliary equation gives the crossing frequency: **(b)**."
   },
   {
     "id": "2b96072268-3",
@@ -6392,8 +6860,11 @@
       "$2k(p-z)$",
       "$\\dfrac{2k}{p}\\,z$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Asymptote angles $\\theta=\\dfrac{(2k+1)180^\\circ}{P-Z}$.",
+    "solution": "The asymptotes make angles $\\dfrac{(2k+1)\\pi}{p-z}$ with the real axis: **(b)**."
   },
   {
     "id": "2b96072268-4",
@@ -6410,8 +6881,11 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Branches to infinity and the real-axis rule.",
+    "solution": "(A) $P-Z$ branches go to infinity: true.\n(R) Real-axis segments are on the locus where the count of poles and zeros to their right is odd: true.\nThe two statements are unrelated, so (R) does not explain (A): **(b)**."
   },
   {
     "id": "2b96072268-5",
@@ -6428,8 +6902,11 @@
       "The breakaway points are determined from $dK/ds=0$.",
       "Segments of the real axis are part of the root locus, if and only if, the total number of real poles and zeros to their right is odd."
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Symmetry of the root locus.",
+    "solution": "The root locus is symmetrical about the *real* axis, not the $j\\omega$ axis. The other three statements are standard properties. So the false one is (a): **(a)**."
   },
   {
     "id": "2b96072268-6",
@@ -6446,8 +6923,11 @@
       "The number of roots of the characteristic equation with positive real part",
       "The number of zeros of the characteristic equation with the negative real parts"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Number of branches.",
+    "solution": "Each branch starts at an open-loop pole, so there are as many separate loci as poles of $G(s)H(s)$ (assuming $P\\ge Z$): **(b)**."
   },
   {
     "id": "2b96072268-7",
@@ -6464,8 +6944,11 @@
       "$-5/3$",
       "$-3/2$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Centroid.",
+    "solution": "Poles: $0,-1,-2,-5$ (sum $-8$); zero: $-3$.\n$\\sigma_A=\\dfrac{-8-(-3)}{4-1}=-\\dfrac53$: **(c)**."
   },
   {
     "id": "2b96072268-8",
@@ -6482,8 +6965,11 @@
       "$K/(s+2)^2$",
       "$K(s+2)/(s+1)^2$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Asymptotes at $\\pm90^\\circ$ through the centroid.",
+    "solution": "$P-Z=2$ gives asymptotes at $\\pm90^\\circ$. For $\\dfrac K{(s+2)^2}$ the two branches leave the double pole at $-2$ and run along the vertical line $\\sigma=-2$, parallel to the imaginary axis: **(c)**."
   },
   {
     "id": "2b96072268-9",
@@ -6500,8 +6986,11 @@
       "The difference between the number of poles and the number of zeros",
       "The sum of the number of poles and the number of zeros"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Branches going to infinity.",
+    "solution": "Each zero absorbs one branch; the remaining $P-Z$ go to infinity: **(c)**."
   },
   {
     "id": "2b96072268-10",
@@ -6882,8 +7371,11 @@
       "3",
       "4"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Check each plot against the construction rules.",
+    "solution": "For two poles and one zero the locus leaves the axis on a circle *centred on the zero*.\n- Plot 1: complex poles and a zero to their left; the loop closes through the zero: valid.\n- Plot 2: poles at $-0.2,-1.05$ and zero at $-1.63$; the circle should be centred on the zero ($\\approx-1.63$, radius $\\approx0.91$). The drawn circle is centred at $-1.2$: **wrong**.\n- Plot 3 and 4: pole, zero, and asymptote directions are consistent.\n\nThe incorrect plot is 2: **(b)**."
   },
   {
     "id": "2b96072268-11",
@@ -6900,8 +7392,11 @@
       "The root locus lies in a section of the real axis to the left of which an even number of poles and zeros of open loop system are present",
       "The root locus lies in a section of the real axis to the right of which an even number of poles and zeros of open loop system are present"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Basic properties.",
+    "solution": "The root locus is symmetrical about the real axis because complex roots occur in conjugate pairs. Real-axis segments lie where an *odd* number of poles and zeros are to the right, so (c) and (d) are wrong: **(b)**."
   },
   {
     "id": "2b96072268-12",
@@ -6918,8 +7413,11 @@
       "as a system parameter is changed",
       "as the sensitivity is changed"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Definition of root locus.",
+    "solution": "The root locus is the path of the characteristic-equation roots as a system parameter (usually the gain $K$) varies: **(c)**."
   },
   {
     "id": "2b96072268-13",
@@ -6936,8 +7434,11 @@
       "$-1.414$",
       "$-0.414$"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Breakaway/break-in: $dK/ds=0$.",
+    "solution": "$K=-\\dfrac{s^2+2s+2}{s+2}$.\n$\\dfrac{dK}{ds}=0\\Rightarrow(2s+2)(s+2)-(s^2+2s+2)=s^2+4s+2=0\\Rightarrow s=-2\\pm\\sqrt2$.\nOnly $-3.414$ lies on the real-axis locus (left of the zero at $-2$): **(a)**."
   },
   {
     "id": "2b96072268-14",
@@ -6954,8 +7455,11 @@
       "Two",
       "Three"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "D",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Number of branches $=\\max(P,Z)$.",
+    "solution": "The equation is $1+\\dfrac{K(s+1)}{s(s+2)(s+3)}=0$ with $P=3$ and $Z=1$. The number of branches is $\\max(P,Z)=3$: **(d)**."
   },
   {
     "id": "2b96072268-15",
@@ -6972,8 +7476,11 @@
       "Move away from the poles",
       "Coincide with the poles"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "$K\\to0$ gives the poles.",
+    "solution": "At $K=0$ the characteristic equation reduces to $D(s)=0$, so the roots coincide with the open-loop poles: **(d)**."
   },
   {
     "id": "2b96072268-16",
@@ -6990,8 +7497,11 @@
       "Imaginary axis and therefore system becomes marginally stable",
       "The left and therefore system becomes unstable"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Effect of adding a zero.",
+    "solution": "A zero attracts the locus towards itself and bends it to the left, which increases relative stability: **(a)**."
   },
   {
     "id": "2b96072268-17",
@@ -7008,8 +7518,11 @@
       "Both Zeros and Poles of $G(s)H(s)$",
       "Neither at Zeros nor at Poles of $G(s)H(s)$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Locus at $K=\\pm\\infty$.",
+    "solution": "As $|K|\\to\\infty$ the roots tend to the open-loop zeros (and to infinity): **(b)**."
   },
   {
     "id": "2b96072268-18",
@@ -7026,8 +7539,11 @@
       "$-\\dfrac{5}{3}$",
       "$\\dfrac{4}{3}$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Centroid.",
+    "solution": "Poles: $0,-4,-1\\pm j$ (sum $-6$); zero: $-1$.\n$\\sigma_A=\\dfrac{-6-(-1)}{4-1}=-\\dfrac53$: **(c)**."
   },
   {
     "id": "2b96072268-19",
@@ -7044,8 +7560,11 @@
       "Both Zeros and Poles of $G(s)H(s)$",
       "Neither at Zeros nor at Poles of $G(s)H(s)$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Locus at $K=0$.",
+    "solution": "At $K=0$ the roots are the open-loop poles: **(b)**."
   },
   {
     "id": "9b8a6f5b15-1",
@@ -7160,8 +7679,11 @@
       "$-3/4$",
       "$11/4$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Damping ratio 0.707 means poles at $45^\\circ$.",
+    "solution": "$s^2+4s+3+4K=0\\Rightarrow s=-2\\pm\\sqrt{1-4K}$.\nFor $\\xi=0.707$ the poles are at $-2\\pm j2$, so $1-4K=-4\\Rightarrow K=\\dfrac54$: **(b)**."
   },
   {
     "id": "9b8a6f5b15-2",
@@ -7178,8 +7700,11 @@
       "The difference of the number of open loop poles and the number of open loop zeros",
       "The number of open loop poles or zeros whichever is greater"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Number of branches $=\\max(P,Z)$.",
+    "solution": "Each branch begins at an open-loop pole and ends at a zero (or infinity), so the number of loci is the larger of the number of poles and zeros: **(d)**."
   },
   {
     "id": "9b8a6f5b15-3",
@@ -7196,8 +7721,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Symmetry of the locus.",
+    "solution": "(I) True, because complex roots come in conjugate pairs. (II) is also true when the pole-zero pattern is itself symmetrical, but it is not the reason behind (I).\n\nBoth true, (II) not the explanation: **(b)**."
   },
   {
     "id": "9b8a6f5b15-4",
@@ -7214,8 +7742,11 @@
       "$0$ and $-1$",
       "$0$ and $1$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Centroid of the asymptotes.",
+    "solution": "Poles: $0,-2,-1\\pm j2$; no zeros. Sum of poles $=-4$.\n$\\sigma_A=\\dfrac{-4}{4}=-1$, on the real axis, so the coordinates are $(-1,\\ 0)$: **(a)**."
   },
   {
     "id": "9b8a6f5b15-5",
@@ -7232,8 +7763,11 @@
       "1.0",
       "infinite"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "No imaginary-axis crossing means no finite critical gain.",
+    "solution": "If the locus never crosses the $j\\omega$ axis, the gain can be increased indefinitely without instability, so the gain margin is infinite: **(d)**."
   },
   {
     "id": "9b8a6f5b15-6",
@@ -7250,8 +7784,11 @@
       "$6$",
       "$8$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Locus passes through $s=0$ when the CE is satisfied there.",
+    "solution": "$s^3+4s^2+s-6+K=0$ at $s=0$: $-6+K=0\\Rightarrow K=6$: **(c)**."
   },
   {
     "id": "9b8a6f5b15-7",
@@ -7268,8 +7805,11 @@
       "60 and 3.16 rad/sec",
       "30 and 3.16 rad/sec"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Oscillatory (marginal) gain from Routh.",
+    "solution": "$s^3+6s^2+10s+K=0$. The $s^1$ element is $\\dfrac{60-K}{6}=0\\Rightarrow K=60$.\nAuxiliary equation $6s^2+60=0\\Rightarrow s=\\pm j\\sqrt{10}$, so $\\omega=3.16$ rad/s.\n\n**(c)**."
   },
   {
     "id": "9b8a6f5b15-8",
@@ -7286,8 +7826,11 @@
       "0",
       "equal to number of zeros"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Branches to infinity $=P-Z$.",
+    "solution": "When $P=Z$, every branch ends on a finite zero, so none tends to infinity: **(c)**."
   },
   {
     "id": "9b8a6f5b15-9",
@@ -7304,8 +7847,11 @@
       "$-2\\pm j$",
       "$-2,\\ 2$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Closed-loop poles: $1+G=0$.",
+    "solution": "$(s+2)^2+1=0\\Rightarrow s=-2\\pm j$: **(c)**."
   },
   {
     "id": "9b8a6f5b15-10",
@@ -7322,8 +7868,11 @@
       "$4$",
       "$5$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Number of branches.",
+    "solution": "$P=3$ (poles at $0,-4,-5$) and $Z=1$, so there are $\\max(P,Z)=3$ branches: **(b)**."
   },
   {
     "id": "9b8a6f5b15-11",
@@ -7340,8 +7889,11 @@
       "$-3.735$ and $-0.265$",
       "There is no breakaway point"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Breakaway points from $dK/ds=0$.",
+    "solution": "$K=-\\dfrac{s^2+2s+3}{s+2}$.\n$\\dfrac{dK}{ds}=0\\Rightarrow(2s+2)(s+2)-(s^2+2s+3)=s^2+4s+1=0\\Rightarrow s=-2\\pm\\sqrt3$, i.e. $-0.268$ or $-3.732$.\nThe real-axis locus lies left of the zero at $-2$, so only $-3.732$ is on it. It is a break-in point: **(b)**."
   },
   {
     "id": "9b8a6f5b15-12",
@@ -7358,8 +7910,11 @@
       "1 and 3 only",
       "2 and 3 only"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Purpose of the root locus.",
+    "solution": "The root locus shows the open-loop poles and zeros (1), how the closed-loop poles, and hence the transient response, change with the gain $K$ (2), and the range of $K$ for stability, from the imaginary-axis crossing (3). All three: **(a)**."
   },
   {
     "id": "9b8a6f5b15-13",
@@ -7376,8 +7931,11 @@
       "$60^\\circ,\\ 120^\\circ$ and $-30^\\circ$",
       "$30^\\circ,\\ 60^\\circ$ and $180^\\circ$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Asymptote angles $\\dfrac{(2k+1)180^\\circ}{P-Z}$.",
+    "solution": "Poles: $-2\\pm j2,\\ -1,\\ 0$ ($P=4$); zero: $-3$ ($Z=1$). $P-Z=3$.\n$\\theta=\\dfrac{180^\\circ(2k+1)}{3}=60^\\circ,\\ 180^\\circ,\\ 300^\\circ\\ (=-60^\\circ)$: **(a)**."
   },
   {
     "id": "9b8a6f5b15-14",
@@ -7394,8 +7952,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Angle criterion on the real axis.",
+    "solution": "(I) True: the angle contributions of a conjugate pair cancel, so they do not alter the real-axis rule.\n(II) True: for a point on the real axis the two angles add to $2\\pi$ ($\\equiv0$), which leaves the odd-multiple-of-$\\pi$ condition unchanged. That is the reason for (I).\n\n**(a)**."
   },
   {
     "id": "9b8a6f5b15-15",
@@ -7413,7 +7974,9 @@
       "2 and 3 only"
     ],
     "answer": null,
-    "marked": "A"
+    "marked": "A",
+    "concept": "Effect of adding a pole to the loop transfer function.",
+    "solution": "1. The locus is pulled towards the right half-plane: true.\n3. The response becomes slower: true.\n2. Whether the steady-state error grows depends on how the pole is written. A pole in the form $\\dfrac1{1+sT}$ leaves the error constants unchanged, while $\\dfrac1{s+p}$ reduces them. The statement is therefore ambiguous, and no answer key has been set."
   },
   {
     "id": "9b8a6f5b15-16",
@@ -7430,8 +7993,11 @@
       "$-1.47$",
       "$-3.47$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "B",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Breakaway: $dK/ds=0$.",
+    "solution": "$K=-s(s+1)(s+2)=-(s^3+3s^2+2s)$.\n$\\dfrac{dK}{ds}=-(3s^2+6s+2)=0\\Rightarrow s=-1\\pm0.577=-0.423$ or $-1.577$.\nOnly $-0.42$ lies on the real-axis locus (between $0$ and $-1$): **(b)**."
   },
   {
     "id": "9b8a6f5b15-17",
@@ -7448,8 +8014,11 @@
       "$60^\\circ,\\ 180^\\circ$ and $300^\\circ$",
       "$40^\\circ,\\ 120^\\circ$ and $200^\\circ$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Asymptote angles for $P-Z=3$.",
+    "solution": "$\\theta=\\dfrac{(2k+1)180^\\circ}{3}=60^\\circ,\\ 180^\\circ,\\ 300^\\circ$: **(c)**."
   },
   {
     "id": "9b8a6f5b15-18",
@@ -7466,8 +8035,11 @@
       "$180^\\circ$ only",
       "$0^\\circ$ or $180^\\circ$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Departure and arrival angles on the real axis.",
+    "solution": "On the real axis the locus leaves a real pole, or enters a real zero, along the axis, at $0^\\circ$ or $180^\\circ$: **(d)**."
   },
   {
     "id": "9b8a6f5b15-19",
@@ -7484,8 +8056,11 @@
       "Root locus technique",
       "Compensation technique"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Root locus technique.",
+    "solution": "The root locus shows how the closed-loop poles, and thus transient response and stability, vary with loop gain: **(c)**."
   },
   {
     "id": "9b8a6f5b15-20",
@@ -7502,8 +8077,11 @@
       "$-1,\\ -2$",
       "$-1,\\ -3$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Breakaway: $dK/ds=0$.",
+    "solution": "$K=-\\dfrac{(s+1)^2}{s+2}$.\n$\\dfrac{dK}{ds}=0\\Rightarrow2(s+1)(s+2)-(s+1)^2=(s+1)(s+3)=0\\Rightarrow s=-1,\\ -3$: **(d)**."
   },
   {
     "id": "86b658e578-1",
@@ -7520,8 +8098,11 @@
       "$-1.44$",
       "$-1.33$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Centroid $=\\dfrac{\\sum\\text{poles}-\\sum\\text{zeros}}{P-Z}$.",
+    "solution": "Poles: $0,-1,-3$; no zeros.\n$\\sigma_A=\\dfrac{0-1-3}{3}=-1.33$: **(d)**."
   },
   {
     "id": "86b658e578-2",
@@ -7538,8 +8119,11 @@
       "only one breakaway point",
       "one real and two complex breakaway points"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Breakaway points: $dK/ds=0$.",
+    "solution": "$K=-s(s+4)(s^2+4s+5)=-u(u+5)$ with $u=s^2+4s$.\n$\\dfrac{dK}{ds}=-(2u+5)(2s+4)=0\\Rightarrow s=-2$ or $s^2+4s+2.5=0\\Rightarrow s=-2\\pm1.22$.\nThe three points $-0.78,\\ -2,\\ -3.22$ are all real, between the poles at $0$ and $-4$, and $K>0$ at each: three real breakaway points: **(b)**."
   },
   {
     "id": "86b658e578-3",
@@ -7556,8 +8140,11 @@
       "three zeros at infinity",
       "four zeros at infinity"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Zeros at infinity $=P-Z$.",
+    "solution": "$P=4$ (at $0,-2,-1\\pm j$) and $Z=1$, so $P-Z=3$ zeros at infinity: **(c)**."
   },
   {
     "id": "86b658e578-4",
@@ -7684,8 +8271,11 @@
       "$\\dfrac{K}{(s+T_1)^3}$",
       "$\\dfrac{K}{s^2(sT_1+1)}$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Branch starts and asymptotes identify the poles.",
+    "solution": "Three branches start from two points: a double pole at the origin and one real pole at $-T_1$ on the negative real axis. The asymptotes are at $\\pm60^\\circ$ and $180^\\circ$, which is right for $P-Z=3$.\n\n$G(s)=\\dfrac{K}{s^2(sT_1+1)}$: **(d)**."
   },
   {
     "id": "86b658e578-5",
@@ -7702,8 +8292,11 @@
       "Synchro",
       "Selsyn"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Instrument for sketching root locus.",
+    "solution": "The *Spirule* is the mechanical device used to measure angles and plot root loci: **(b)**."
   },
   {
     "id": "86b658e578-6",
@@ -7720,8 +8313,11 @@
       "between $s=-3$ and $s=-4$",
       "towards left of $s=-4$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Real-axis rule: odd number of poles + zeros to the right.",
+    "solution": "Poles at $0,-3,-4$; zero at $-1$.\n- $-1<s<0$: 1 to the right, odd: on the locus.\n- $-3<s<-1$: 2 to the right, even: not on it.\n- $-4<s<-3$: 3 to the right, odd: on the locus.\n- $s<-4$: 4 to the right, even: not on it.\n\nOf the options, between $-3$ and $-4$: **(c)**."
   },
   {
     "id": "86b658e578-7",
@@ -7830,8 +8426,11 @@
       "$\\dfrac{K(s+1)}{s(s+2)}$",
       "$\\dfrac{K(s+2)}{s(s+1)}$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Breakaway circle centred on the zero.",
+    "solution": "The loci leave the real axis between the poles at $0$ and $-1$, move round a circle of radius $\\sqrt2$ centred at $-2$, and return to the real axis left of $-2$. A circle centred on a zero occurs for two poles and one zero, with radius $\\sqrt{1\\cdot2}=\\sqrt2$.\n\nPoles $0,-1$, zero $-2$: $G=\\dfrac{K(s+2)}{s(s+1)}$: **(d)**."
   },
   {
     "id": "a64c486e48-1",
@@ -7889,7 +8488,9 @@
       "A–1, B–3, C–2"
     ],
     "answer": "D",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Who contributed what.",
+    "solution": "Bode: asymptotic (magnitude) plots (1). Evans: root-locus technique (3). Nyquist: polar plots and the stability criterion (2).\n\nA–1, B–3, C–2: **(d)**."
   },
   {
     "id": "a64c486e48-2",
@@ -8017,7 +8618,9 @@
       "$30^\\circ$ and $3/4$"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Read PM and GM from the polar plot.",
+    "solution": "At the gain crossover (unit circle) the plot makes $-30^\\circ$ with the positive real axis, i.e. $\\angle G=-30^\\circ$, so $PM=180^\\circ-30^\\circ=150^\\circ$.\nThe plot crosses the negative real axis at $-0.25$, so $GM=\\dfrac1{0.25}=4$.\n\n**(a)**."
   },
   {
     "id": "a64c486e48-3",
@@ -8035,7 +8638,9 @@
       "$\\sqrt{3}$"
     ],
     "answer": "B",
-    "marked": null
+    "marked": null,
+    "concept": "Phase crossover: $\\angle G(j\\omega)=-180^\\circ$.",
+    "solution": "$\\phi=-\\left(\\tan^{-1}\\omega+\\tan^{-1}2\\omega+\\tan^{-1}3\\omega\\right)$.\nAt $\\omega=1$: $45^\\circ+63.4^\\circ+71.6^\\circ=180^\\circ$.\n$\\omega_{pc}=1$ rad/s: **(b)**."
   },
   {
     "id": "a64c486e48-4",
@@ -8113,8 +8718,11 @@
       "two system",
       "three system"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "System type from the low-frequency behaviour of the plot.",
+    "solution": "The plot comes in from infinity along a vertical asymptote, which means the phase at $\\omega\\to0$ is $-90^\\circ$. That is a type-1 system: **(b)**."
   },
   {
     "id": "a64c486e48-5",
@@ -8131,8 +8739,11 @@
       "$\\dfrac{1}{\\sqrt{T_1T_2}}$ and $\\dfrac{T_1T_2}{T_1+T_2}$",
       "$\\sqrt{T_1T_2}$ and $\\dfrac{T_1T_2}{T_1+T_2}$"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Phase crossover and gain margin.",
+    "solution": "$\\phi=-90^\\circ-\\tan^{-1}\\omega T_1-\\tan^{-1}\\omega T_2=-180^\\circ\\Rightarrow\\omega^2T_1T_2=1\\Rightarrow\\omega_{pc}=\\dfrac1{\\sqrt{T_1T_2}}$.\n$|G|=\\dfrac{1}{\\omega\\sqrt{(1+\\omega^2T_1^2)(1+\\omega^2T_2^2)}}=\\dfrac{T_1T_2}{T_1+T_2}$ there.\n$GM=\\dfrac1{|G|}=\\dfrac{T_1+T_2}{T_1T_2}$: **(a)**."
   },
   {
     "id": "a64c486e48-6",
@@ -8149,8 +8760,11 @@
       "$-40$ dB/decade",
       "$-80$ dB/decade"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "High-frequency slope $=-20(P-Z)$ dB/decade.",
+    "solution": "Poles: 2 at the origin + 4 complex $=6$. Zeros: 2.\nSlope $=-20(6-2)=-80$ dB/decade: **(d)**."
   },
   {
     "id": "47f8ae67ed-1",
@@ -8167,8 +8781,11 @@
       "positive phase function",
       "non-minimum phase function"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "A right-half-plane zero.",
+    "solution": "A transfer function with a zero (or pole) in the right half of the $s$-plane is non-minimum phase: **(d)**."
   },
   {
     "id": "47f8ae67ed-2",
@@ -8185,8 +8802,11 @@
       "will start ($\\omega=\\infty$) in the second quadrant and will terminate ($\\omega=0$) in the third quadrant",
       "will start ($\\omega=\\infty$) in the first quadrant and will terminate ($\\omega=0$) in the fourth quadrant"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Phase of $\\dfrac{10}{s^2(1+0.5s)(1+s)}$ at the extremes.",
+    "solution": "$\\phi(\\omega)=-180^\\circ-\\tan^{-1}0.5\\omega-\\tan^{-1}\\omega$.\n- $\\omega\\to0$: $\\phi\\to-180^\\circ$ from below (equivalent to $180^\\circ-\\epsilon$), magnitude $\\to\\infty$: second quadrant.\n- $\\omega\\to\\infty$: $\\phi\\to-360^\\circ$ from above (equivalent to a small positive angle), magnitude $\\to0$: first quadrant.\n\nStarts ($\\omega=\\infty$) in the first quadrant and terminates ($\\omega=0$) in the second: **(a)**."
   },
   {
     "id": "47f8ae67ed-3",
@@ -8469,8 +9089,11 @@
       "Plot (c)",
       "Plot (d)"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Type-1 system: the plot starts at $-j\\infty$.",
+    "solution": "$G=\\dfrac{5}{s(1+0.1s)(1+0.01s)}$ has an integrator. As $\\omega\\to0$, $|G|\\to\\infty$ with phase $-90^\\circ$, and it ends at the origin with phase $-270^\\circ$.\nOnly plot (c) comes in from $-j\\infty$ and shows this wrap-around. (a), (b), (d) all start at finite points: **(c)**."
   },
   {
     "id": "47f8ae67ed-4",
@@ -8488,7 +9111,9 @@
       "1 alone"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Gain and phase margins.",
+    "solution": "1. Both measure how close the polar plot comes to $-1+j0$: true.\n2. A stable non-minimum-phase system need not have positive margins: false.\n3. A stable minimum-phase system must have both margins positive: true.\n\nOnly 1 and 3: **(b)**."
   },
   {
     "id": "47f8ae67ed-5",
@@ -8505,8 +9130,11 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Non-minimum phase and Bode's gain-phase relation.",
+    "solution": "(A) $G$ has a zero at $s=+25$ in the right half-plane: non-minimum phase, true.\n(R) For minimum-phase systems the magnitude plot determines the phase uniquely: true, but it does not explain why a zero at $+25$ makes (A) true.\n\n**(b)**."
   },
   {
     "id": "47f8ae67ed-6",
@@ -8523,8 +9151,11 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Bandwidth.",
+    "solution": "(A) A smaller bandwidth filters out more high-frequency noise: true.\n(R) Bandwidth also sets how well the system follows (reproduces) the input: true.\nBoth are properties of bandwidth, but one is not the explanation of the other: **(b)**."
   },
   {
     "id": "47f8ae67ed-7",
@@ -8541,8 +9172,11 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Effect of an extra pole.",
+    "solution": "(A) An extra pole slows the closed loop, so the rise time increases: true.\n(R) It reduces the bandwidth, and $t_r\\propto1/BW$, so this is exactly why the rise time rises: true.\n\n**(a)**."
   },
   {
     "id": "47f8ae67ed-8",
@@ -8559,8 +9193,11 @@
       "2, 3 and 4",
       "1, 2, 3 and 4"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Effects of a phase-lag compensator.",
+    "solution": "A lag compensator lowers the gain at higher frequency, which reduces the gain crossover frequency (2), the bandwidth (3) and the resonance peak (4). It does not reduce the velocity constant, in fact it allows a larger one for the same stability margin, so (1) is not an effect.\n\n2, 3 and 4: **(c)**."
   },
   {
     "id": "47f8ae67ed-9",
@@ -8612,8 +9249,11 @@
       "$0.00$ dB, $-10^\\circ$",
       "$3.86$ dB, $10^\\circ$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Read the margins from the table.",
+    "solution": "Gain crossover ($|G|=1$) is at $\\omega=8$, where $\\angle G=-170^\\circ$. $PM=180^\\circ-170^\\circ=10^\\circ$.\nPhase crossover ($\\angle G=-180^\\circ$) is at $\\omega=10$, where $|G|=0.64$. $GM=20\\log\\dfrac1{0.64}=3.86$ dB.\n\n**(d)**."
   },
   {
     "id": "47f8ae67ed-10",
@@ -8762,8 +9402,11 @@
       "$\\dfrac{1}{s^2+2s+2}$",
       "$\\dfrac{1}{s+1}$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Match DC value and end phase of the Nyquist plot.",
+    "solution": "The plot starts at $+1$ ($\\omega=0$), so the DC gain is 1. It ends at the origin tangent to the negative real axis, so the phase tends to $-180^\\circ$: two poles.\nThat is $\\dfrac1{(s+1)^2}$ (a third-order system would end at $-270^\\circ$, a first-order one at $-90^\\circ$, and $\\dfrac1{s^2+2s+2}$ has DC gain 0.5): **(b)**."
   },
   {
     "id": "47f8ae67ed-11",
@@ -8780,8 +9423,11 @@
       "$PM=90^\\circ+\\tan^{-1}\\left\\{\\dfrac{\\sqrt{2\\xi^2+\\sqrt{1+4\\xi^4}}}{2\\xi}\\right\\}$",
       "$PM=180^\\circ-\\tan^{-1}\\left\\{\\dfrac{\\sqrt{2\\xi^2-\\sqrt{1+4\\xi^4}}}{2}\\right\\}$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Phase margin vs damping ratio.",
+    "solution": "For the standard second-order loop $G=\\dfrac{\\omega_n^2}{s(s+2\\xi\\omega_n)}$,\n$PM=\\tan^{-1}\\dfrac{2\\xi}{\\sqrt{-2\\xi^2+\\sqrt{1+4\\xi^4}}}$: **(b)**."
   },
   {
     "id": "47f8ae67ed-12",
@@ -9125,8 +9771,11 @@
       "2 and 3",
       "1 and 3"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Bode magnitude plot: slopes and corner frequencies.",
+    "solution": "1. The initial slope is $-20$ dB/decade: type 1. True.\n2. The extension of the $-20$ dB/decade line meets 0 dB at $\\omega=K_v$, which is $\\omega_3$: true.\n3. At $\\omega_1$ the level is $20\\log(\\omega_3/\\omega_1)$, and the $-40$ segment reaches 0 dB at $\\omega_2$, so $40\\log(\\omega_2/\\omega_1)=20\\log(\\omega_3/\\omega_1)$, i.e. $\\omega_2=\\sqrt{\\omega_1\\omega_3}$ (geometric, not arithmetic mean): false.\n\nOnly 1 and 2: **(b)**."
   },
   {
     "id": "47f8ae67ed-13",
@@ -9282,7 +9931,9 @@
       "$-80$ dB/decade"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "High-frequency slope $=-20(P-Z)$ dB/decade.",
+    "solution": "The lag-lead compensator has 2 poles and 2 zeros, so it adds no net slope at high frequency. $G(s)$ has 3 poles, so the slope is $-60$ dB/decade: **(c)**."
   },
   {
     "id": "47f8ae67ed-14",
@@ -9299,8 +9950,11 @@
       "$7.07$ rad/s",
       "$5$ rad/s"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Resonant frequency $\\omega_r=\\omega_n\\sqrt{1-2\\xi^2}$.",
+    "solution": "Taking the given function as the system whose frequency response is plotted: $\\omega_n=10$ and $\\xi=0.5$.\n$\\omega_r=10\\sqrt{1-0.5}=7.07$ rad/s: **(c)**."
   },
   {
     "id": "47f8ae67ed-15",
@@ -9449,8 +10103,11 @@
       "$\\dfrac{1}{s^2+2s+2}$",
       "$\\dfrac{1}{s+1}$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Same plot as 5.16.",
+    "solution": "The plot starts at $+1$ ($\\omega=0$) and tends to the origin along the negative real axis, i.e. DC gain 1 and phase $\\to-180^\\circ$. This is $\\dfrac1{(s+1)^2}$: **(b)**."
   },
   {
     "id": "aae70a5723-1",
@@ -9467,8 +10124,11 @@
       "$\\pi/2$ rad",
       "$\\pi$ rad"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Phase margin at a gain crossover at $\\omega=0$.",
+    "solution": "$|G(j\\omega)|=\\dfrac1{1+\\omega^2}\\le1$, equal to 1 only at $\\omega=0$. The phase there is $0^\\circ$, so $PM=180^\\circ=\\pi$ rad: **(d)**."
   },
   {
     "id": "aae70a5723-2",
@@ -9485,8 +10145,11 @@
       "A is true but R is false",
       "A is false but R is true"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Same as 5.12.",
+    "solution": "Bandwidth sets both noise filtering and how well the input is reproduced. Both statements are true but neither explains the other: **(b)**."
   },
   {
     "id": "aae70a5723-3",
@@ -9503,8 +10166,11 @@
       "Routh-Hurwitz criterion can determine the degree of stability",
       "Gain margin and phase margin are the measure of the degree of stability"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Degree of stability.",
+    "solution": "Gain and phase margins measure how far the system is from instability, i.e. its degree (relative) stability. The other options misstate the definitions, and Routh-Hurwitz gives only absolute stability: **(d)**."
   },
   {
     "id": "aae70a5723-4",
@@ -9521,8 +10187,11 @@
       "Constant at 0 dB for $\\omega<1$ and a slope of $+20$ dB/decade for $\\omega>1$",
       "Constant at 0 dB for $\\omega<1$ and a slope of $-20$ dB/decade for $\\omega>1$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Bode plot of a first-order lag.",
+    "solution": "$|X(j\\omega)|=\\dfrac{1}{\\sqrt{1+\\omega^2}}$: 0 dB for $\\omega<1$, falling at $-20$ dB/decade for $\\omega>1$: **(d)**."
   },
   {
     "id": "aae70a5723-5",
@@ -9539,8 +10208,11 @@
       "1 and 3",
       "1, 2 and 3"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Sharp cut-off in the frequency response.",
+    "solution": "A sharp cut-off means a high resonance peak (1) and a more oscillatory, less stable system (3). It does not imply a large bandwidth.\n\nOnly 1 and 3: **(c)**."
   },
   {
     "id": "aae70a5723-6",
@@ -9557,8 +10229,11 @@
       "Both phase margin and gain margin should be positive",
       "Both phase margin and gain margin should be negative"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Stability margins.",
+    "solution": "A stable minimum-phase system has positive gain margin and positive phase margin: **(c)**."
   },
   {
     "id": "aae70a5723-7",
@@ -9576,7 +10251,9 @@
       "$<0$ dB"
     ],
     "answer": "D",
-    "marked": null
+    "marked": null,
+    "concept": "Gain at phase crossover.",
+    "solution": "For stability the gain at the phase-crossover frequency must be below unity, i.e. below 0 dB: **(d)**."
   },
   {
     "id": "aae70a5723-8",
@@ -9593,8 +10270,11 @@
       "halved",
       "one fourth of original value"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "$GM=1/|G(j\\omega_{pc})|$.",
+    "solution": "Doubling the gain doubles $|G(j\\omega_{pc})|$, so the gain margin is halved (it falls by 6 dB): **(c)**."
   },
   {
     "id": "aae70a5723-9",
@@ -9655,8 +10335,11 @@
       "A–3, B–4, C–1, D–2",
       "A–1, B–2, C–3, D–4"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "C",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Frequency-domain and time-domain correspondences.",
+    "solution": "- Bandwidth $\\leftrightarrow$ speed of the time response (3).\n- Phase margin $\\leftrightarrow$ damping ratio (4).\n- Response (resonance) peak $\\leftrightarrow$ overshoot (1).\n- Gain margin $\\leftrightarrow$ stability (2).\n\nA–3, B–4, C–1, D–2: **(c)**."
   },
   {
     "id": "aae70a5723-10",
@@ -9673,8 +10356,11 @@
       "$M_r=1.30$",
       "$M_r=1.95$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "$M_r=\\dfrac{1}{2\\xi\\sqrt{1-\\xi^2}}$.",
+    "solution": "$M_r=\\dfrac{1}{2(0.421)\\sqrt{1-0.177}}=\\dfrac1{0.842\\times0.907}=1.31\\approx1.30$: **(c)**."
   },
   {
     "id": "aae70a5723-11",
@@ -9691,8 +10377,11 @@
       "Only 2 and 3",
       "Only 1 and 3"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Minimum-phase systems.",
+    "solution": "1. All poles in the left half-plane: true.\n2. Zeros of a minimum-phase system must also be in the left half-plane, not anywhere: false.\n3. For a minimum-phase system the magnitude plot fixes the phase plot uniquely: true.\n\nOnly 1 and 3: **(d)**."
   },
   {
     "id": "aae70a5723-12",
@@ -9709,8 +10398,11 @@
       "Both 1 and 2",
       "Neither 1 and 2"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Asymptotic Bode plots.",
+    "solution": "1. At the corner frequency the actual magnitude of a real zero or pole differs from the asymptote by 3 dB: true.\n2. For a complex pair the phase at $\\omega=\\omega_n$ is $-90^\\circ$ for every $\\xi$ (only the slope of the phase curve depends on $\\xi$): false.\n\nOnly 1: **(a)**."
   },
   {
     "id": "aae70a5723-13",
@@ -9843,8 +10535,11 @@
       "$1/2$",
       "$3/5$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "A",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Gain margin at the phase crossover.",
+    "solution": "$\\phi=-90^\\circ-\\tan^{-1}\\omega-\\tan^{-1}2\\omega=-180^\\circ\\Rightarrow2\\omega^2=1\\Rightarrow\\omega_{pc}=\\dfrac1{\\sqrt2}$.\n$|G|=\\dfrac{2}{\\omega\\sqrt{1+\\omega^2}\\sqrt{1+4\\omega^2}}=\\dfrac{2}{0.707\\times1.225\\times1.732}=\\dfrac43$.\n$GM=\\dfrac1{|G|}=\\dfrac34$ (less than 1, so the closed loop is unstable; Routh on $2s^3+3s^2+s+2$ confirms it): **(a)**."
   },
   {
     "id": "aae70a5723-14",
@@ -9861,8 +10556,11 @@
       "$K=2$ and $\\omega=1$ r/s",
       "$K=2$ and $\\omega=2$ r/s"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Oscillator: marginal stability from Routh.",
+    "solution": "| $s^4$ | 1 | 3 | $K$ |\n|---|---|---|---|\n| $s^3$ | 2 | 2 | |\n| $s^2$ | 2 | $K$ | |\n| $s^1$ | $2-K$ | | |\n\nSustained oscillation needs $s^1=0\\Rightarrow K=2$.\nAuxiliary equation $2s^2+2=0\\Rightarrow s=\\pm j$, so $\\omega=1$ rad/s: **(c)**."
   },
   {
     "id": "aae70a5723-15",
@@ -9879,8 +10577,11 @@
       "Gain margin is positive and phase margin is negative",
       "Both gain margin and phase margin are positive"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Stable closed loop.",
+    "solution": "A stable system needs both a positive gain margin and a positive phase margin: **(d)**."
   },
   {
     "id": "aae70a5723-16",
@@ -9898,7 +10599,9 @@
       "A is false but R is true"
     ],
     "answer": "B",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Nyquist stability criterion.",
+    "solution": "(A) True: Nyquist uses the open-loop poles (to count RHP poles $P$) and the polar plot (encirclements $N$) to decide $Z=N+P$.\n(R) True: an unstable system has right-half-plane poles. But (R) is a general statement and not the reason the open-loop information suffices.\n\n**(b)**."
   },
   {
     "id": "aae70a5723-17",
@@ -9915,8 +10618,11 @@
       "Gain margins of the two systems are the same but phase margin of $G(s)H(s)$ will be more.",
       "Phase margins of the two systems are the same but gain margin of $G(s)H(s)$ will be less."
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "B",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "A time delay adds phase lag only.",
+    "solution": "$e^{-s}$ has unit magnitude and phase $-\\omega$ rad. The gain crossover frequency is unchanged, but the extra lag reduces the phase margin by $\\omega_{gc}$ rad. It also moves the phase crossover to a lower frequency, where the gain is higher, so the gain margin falls too.\n\nBoth margins of $G(s)H(s)$ are larger: **(b)**."
   },
   {
     "id": "aae70a5723-18",
@@ -9934,7 +10640,9 @@
       "1, 2 and 3"
     ],
     "answer": null,
-    "marked": "A"
+    "marked": "A",
+    "concept": "Relative stability.",
+    "solution": "1. Phase margin is related to the effective damping: true.\n2. It is the *phase margin* that gives the better estimate of damping ratio, so this is false.\n3. Gain margin in dB is *positive* for a stable system, so this is false.\n\nOnly statement 1 holds, which is not offered. The question as transcribed has an error, so no answer key has been set."
   },
   {
     "id": "69c3912485-1",
@@ -10245,8 +10953,11 @@
       "Plot (c)",
       "Plot (d)"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Polar plot of a type-2 function.",
+    "solution": "$\\angle G=-180^\\circ-\\tan^{-1}\\omega T$, which runs from $-180^\\circ$ at $\\omega=0$ (magnitude $\\to\\infty$) to $-270^\\circ$ at $\\omega=\\infty$ (magnitude $\\to0$).\nSo the plot starts at infinity along the negative real axis, stays in the second quadrant, and ends at the origin tangent to the positive imaginary axis. This is plot (c): **(c)**."
   },
   {
     "id": "69c3912485-2",
@@ -10263,8 +10974,11 @@
       "stable",
       "highly stable"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Margins near zero.",
+    "solution": "A gain margin close to 1 (0 dB) or a phase margin close to 0 means the plot is nearly on $-1+j0$: the system is on the edge of instability and highly oscillatory: **(b)**."
   },
   {
     "id": "69c3912485-3",
@@ -10281,8 +10995,11 @@
       "$T$ only",
       "Neither $K$ nor $T$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "A",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Pure delay $e^{-Ts}$.",
+    "solution": "$|G(j\\omega)|=K$ for all $\\omega$, so the Nyquist plot is a circle of radius $K$ traced repeatedly.\nIt encloses $-1$ only if $K>1$. Equivalently, $1+Ke^{-Ts}=0$ gives $\\operatorname{Re}s=\\dfrac{\\ln K}{T}$, whose sign depends only on $K$.\n\nStability depends on $K$ only: **(a)**."
   },
   {
     "id": "69c3912485-4",
@@ -10343,8 +11060,11 @@
       "A–3, B–4, C–2, D–1",
       "A–4, B–3, C–1, D–2"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Gain margin from the Nyquist plot.",
+    "solution": "- No crossing of the negative real axis: GM is infinite (4).\n- Crossing between $0$ and $-1$: GM $>0$ dB (3).\n- Passing through $-1$: GM $=0$ dB (2).\n- Enclosing $-1$: GM $<0$ dB (1).\n\nA–4, B–3, C–2, D–1: **(b)**."
   },
   {
     "id": "69c3912485-5",
@@ -10594,8 +11314,11 @@
       "GM $<0$ dB and PM $>0$ degree",
       "GM $<0$ dB and PM $<0$ degree"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "D",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Gain-phase plot.",
+    "solution": "At the phase crossover ($-180^\\circ$) the curve is above the 0 dB line, so the gain there is greater than 1 and $GM<0$ dB. The 0 dB point lies to the left of $-180^\\circ$, so the phase at gain crossover is below $-180^\\circ$ and $PM<0$.\n\nBoth negative (unstable): **(d)**."
   },
   {
     "id": "69c3912485-6",
@@ -10612,8 +11335,11 @@
       "zero",
       "$a$"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "$GM=1/|G(j\\omega_{pc})|$.",
+    "solution": "If the magnitude at phase crossover is $a$, the gain can be multiplied by $1/a$ before reaching the critical point: $GM=\\dfrac1a$: **(a)**."
   },
   {
     "id": "69c3912485-7",
@@ -10631,7 +11357,9 @@
       "Zero"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "$M_r=\\dfrac{1}{2\\xi\\sqrt{1-\\xi^2}}$.",
+    "solution": "$M_r=1\\Rightarrow2\\xi\\sqrt{1-\\xi^2}=1\\Rightarrow4\\xi^2(1-\\xi^2)=1\\Rightarrow(2\\xi^2-1)^2=0\\Rightarrow\\xi=\\dfrac1{\\sqrt2}$: **(c)**."
   },
   {
     "id": "69c3912485-8",
@@ -10648,8 +11376,11 @@
       "$5$ rad/s",
       "$6$ rad/s"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Marginal stability and oscillation frequency.",
+    "solution": "$s^3+6s^2+5s+K=0$. The $s^1$ element is $\\dfrac{30-K}6=0\\Rightarrow K=30$.\nAuxiliary equation $6s^2+30=0\\Rightarrow s=\\pm j\\sqrt5$, so $\\omega=\\sqrt5$ rad/s: **(a)**."
   },
   {
     "id": "69c3912485-9",
@@ -10666,8 +11397,11 @@
       "$-90^\\circ$",
       "$+90^\\circ$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "$PM=180^\\circ+\\angle G(j\\omega_{gc})$.",
+    "solution": "$PM=180^\\circ-90^\\circ=90^\\circ$: **(d)**."
   },
   {
     "id": "69c3912485-10",
@@ -10684,8 +11418,11 @@
       "$90^\\circ$",
       "$180^\\circ$"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Plot through $-1+j0$.",
+    "solution": "If the plot passes through the critical point, the gain crossover and phase crossover coincide, so $PM=0^\\circ$ and $GM=1$: **(a)**."
   },
   {
     "id": "69c3912485-11",
@@ -10702,8 +11439,11 @@
       "$0.707$ and $-45^\\circ$",
       "$3$ dB and $-90^\\circ$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Evaluate $G(j\\omega)$.",
+    "solution": "$G(j1)=\\dfrac1{1+j}$: magnitude $\\dfrac1{\\sqrt2}=0.707$, phase $-\\tan^{-1}1=-45^\\circ$: **(c)**."
   },
   {
     "id": "69c3912485-12",
@@ -10720,8 +11460,11 @@
       "$1$ rad/s",
       "$30$ rad/s"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Corner frequency $=1/T$.",
+    "solution": "$\\dfrac1{3s+1}$ has $T=3$, so $\\omega_c=\\dfrac13=0.33$ rad/s: **(b)**."
   },
   {
     "id": "69c3912485-13",
@@ -10738,8 +11481,11 @@
       "$1.41$ and $-45^\\circ$",
       "$2.41$ and $90^\\circ$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Evaluate $G(j\\omega)$.",
+    "solution": "$G(j1)=1+j$: magnitude $\\sqrt2=1.41$, phase $+45^\\circ$: **(b)**."
   },
   {
     "id": "69c3912485-14",
@@ -10756,8 +11502,11 @@
       "$0.30$ and $2.33$",
       "$0.50$ and $3.00$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Factorise the denominator.",
+    "solution": "$0.66s^2+2.33s+1=(1+2s)(1+0.33s)$.\nCorner frequencies are $\\dfrac12=0.5$ and $\\dfrac1{0.33}\\approx3.0$ rad/s: **(d)**."
   },
   {
     "id": "69c3912485-15",
@@ -10774,8 +11523,11 @@
       "Unstable",
       "Could be stable or unstable or marginally stable"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Negative gain margin in dB.",
+    "solution": "A negative gain margin in dB means $|G(j\\omega_{pc})|>1$, so the loop gain exceeds the critical value and the closed loop is unstable: **(c)**."
   },
   {
     "id": "69c3912485-16",
@@ -10793,7 +11545,9 @@
       "Gain crossover frequency $\\neq$ Phase crossover frequency"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "Marginal stability.",
+    "solution": "At marginal stability the gain crossover and phase crossover frequencies coincide (the plot passes through $-1$): **(b)**."
   },
   {
     "id": "69c3912485-17",
@@ -10810,8 +11564,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Nyquist criterion.",
+    "solution": "(I) True: it determines closed-loop stability from the open-loop frequency response.\n(II) False as stated: it relates the number of encirclements of $-1$ by the open-loop plot to the difference between closed-loop poles and open-loop poles in the RHP, not the closed-loop poles and zeros.\n\n**(c)**."
   },
   {
     "id": "69c3912485-18",
@@ -10828,8 +11585,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "D",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Overshoot vs resonance peak.",
+    "solution": "(I) False: a resonance peak exists only for $\\xi<0.707$, but overshoot occurs for all $\\xi<1$, so systems with $0.707<\\xi<1$ overshoot with no resonance peak.\n(II) True: a large $M_r$ means small $\\xi$ and large overshoot.\n\n**(d)**."
   },
   {
     "id": "406016ea44-1",
@@ -10846,8 +11606,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Effect of gain on a Bode plot.",
+    "solution": "(I) True: gain shifts the magnitude plot only, not the phase plot.\n(II) False: changing the gain moves the gain crossover frequency, where the phase is read, so the phase margin changes.\n\n**(c)**."
   },
   {
     "id": "406016ea44-2",
@@ -10864,8 +11627,11 @@
       "$60$ dB",
       "$80$ dB"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Gain margin at phase crossover.",
+    "solution": "$\\phi=-3\\tan^{-1}(\\omega/5)=-180^\\circ\\Rightarrow\\omega_{pc}=5\\tan60^\\circ=8.66$.\n$|G|=\\dfrac{10}{(\\sqrt{25+75})^3}=\\dfrac{10}{1000}=0.01$.\n$GM=20\\log\\dfrac1{0.01}=40$ dB: **(b)**."
   },
   {
     "id": "406016ea44-3",
@@ -10882,8 +11648,11 @@
       "$2$ rad/s and $135^\\circ$",
       "$1$ rad/s and $135^\\circ$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Asymptotic Bode plot of $\\dfrac1{s(s+1)}$.",
+    "solution": "On the asymptotic plot the gain falls at $-20$ dB/decade up to the corner at 1 rad/s, where it crosses 0 dB, so $\\omega_{gc}\\approx1$ rad/s.\n$PM=180^\\circ-90^\\circ-\\tan^{-1}1=45^\\circ$.\n(The exact values are $0.79$ rad/s and $51.8^\\circ$; the asymptotic answer matches option (a).)\n\n**(a)**."
   },
   {
     "id": "406016ea44-4",
@@ -10900,8 +11669,11 @@
       "$20$ dB/decade",
       "$-20$ dB/decade"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Low-frequency slope $=-20N$ dB/decade.",
+    "solution": "A type-1 system has one integrator, so the low-frequency asymptote has slope $-20$ dB/decade: **(d)**."
   },
   {
     "id": "406016ea44-5",
@@ -10918,8 +11690,11 @@
       "$\\sqrt{2}$ rad/s",
       "$2$ rad/s"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Forced response vanishes at a zero of $H$.",
+    "solution": "$Y(s)=\\dfrac1s-\\dfrac3{s+1}+\\dfrac3{s+2}=\\dfrac{s^2+2}{s(s+1)(s+2)}$, so $H(s)=\\dfrac{s^2+2}{(s+1)(s+2)}$.\nThe zeros are at $s=\\pm j\\sqrt2$: a sinusoid at $\\sqrt2$ rad/s is blocked: **(c)**."
   },
   {
     "id": "406016ea44-6",
@@ -10936,8 +11711,11 @@
       "3 and 4",
       "1 and 4"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Phase margin vs damping ratio.",
+    "solution": "For a second-order loop, $PM\\approx100\\,\\xi$ (degrees), so it is directly proportional to $\\xi$ (1) and zero when $\\xi=0$ (4).\n\n**(d)**."
   },
   {
     "id": "406016ea44-7",
@@ -10972,8 +11750,11 @@
       "$\\omega_n\\sqrt{1-2\\xi^2}$",
       "zero"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Resonant frequency.",
+    "solution": "The magnitude peaks at $\\omega_r=\\omega_n\\sqrt{1-2\\xi^2}$ (for $\\xi<0.707$): **(c)**."
   },
   {
     "id": "406016ea44-9",
@@ -10990,8 +11771,11 @@
       "$0$ dB",
       "$40$ dB"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Bode magnitude below the corner.",
+    "solution": "$\\dfrac{10}{10+s}=\\dfrac1{1+0.1s}$ has its corner at $10$ rad/s. At $0.1$ rad/s the asymptote is flat at 0 dB: **(c)**."
   },
   {
     "id": "406016ea44-10",
@@ -11008,8 +11792,11 @@
       "it leads to slower response",
       "noise is proportional to the square of the bandwidth"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "A",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Bandwidth and noise.",
+    "solution": "A wider bandwidth passes more noise (noise power is proportional to bandwidth), so excessive bandwidth is avoided: **(a)**."
   },
   {
     "id": "406016ea44-11",
@@ -11026,8 +11813,11 @@
       "$\\pm\\sqrt{11}$",
       "$\\pm\\sqrt{6}$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Phase crossover: the denominator of $G(j\\omega)$ must be purely real.",
+    "solution": "$G(j\\omega)=\\dfrac{K}{(6-6\\omega^2)+j(11\\omega-\\omega^3)}$.\nThe phase is $-180^\\circ$ when the imaginary part of the denominator is zero: $11\\omega-\\omega^3=0\\Rightarrow\\omega=\\sqrt{11}$ rad/s (frequency is positive): **(b)**."
   },
   {
     "id": "406016ea44-12",
@@ -11044,8 +11834,11 @@
       "2 and 3",
       "2 and 4"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Bode plot of a differentiator.",
+    "solution": "$G(j\\omega)=j\\omega$: magnitude $20\\log\\omega$, rising at $20$ dB/decade (2); phase constant at $+90^\\circ=\\pi/2$ (4): **(d)**."
   },
   {
     "id": "406016ea44-13",
@@ -11062,8 +11855,11 @@
       "1 and 2 only",
       "2 and 3 only"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Properties of Bode plots.",
+    "solution": "1. GM and PM are read directly from the plots: true.\n2. The Bode (and Nyquist-from-Bode) stability tests are valid for minimum-phase systems: true.\n3. A positive gain margin needs the magnitude at phase crossover to be *below* 0 dB, not positive: false.\n\nOnly 1 and 2: **(c)**."
   },
   {
     "id": "406016ea44-14",
@@ -11080,8 +11876,11 @@
       "Zeros of the closed loop transfer function",
       "Zeros of the open loop transfer function"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "A",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Characteristic equation.",
+    "solution": "The roots of $1+G(s)H(s)=0$ are, by definition, the poles of the closed-loop transfer function $\\dfrac{G}{1+GH}$: **(a)**."
   },
   {
     "id": "406016ea44-15",
@@ -11098,8 +11897,11 @@
       "Non-minimum phase system",
       "PID controller system"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Right-half-plane zero.",
+    "solution": "$G(s)=\\dfrac{10(s-1)}{s+10}$ has a zero at $s=+1$ in the right half-plane, while its pole ($-10$) is stable: a stable non-minimum-phase system: **(c)**."
   },
   {
     "id": "406016ea44-16",
@@ -11117,7 +11919,9 @@
       "$1.04$ and $4.8$ r/s"
     ],
     "answer": "B",
-    "marked": "B"
+    "marked": "B",
+    "concept": "$M_r$ and $\\omega_r$ of the closed loop.",
+    "solution": "Closed loop: $\\dfrac{25}{s^2+6s+25}$, so $\\omega_n=5$ and $\\xi=0.6$.\n$M_r=\\dfrac1{2\\xi\\sqrt{1-\\xi^2}}=\\dfrac1{2(0.6)(0.8)}=1.04$.\n$\\omega_r=\\omega_n\\sqrt{1-2\\xi^2}=5\\sqrt{0.28}=2.65\\approx2.67$ rad/s: **(b)**."
   },
   {
     "id": "406016ea44-17",
@@ -11134,8 +11938,11 @@
       "$10$ r/s and $1$ r/s",
       "$100$ r/s and $1$ r/s"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Corner frequency $=\\omega_n$ of each quadratic factor.",
+    "solution": "Numerator $s^2+10s+100$: $\\omega_n=10$ rad/s.\nDenominator $s^2+15s+1$: $\\omega_n=1$ rad/s (the double pole at the origin has no corner).\n\n$10$ and $1$ rad/s: **(c)**."
   },
   {
     "id": "406016ea44-18",
@@ -11152,8 +11959,11 @@
       "$200$ r/s",
       "$100$ r/s"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Asymptotic plot of a PD controller.",
+    "solution": "$0.1+0.01s=0.1(1+0.1s)$: DC level $-20$ dB, corner at $10$ rad/s, then $+20$ dB/decade.\nTo rise from $-20$ dB to $+20$ dB takes two decades above the corner: $10\\times100=1000$ rad/s: **(b)**."
   },
   {
     "id": "406016ea44-19",
@@ -11170,8 +11980,11 @@
       "$25$",
       "$20$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "A",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Phase margin condition at gain crossover.",
+    "solution": "$PM=180^\\circ-90^\\circ-\\tan^{-1}\\dfrac{\\omega_{gc}}5=45^\\circ\\Rightarrow\\omega_{gc}=5$ rad/s.\n$|G|=\\dfrac{K}{5\\sqrt{25+25}}=1\\Rightarrow K=35.4\\approx35$: **(a)**."
   },
   {
     "id": "406016ea44-20",
@@ -11188,8 +12001,11 @@
       "2 and 3 only",
       "1, 2 and 3"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "D",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Margins of an unstable system.",
+    "solution": "Both margins are usually negative (3). But with several crossover frequencies (conditionally stable or non-minimum-phase loops) one margin can be positive while the other is negative, in either order (1, 2). All three can occur: **(d)**."
   },
   {
     "id": "406016ea44-21",
@@ -11206,8 +12022,11 @@
       "$-90^\\circ$ and $90^\\circ$",
       "$0^\\circ$ and $0^\\circ$"
     ],
-    "answer": null,
-    "marked": "D"
+    "answer": "D",
+    "marked": "D",
+    "answerSource": "derived",
+    "concept": "Phase of a lead-lag ratio.",
+    "solution": "$\\angle G=\\tan^{-1}0.2\\omega-\\tan^{-1}0.5\\omega$.\nAt $\\omega=0$: $0^\\circ$. At $\\omega=\\infty$: $90^\\circ-90^\\circ=0^\\circ$: **(d)**."
   },
   {
     "id": "406016ea44-22",
@@ -11224,8 +12043,11 @@
       "2 poles and 1 zero",
       "1 pole and 1 zero"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Slope changes show corner frequencies.",
+    "solution": "The initial slope of $-40$ dB/decade means two poles at the origin. At $0.1$ the slope rises by $+20$ (a zero) and at $10$ it rises by another $+20$ (a second zero).\n\nTwo poles and two zeros: **(b)**."
   },
   {
     "id": "406016ea44-23",
@@ -11242,8 +12064,11 @@
       "Magnitude varying with frequency and with anti-symmetric pole-zero pattern",
       "Unit magnitude at some frequencies with symmetric pole-zero pattern"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "All-pass systems.",
+    "solution": "An all-pass system has unit magnitude at all frequencies; its poles and zeros are mirror images about the $j\\omega$ axis (a symmetric pole-zero pattern), e.g. $\\dfrac{s-a}{s+a}$: **(b)**."
   },
   {
     "id": "66ee902682-1",
@@ -11260,8 +12085,11 @@
       "3 and 4",
       "1 and 4"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Relative stability.",
+    "solution": "Relative stability is expressed through the gain margin, phase margin and the location of the poles in the $s$-plane (3), and it is also a comparison with another system (4). It is not defined by gain margin alone or phase margin alone.\n\n3 and 4: **(c)**."
   },
   {
     "id": "66ee902682-2",
@@ -11438,7 +12266,9 @@
       "$20(s+1)$"
     ],
     "answer": "C",
-    "marked": "C"
+    "marked": "C",
+    "concept": "Read the asymptotic magnitude plot.",
+    "solution": "The plot is flat at $20$ dB up to $1$ rad/s, then falls at $-20$ dB/decade.\n$20$ dB $=10$ and a corner at $1$ rad/s give $G=\\dfrac{10}{s+1}$: **(c)**."
   },
   {
     "id": "66ee902682-3",
@@ -11455,8 +12285,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Non-minimum-phase elements.",
+    "solution": "(I) True: non-minimum-phase elements add extra phase lag that grows with frequency, which complicates compensation.\n(II) True: a transportation lag $e^{-sT}$ is non-minimum phase, and its phase lag $-\\omega T$ grows without limit, which is the cause of (I).\n\n**(a)**."
   },
   {
     "id": "66ee902682-4",
@@ -11473,8 +12306,11 @@
       "$-40$ dB/dec",
       "$-60$ dB/dec"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Low-frequency slope $=-20\\times$ (number of poles at the origin).",
+    "solution": "Two poles at the origin give a low-frequency slope of $-40$ dB/decade: **(c)**."
   },
   {
     "id": "66ee902682-5",
@@ -11700,8 +12536,11 @@
       "$\\dfrac{K(s+2)}{s(s+20)}$",
       "$\\dfrac{Ks(s+20)}{s+2}$"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Read the slope changes.",
+    "solution": "Slope $-20$ at the start means one pole at the origin. At $2$ rad/s the slope steepens to $-40$ (a pole at $2$). At $20$ rad/s it returns to $-20$ (a zero at $20$).\n\n$G(s)H(s)=\\dfrac{K(s+20)}{s(s+2)}$: **(b)**."
   },
   {
     "id": "66ee902682-6",
@@ -12090,8 +12929,11 @@
       "$\\dfrac{Ks^2}{\\left(1+\\frac{s}{10}\\right)^5}$",
       "$\\dfrac{Ks^2}{\\left(1+\\frac{s}{10}\\right)^2}$"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "C",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Slope changes show the number of poles.",
+    "solution": "The slope is $+40$ dB/decade at the start, so $s^2$ in the numerator. At $10$ rad/s the slope drops by $100$ dB/decade (to $-60$), which is five poles at $10$.\n\n$\\dfrac{Ks^2}{(1+s/10)^5}$: **(c)**."
   },
   {
     "id": "66ee902682-7",
@@ -12109,7 +12951,9 @@
       "$+2$"
     ],
     "answer": null,
-    "marked": "C"
+    "marked": "C",
+    "concept": "Nyquist: $N=Z-P$.",
+    "solution": "For closed-loop stability $Z=0$, so the required encirclement of $-1+j0$ is $N=-P$ (counter-clockwise). The count of right-half-plane poles $P$ depends on how the poles \"on the imaginary axis\" are treated in the description. The question is ambiguous, so no answer key has been set."
   },
   {
     "id": "66ee902682-8",
@@ -12126,8 +12970,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Transport lag in Bode plots.",
+    "solution": "(II) True: $e^{-sT}$ has magnitude 1 and phase $-\\omega T$, so only the phase plot shifts.\n(I) True: that is exactly why a Bode plot handles delays easily (add $-\\omega T$ to the phase). (II) is the reason for (I).\n\n**(a)**."
   },
   {
     "id": "66ee902682-9",
@@ -12144,8 +12991,11 @@
       "2 and 3 only",
       "1 and 2 only"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "High-pass transfer functions.",
+    "solution": "A high-pass response needs a zero at the origin and equal numbers of poles and zeros at high frequency (so the gain stays constant), e.g. $\\dfrac{s}{s+a}$ and $\\dfrac{s^2}{s^2+bs+c}$. A function with 2 poles and 1 zero rolls off at high frequency, so it is band-pass.\n\n1 and 2 only: **(d)**."
   },
   {
     "id": "66ee902682-10",
@@ -12162,8 +13012,11 @@
       "steady-state response",
       "frequency response"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "D",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Definition of frequency response.",
+    "solution": "The magnitude and phase relationship between a sinusoidal input and the steady-state output is the frequency response: **(d)**."
   },
   {
     "id": "66ee902682-11",
@@ -12181,7 +13034,9 @@
       "a maximum-phase transfer function"
     ],
     "answer": "A",
-    "marked": "A"
+    "marked": "A",
+    "concept": "Minimum-phase functions.",
+    "solution": "All poles and zeros in the left half-plane define a minimum-phase transfer function: **(a)**."
   },
   {
     "id": "66ee902682-12",
@@ -12198,8 +13053,11 @@
       "peak frequency",
       "tuned frequency"
     ],
-    "answer": null,
-    "marked": "B"
+    "answer": "B",
+    "marked": "B",
+    "answerSource": "derived",
+    "concept": "Resonant frequency.",
+    "solution": "The frequency at which the magnitude peaks is the resonant frequency $\\omega_r$: **(b)**."
   },
   {
     "id": "66ee902682-13",
@@ -12216,8 +13074,11 @@
       "Statement (I) is true but Statement (II) is false",
       "Statement (I) is false but Statement (II) is true"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "D",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Margins of stable and unstable systems.",
+    "solution": "(I) False: an unstable system has a negative gain margin or a *negative* phase margin, not a positive one.\n(II) True: a stable system needs both margins positive.\n\n**(d)**."
   },
   {
     "id": "66ee902682-14",
@@ -12234,8 +13095,11 @@
       "A subsystem inserted into the forward or feedback path for the purpose of improving the transient response or steady-state error.",
       "A system that monitors its output and corrects for disturbances. It is characterized by feedback paths from the output."
     ],
-    "answer": null,
-    "marked": null
+    "answer": "B",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "$M$ and $N$ circles.",
+    "solution": "Constant-$M$ circles give constant closed-loop *magnitude*; constant-$N$ circles give constant closed-loop *phase* of a unity-feedback system: **(b)**."
   },
   {
     "id": "66ee902682-15",
@@ -12252,8 +13116,11 @@
       "$90^\\circ$",
       "$-180^\\circ$"
     ],
-    "answer": null,
-    "marked": "A"
+    "answer": "A",
+    "marked": "A",
+    "answerSource": "derived",
+    "concept": "Asymptotic phase at 20 Hz.",
+    "solution": "Each pole or zero contributes about $\\mp90^\\circ$ if the frequency is well above its corner and about $0^\\circ$ if well below.\nPoles at $0.01$ Hz and $1$ Hz: $-90^\\circ-90^\\circ$. Pole at $80$ Hz: $\\approx0^\\circ$. Zero at $5$ Hz: $+90^\\circ$. Zeros at $100$ and $200$ Hz: $\\approx0^\\circ$.\n\nTotal $\\approx-90^\\circ$: **(a)**."
   },
   {
     "id": "66ee902682-16",
@@ -12271,7 +13138,9 @@
       "$\\dfrac{1125}{s^2+25s+225}$"
     ],
     "answer": null,
-    "marked": null
+    "marked": null,
+    "concept": "Second-order peak: $M_r=\\dfrac{1}{2\\xi\\sqrt{1-\\xi^2}}$, $\\omega_r=\\omega_n\\sqrt{1-2\\xi^2}$.",
+    "solution": "DC gain 5, peak $\\dfrac{10}{\\sqrt3}$ so $M_r=\\dfrac{2}{\\sqrt3}$, which gives $\\xi=0.5$. $\\omega_r=5\\sqrt2=\\omega_n\\sqrt{0.5}\\Rightarrow\\omega_n=10$.\nThe system is $\\dfrac{500}{s^2+10s+100}$, which is not among the options (option (c) has $12s$ instead of $10s$). The question as transcribed has an error, so no answer key has been set."
   },
   {
     "id": "9202a80972-1",
@@ -12288,8 +13157,11 @@
       "$\\dfrac{1}{2\\zeta\\sqrt{1-\\zeta^2}}$",
       "$\\dfrac{1}{\\zeta\\sqrt{1-\\zeta^2}}$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Resonant peak.",
+    "solution": "$M_r=\\dfrac{1}{2\\zeta\\sqrt{1-\\zeta^2}}$ for $0<\\zeta<0.707$: **(c)**."
   },
   {
     "id": "9202a80972-2",
@@ -12306,8 +13178,11 @@
       "$30^\\circ$",
       "$60^\\circ$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "C",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "Phase margin at gain crossover.",
+    "solution": "$|G(j\\omega)|=\\dfrac{2\\sqrt3}{\\omega\\sqrt{1+\\omega^2}}=1\\Rightarrow\\omega^2(1+\\omega^2)=12\\Rightarrow\\omega=\\sqrt3$.\n$\\angle G=-90^\\circ-\\tan^{-1}\\sqrt3=-150^\\circ$, so $PM=30^\\circ$: **(c)**."
   },
   {
     "id": "9202a80972-3",
@@ -12324,8 +13199,11 @@
       "$90^\\circ$",
       "$\\infty^\\circ$"
     ],
-    "answer": null,
-    "marked": null
+    "answer": "D",
+    "marked": null,
+    "answerSource": "derived",
+    "concept": "No gain crossover.",
+    "solution": "$|G(j\\omega)|^2=\\dfrac{1+\\omega^2}{(1+\\omega^2)(4+\\omega^2)}=\\dfrac1{4+\\omega^2}\\le0.25$ for all $\\omega$. The magnitude never reaches 1, so there is no gain crossover frequency and the phase margin is unlimited ($\\infty$): **(d)**."
   },
   {
     "id": "9202a80972-4",
@@ -12361,7 +13239,9 @@
       "2 and 3"
     ],
     "answer": null,
-    "marked": "D"
+    "marked": "D",
+    "concept": "Bode plot of a type-2 system.",
+    "solution": "$|G|=K/\\omega^2$ at low frequency, so the $-40$ dB/decade line crosses 0 dB at $\\omega_x=\\sqrt K$ (not $K$), has the value $20\\log K$ at $\\omega=1$ (not $40\\log K$), and $K$ is the *acceleration* error coefficient (not the ramp one).\nAs transcribed all three statements are wrong, which is not among the options, so no answer key has been set."
   },
   {
     "id": "9202a80972-6",
@@ -12378,7 +13258,10 @@
       "1 and 3 only",
       "2 and 3 only"
     ],
-    "answer": null,
-    "marked": "C"
+    "answer": "A",
+    "marked": "C",
+    "answerSource": "derived",
+    "concept": "Phase and gain crossover definitions.",
+    "solution": "1. Gain margin measures how close the negative-real-axis crossing is to the critical point: correct.\n2. The phase crossover point is where the plot cuts the *negative* real axis, not the positive one: **not correct**.\n3. The phase crossover frequency is where $\\angle G(j\\omega)H(j\\omega)=-180^\\circ$ ($\\equiv180^\\circ$): correct.\n\nOnly statement 2 is not correct: **(a)**."
   }
 ]

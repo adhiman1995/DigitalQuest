@@ -4,7 +4,7 @@ import ToolDock from './tools/ToolDock.jsx';
 import { byNumber } from './util.js';
 
 export default function Library({ syllabus, questions: rawQuestions, progress }) {
-  const { state, toggle, setResponse } = progress;
+  const { state, toggle, setResponse, recordResult } = progress;
   const loaded = rawQuestions !== null;
   const questions = useMemo(() => [...(rawQuestions || [])].sort(byNumber), [rawQuestions]);
   const [subject, setSubject] = useState('');
@@ -26,6 +26,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
     if (topic && x.topic !== topic) return false;
     if (year && String(x.year) !== year) return false;
     if (only === 'added' && !state.added[x.id]) return false;
+    if (only === 'reattempt' && !state.reattempt[x.id]) return false;
     if (only === 'marked' && !state.bookmarks[x.id]) return false;
     if (only === 'unsolved' && state.solved[x.id]) return false;
     if (only === 'unattempted' && state.responses[x.id]) return false;
@@ -55,7 +56,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
         <input placeholder="Search questions…" value={q} onChange={(e) => setQ(e.target.value)} />
       </div>
       <div className="filters">
-        {[['', 'All'], ['unattempted', 'Not attempted'], ['unsolved', 'Unsolved'], ['marked', '★ Bookmarked'], ['added', `Practice set (${addedCount})`]].map(([k, label]) => (
+        {[['', 'All'], ['unattempted', 'Not attempted'], ['unsolved', 'Unsolved'], ['reattempt', `Reattempt (${Object.keys(state.reattempt).length})`], ['marked', '★ Bookmarked'], ['added', `Practice set (${addedCount})`]].map(([k, label]) => (
           <button key={k} className={only === k ? 'on' : ''} onClick={() => setOnly(k)}>{label}</button>
         ))}
         <span className="muted" style={{ marginLeft: 'auto' }}>{shown.length} of {questions.length} questions</span>
@@ -69,7 +70,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
       )}
 
       {shown.map((x) => (
-        <QuestionCard key={x.id} q={x} subjectName={subjectName(x.subjectId)} state={state} toggle={toggle} setResponse={setResponse} />
+        <QuestionCard key={x.id} q={x} subjectName={subjectName(x.subjectId)} state={state} toggle={toggle} setResponse={setResponse} recordResult={recordResult} />
       ))}
       <ToolDock progress={progress} />
     </section>

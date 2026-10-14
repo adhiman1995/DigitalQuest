@@ -35,7 +35,7 @@ app.get('/api/questions', (_req, res) => {
 auth.routes(app);
 
 // ---------------------------------------------------------------- progress
-const MAPS = ['done', 'solved', 'bookmarks', 'added', 'responses'];
+const MAPS = ['done', 'solved', 'bookmarks', 'added', 'responses', 'results', 'reattempt', 'revealed'];
 
 // Accept only the expected shape so a client can never store arbitrary junk.
 function clean(d) {

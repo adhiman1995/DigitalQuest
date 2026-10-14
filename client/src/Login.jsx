@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GoogleButton } from './Auth.jsx';
+import ThemeSwitch from './Theme.jsx';
 import Icon from './Icons.jsx';
 
 export function Brand({ small }) {
@@ -38,6 +39,7 @@ export default function Login({ auth, stats }) {
 
   return (
     <div className="login">
+      <div className="login-theme"><ThemeSwitch /></div>
       <aside className="login-hero">
         <Brand />
         <div className="hero-copy">

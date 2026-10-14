@@ -6,7 +6,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 8,
     "text": "**Assertion (A):** The largest undershoot corresponding to a unit step input to an underdamped second order system with damping ratio $\\xi$ and undamped natural frequency of oscillation $\\omega_n$ is $e^{-2\\xi\\pi/\\sqrt{1-\\xi^2}}$.\n**Reason (R):** The overshoots and undershoots of a second order underdamped system is $e^{-\\xi n\\pi/\\sqrt{1-\\xi^2}}$, $n = 1, 2, \\ldots$",
     "options": [
@@ -26,7 +25,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 8,
     "text": "Which one of the following transfer functions represents the critically damped system?",
     "options": [
@@ -46,7 +44,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 8,
     "text": "A second order system has the damping ratio $\\xi$ and undamped natural frequency of oscillation $\\omega_n$. The settling time at 2% tolerance band of the system is",
     "options": [
@@ -66,7 +63,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 8,
     "text": "Two identical first-order systems have been cascaded non-interactively. The unit step response of the systems will be",
     "options": [
@@ -86,7 +82,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 8,
     "text": "Which one of the following is the response $y(t)$ of a causal LTI system described by $$H(s)=\\dfrac{s+1}{s^2+2s+2}$$ for a given input $x(t)=e^{-t}u(t)$?",
     "options": [
@@ -106,7 +101,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 8,
     "text": "Which one of the following is the steady-state error for a step input applied to a unity feedback system with the open loop transfer function $$G(s)=\\dfrac{10}{s^2+14s+50}\\,?$$",
     "options": [
@@ -126,7 +120,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 8,
     "text": "The unit step response of a particular control system is given by $c(t)=1-10e^{-t}$. Then its transfer function is",
     "options": [
@@ -146,7 +139,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Higher-Order Approximation",
-    "book": "MADE EASY",
     "page": 8,
     "text": "A third-order system is approximated to an equivalent second order system. The rise time of this approximated lower order system will be",
     "options": [
@@ -166,7 +158,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 8,
     "text": "Match List-I (pole-zero plot of linear control system) with List-II (responses of the system) and select the correct answer.",
     "figure": {
@@ -554,7 +545,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 9,
     "text": "A system has a single pole at origin. Its impulse response will be",
     "options": [
@@ -574,7 +564,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Sensitivity & Feedback",
-    "book": "MADE EASY",
     "page": 9,
     "text": "Consider the unity feedback system as shown below. The sensitivity of the steady state error to change in parameter $K$ and parameter $a$ with ramp inputs are respectively",
     "figure": {
@@ -710,7 +699,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 9,
     "text": "Which one of the following is the transfer function of a linear system whose output is $t^2e^{-t}$ for a unit step input?",
     "options": [
@@ -730,7 +718,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 9,
     "text": "Assuming unit ramp input, match List-I (System Type) with List-II (Steady State Error) and select the correct answer using the codes given below the lists:",
     "lists": [
@@ -794,7 +781,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 9,
     "text": "When the time period of observation is large, the type of the error is",
     "options": [
@@ -814,7 +800,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 9,
     "text": "The unit impulse response of a system having transfer function $\\dfrac{K}{s+\\alpha}$ is shown below. The value of $\\alpha$ is",
     "figure": {
@@ -901,7 +886,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 9,
     "text": "What is the unit step response of a unity feedback control system having forward path transfer function $$G(s)=\\dfrac{80}{s(s+18)}\\,?$$",
     "options": [
@@ -921,7 +905,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Sensitivity & Feedback",
-    "book": "MADE EASY",
     "page": 10,
     "text": "Consider the following statements: Feedback in control system can be used\n1. to reduce the sensitivity of the system to parameter variations and disturbances\n2. to change time constant of the system\n3. to increase loop gain of the system\nWhich of the statements given above are correct?",
     "options": [
@@ -941,7 +924,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 10,
     "text": "Which one of the following statements is correct? A second-order system is critically damped when the roots of its characteristic equation are",
     "options": [
@@ -961,7 +943,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 10,
     "text": "A linear network has the system function $$H(s)=H\\,\\dfrac{s+c}{(s+a)(s+b)}$$ The outputs of the network with zero initial conditions for two different inputs are tabled as",
     "table": {
@@ -998,7 +979,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 10,
     "text": "For the given system, how can be steady state error produced by step disturbance be reduced?",
     "figure": {
@@ -1205,7 +1185,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 10,
     "text": "Which one of the following expresses the time at which second peak in step response occurs for a second order system?",
     "options": [
@@ -1225,7 +1204,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Sensitivity & Feedback",
-    "book": "MADE EASY",
     "page": 10,
     "text": "With negative feedback in a closed loop control system, the system sensitivity to parameter variations:",
     "options": [
@@ -1245,7 +1223,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 10,
     "text": "An underdamped second order system with negative damping will have the two roots:",
     "options": [
@@ -1265,7 +1242,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 10,
     "text": "Match List-I (System $G(s)$) with List-II (Nature of Response) and select the correct answer using the code given below the Lists:",
     "lists": [
@@ -1329,7 +1305,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 10,
     "text": "Given a unity feedback system with $G(s)=\\dfrac{K}{s(s+4)}$, what is the value of $K$ for a damping ratio of 0.5?",
     "options": [
@@ -1349,7 +1324,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 11,
     "text": "What is the steady state error for a unity feedback control system having $G(s)=\\dfrac{1}{s(s+1)}$, due to unit ramp input?",
     "options": [
@@ -1369,7 +1343,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 11,
     "text": "What is the value of $K$ for a unity feedback system with $G(s)=\\dfrac{K}{s(1+s)}$ to have a peak overshoot of 50%?",
     "options": [
@@ -1389,7 +1362,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 11,
     "text": "Consider the following statements: For the first order transient systems, the time constant is\n1. a specification of transient response\n2. reciprocal of real-axis pole location\n3. an indication of accuracy of response\n4. an indication of speed of the response\nWhich of the statements given above are correct?",
     "options": [
@@ -1409,7 +1381,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 11,
     "text": "The unit step response of a second order system is $1-e^{-5t}-5te^{-5t}$. Consider the following statements:\n1. The undamped natural frequency is 5 rad/s.\n2. The damping ratio is 1.\n3. The impulse response is $25te^{-5t}$.\nWhich of the statements given above are correct?",
     "options": [
@@ -1429,7 +1400,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 11,
     "text": "The unit step response of a system is $1-e^{-t}(1+t)$. Which is this system?",
     "options": [
@@ -1449,7 +1419,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 11,
     "text": "**Assertion (A):** The impulse response is only a function of the terms in natural response.\n**Reason (R):** The differentiation and differencing operations eliminate the constant terms associated with the particular solution in the step response and change only the constants associated with exponential terms in the natural response.",
     "options": [
@@ -1469,7 +1438,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 11,
     "text": "The relation between input $x(t)$ and output $y(t)$ of a continuous-time system is given by $$\\dfrac{dy(t)}{dt}+3y(t)=x(t)$$ What is the forced response of the system when $x(t)=k$ (a constant)?",
     "options": [
@@ -1489,7 +1457,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 11,
     "text": "How can the steady-state error in a system be reduced?",
     "options": [
@@ -1509,7 +1476,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 11,
     "text": "For second-order system $$2\\dfrac{d^2y}{dt^2}+4\\dfrac{dy}{dt}+8y=8x$$ what is the damping ratio?",
     "options": [
@@ -1529,7 +1495,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 11,
     "text": "For a second-order system, $\\xi$ is equal to zero in the transfer function given by $$\\dfrac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}$$ Which one of the following is correct?",
     "options": [
@@ -1549,7 +1514,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 11,
     "text": "For the unity feedback system with $G(s)=\\dfrac{10}{s^2(s+4)}$, what is the steady state error resulting from an input $10t$?",
     "options": [
@@ -1569,7 +1533,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 12,
     "text": "**Assertion (A):** The system having characteristic equation $4s^2+6s+1=0$ gives rise to under-damped oscillations for a step input.\n**Reason (R):** The un-damped natural frequency of oscillation of the system is $\\omega_n=0.5$ rad/s.",
     "options": [
@@ -1589,7 +1552,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 12,
     "text": "A diaphragm type pressure sensor has two poles as shown in the figure below. The zeros are at infinity. What is its steady state deformation for a unit step input pressure?",
     "figure": {
@@ -1688,7 +1650,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 12,
     "text": "A second order control system has a transfer function $\\dfrac{16}{s^2+4s+16}$. What is the time for the first overshoot?",
     "options": [
@@ -1708,7 +1669,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Higher-Order Approximation",
-    "book": "MADE EASY",
     "page": 12,
     "text": "The closed loop transfer function of a control system has the following poles and zeros:",
     "table": {
@@ -1753,7 +1713,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 12,
     "text": "Consider the function $F(s)=\\dfrac{\\omega}{s^2+\\omega^2}$ where $F(s)$ is the Laplace transform of $f(t)$. What is the steady-state value of $f(t)$?",
     "options": [
@@ -1773,7 +1732,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 12,
     "text": "In a unity feedback control system with $$G(s)=\\dfrac{4}{s^2+0.4s}$$ when subjected to unit step input, it is required that system response should be settled within 2% tolerance band; the system settling time is",
     "options": [
@@ -1793,7 +1751,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 12,
     "text": "Which of the following is the response of a spring-mass-damper with under-damping?",
     "figure": {
@@ -2017,7 +1974,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 13,
     "text": "From the point of view of stability and response speed of a closed loop system, the appropriate range for the value of damping ratio lies between",
     "options": [
@@ -2037,7 +1993,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 13,
     "text": "**Assertion (A):** Steady state error can be reduced by increasing integral gain.\n**Reason (R):** Overshoot can be reduced by increasing derivative gain.",
     "options": [
@@ -2057,7 +2012,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 13,
     "text": "**Assertion (A):** A linear system gives a bounded output if the input is bounded.\n**Reason (R):** The roots of the characteristic equation have all negative real parts and response due to initial conditions decay to zero as time $t$ tends to infinity.",
     "options": [
@@ -2077,7 +2031,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 13,
     "text": "What is the steady-state value of the unit-step response of a closed-loop control system shown in figure?",
     "figure": {
@@ -2257,7 +2210,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 13,
     "text": "The block diagram of a closed-loop control system is given in figure. What is the type of this system?",
     "figure": {
@@ -2415,7 +2367,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 13,
     "text": "Given the differential equation model of a physical system, determine the time constant of the system $$40\\dfrac{dx}{dt}+2x=f(t)$$",
     "options": [
@@ -2435,7 +2386,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 13,
     "text": "Consider a second order all-pole transfer function model, if the desired settling time (5%) is 0.60 sec and the desired damping ratio 0.707, where should the poles be located in s-plane?",
     "options": [
@@ -2455,7 +2405,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 13,
     "text": "Given a unity feedback system with $G(s)=\\dfrac{K}{s(s+6)}$, the value of $K$ for damping ratio of 0.75 is",
     "options": [
@@ -2475,7 +2424,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 13,
     "text": "**Statement (I):** A second order system subjected to a unit impulse oscillates at its natural frequency.\n**Statement (II):** Impulse input contains frequencies from $-\\infty$ to $+\\infty$.",
     "options": [
@@ -2495,7 +2443,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 13,
     "text": "**Statement (I):** In a prototype second order system the rise time $t_r$ and bandwidth are inversely proportional.\n**Statement (II):** Increasing $\\omega_n$ increases bandwidth while $t_r$ reduces.",
     "options": [
@@ -2515,7 +2462,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 14,
     "text": "The type of system which is used for determination of static error constants is determined from the number of",
     "options": [
@@ -2535,7 +2481,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 14,
     "text": "The time taken for the output to settle within $\\pm2\\%$ of step input for the control system represented by $$\\dfrac{25}{s^2+5s+25}$$ is given by",
     "options": [
@@ -2555,7 +2500,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 14,
     "text": "The following quantities give a measure of the transient characteristics of a control system, when subjected to unit step excitation:\n1. Maximum overshoot\n2. Maximum undershoot\n3. Overall gain\n4. Delay time\n5. Rise time\n6. Fall time",
     "options": [
@@ -2575,7 +2519,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 14,
     "text": "In a feedback control system, if $G(s)=\\dfrac{4}{s(s+3)}$ and $H(s)=\\dfrac{1}{s}$, then the closed-loop system will be of type",
     "options": [
@@ -2595,7 +2538,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 14,
     "text": "For a second order dynamic system, if the damping ratio is 1 then the poles are",
     "options": [
@@ -2615,7 +2557,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Higher-Order Approximation",
-    "book": "MADE EASY",
     "page": 14,
     "text": "A third order system is approximated to an equivalent second order system. The rise time of this approximated system will be",
     "options": [
@@ -2635,7 +2576,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 14,
     "text": "A system is described by the transfer function $G(s)=\\dfrac{2s+5}{(s+5)(s+4)}$. The dc gain of the system is",
     "options": [
@@ -2655,7 +2595,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Sensitivity & Feedback",
-    "book": "MADE EASY",
     "page": 14,
     "text": "The sensitivity $S_T^K$ of transfer function $T=\\dfrac{1+2K}{3+4K}$ with respect to the parameter $K$ is given by",
     "options": [
@@ -2675,7 +2614,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 14,
     "text": "If the overshoot of the unit-step response of a second order system is 30%, then the time at which peak overshoot occurs (assuming $\\omega_n=10$ rad/sec):",
     "options": [
@@ -2695,7 +2633,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 14,
     "text": "Which has one of the following transfer functions have the greatest overshoot?",
     "options": [
@@ -2715,7 +2652,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 14,
     "text": "The open-loop transfer function of a unity feedback control system is $G(s)=\\dfrac{1}{(s+2)^2}$. The closed loop transfer function poles are located at",
     "options": [
@@ -2735,7 +2671,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 14,
     "text": "The transfer function of a system is $G(s)=\\dfrac{100}{s^2+10s+100}$. The unit step response of the system will settle in approximately",
     "options": [
@@ -2755,7 +2690,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 15,
     "text": "The DC gain and steady state error for step input for $G(s)=\\dfrac{s+1}{s^2+s+1}$ are",
     "options": [
@@ -2775,7 +2709,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 15,
     "text": "A second order system is described by the equation $$\\dfrac{d^2x}{dt^2}+5\\dfrac{dx}{dt}+7x=7y$$ The frequency and damping ratio respectively are",
     "options": [
@@ -2795,7 +2728,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 15,
     "text": "**Statement (I):** Zero input response is the natural response with zero initial conditions.\n**Statement (II):** Zero state response is the response with given input with zero initial conditions.",
     "options": [
@@ -2815,7 +2747,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 15,
     "text": "When damping ratio is equal to zero, the damping frequency of a system is",
     "options": [
@@ -2835,7 +2766,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 15,
     "text": "A unity feedback system has $$G(s)=\\dfrac{K(s+12)}{(s+14)(s+18)}$$ What is the value of $K$ to yield 10% error in steady state?",
     "options": [
@@ -2855,7 +2785,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 15,
     "text": "A unity feedback system has an open-loop transfer function $G(s)=\\dfrac{K}{s(s+10)}$. If the damping ratio is 0.5, then what is the value of $K$?",
     "options": [
@@ -2875,7 +2804,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 15,
     "text": "When the unit impulse response of a second order system is $\\dfrac{1}{6}e^{-0.8t}\\sin 0.6t$, the natural frequency and damping ratio of the system are respectively",
     "options": [
@@ -2895,7 +2823,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 15,
     "text": "The second-order system defined by $$\\dfrac{25}{s^2+5s+25}$$ is given a step input. The time taken for the output to settle within $\\pm2\\%$ is",
     "options": [
@@ -2915,7 +2842,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 15,
     "text": "The time required for the step response to decrease and stay within a specified percentage of its final value is called",
     "options": [
@@ -2935,7 +2861,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 15,
     "text": "The rise time of the output response of a low pass filter circuit when a step input is applied will be",
     "options": [
@@ -2955,7 +2880,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 15,
     "text": "The transfer function $\\dfrac{1}{2s+1}$ will have",
     "options": [
@@ -2975,7 +2899,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 16,
     "text": "The closed-loop transfer function of a certain control system is given by $$\\dfrac{C(s)}{R(s)}=\\dfrac{100}{s^2+10s+100}$$ Then the settling time for a 2% tolerance band is given by",
     "options": [
@@ -2995,7 +2918,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 16,
     "text": "The unit step input response of a certain control system is given by $c(t)=1+0.2e^{-60t}-1.2e^{-10t}$. The undamped natural frequency $\\omega_n$ and damping ratio $\\xi$ are, respectively",
     "options": [
@@ -3015,7 +2937,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 16,
     "text": "For a unity feedback control system having an open-loop transfer function $G(s)=\\dfrac{25}{s(s+6)}$, what is the time $t_p$ at which the peak of the step input response occurs?",
     "options": [
@@ -3035,7 +2956,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 16,
     "text": "The closed-loop transfer function of a unity feedback control system is $$\\dfrac{C(s)}{R(s)}=\\dfrac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}$$ The velocity error constant of the system is",
     "options": [
@@ -3055,7 +2975,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Pole Location & Response",
-    "book": "MADE EASY",
     "page": 16,
     "text": "For a second-order differential equation, if the damping ratio $\\xi$ is unity, then",
     "options": [
@@ -3075,7 +2994,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 16,
     "text": "The largest error between reference input and output during the transient period is called",
     "options": [
@@ -3095,7 +3013,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 16,
     "text": "Consider the following statements. For a type-1 and a unity feedback system, having unity gain in the forward path\n1. positional error constant $K_p$ is equal to zero\n2. acceleration error constant $K_a$ is equal to zero\n3. steady-state error $e_{ss}$ per unit-step displacement input is equal to 1.\nWhich of the above statements are correct?",
     "options": [
@@ -3115,7 +3032,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 16,
     "text": "A control system has $G(s)=\\dfrac{10}{s(s+5)}$ and $H(s)=K$. What is the value of $K$ for which the steady-state error for unit-step input is less than 5%?",
     "options": [
@@ -3135,7 +3051,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 16,
     "text": "What is the time required to reach 2% of steady-state value, for the closed-loop transfer function $\\dfrac{2}{(s+10)(s+100)}$, when the input is $u(t)$?",
     "options": [
@@ -3155,7 +3070,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 16,
     "text": "If the characteristic equation of a closed-loop system is $2s^2+6s+6=0$, then the system is",
     "options": [
@@ -3175,7 +3089,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 16,
     "text": "In a unity feedback control system, the open-loop transfer function is $$G(s)=\\dfrac{K(s+2)}{s^2(s^2+7s+12)}$$ Then the error constants $K_p$, $K_v$ and $K_a$ respectively, are",
     "options": [
@@ -3195,7 +3108,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 17,
     "text": "Settling time is the time required for the system response to settle within a certain percentage of",
     "options": [
@@ -3215,7 +3127,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 17,
     "text": "A unity feedback system is shown in the figure. What is the magnitude of $K$ so that the system is under-damped?",
     "figure": {
@@ -3351,7 +3262,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 17,
     "text": "For a closed-loop system shown in the figure, what is the settling-time for $\\pm2\\%$ settling of the steady-state condition, assuming unit-step input?",
     "figure": {
@@ -3487,7 +3397,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 17,
     "text": "A unit-step input to a first-order system $G(s)$ yields a response as shown in the figure. This can happen when the values of $K$ and $a$, respectively, are",
     "figure": {
@@ -3592,7 +3501,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 17,
     "text": "The steady-state error for a Type 0 system for unit-step input is 0.2. In a certain instance, this error possibility was removed by insertion of a unity gain block. Thereafter, a unit ramp was applied. The nature of the block and new steady-state error in this changed configuration will, respectively, be",
     "options": [
@@ -3612,7 +3520,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 17,
     "text": "The unit-impulse response of a system is $16e^{-2t}-8e^{-t}$. Its unit-step response is",
     "options": [
@@ -3632,7 +3539,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 17,
     "text": "For the given transfer function $$G(s)=\\dfrac{Y(s)}{R(s)}=\\dfrac{1}{s^2+3s+2}$$ the response $y(t)$ for a step input $r(t)=5u(t)$ will be",
     "after": "where $u(t)$ is a unit step input.",
@@ -3653,7 +3559,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 17,
     "text": "For a Type-2 system, the steady-state errors for unit step and unit ramp input are",
     "options": [
@@ -3673,7 +3578,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 17,
     "text": "Consider the following statements regarding a parabolic function:\n1. A parabolic function is one degree faster than the ramp function.\n2. A unit parabolic function is defined as$$f(t)=\\begin{cases}\\dfrac{t^2}{2}, & t>0\\\\[4pt] 0, & \\text{otherwise}\\end{cases}$$3. Laplace transform of unit parabolic function is $\\dfrac{1}{s^3}$.\nWhich of the above statements are correct?",
     "options": [
@@ -3693,7 +3597,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "First-Order Systems",
-    "book": "MADE EASY",
     "page": 18,
     "text": "Unit step response of first order system with transfer function $$G(s)=\\dfrac{1}{1+\\tau s}$$ is",
     "options": [
@@ -3713,7 +3616,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Step & Impulse Response",
-    "book": "MADE EASY",
     "page": 18,
     "text": "Step response of the system is defined as\n1. The output due to a unit step input signal.\n2. The running sum of impulse response.\n3. The running integral of impulse response for a continuous-time system.",
     "options": [
@@ -3733,7 +3635,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 18,
     "text": "A unity feedback system is characterized by the open loop transfer function $$G(s)=\\dfrac{1}{s(0.5s+1)(0.2s+1)}$$ The steady state errors for unit-step and unit-ramp inputs are respectively",
     "options": [
@@ -3753,7 +3654,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 18,
     "text": "In a type-1, second-order system, the first undershoot occurs at a time $t$ (with standard notations) is",
     "options": [
@@ -3773,7 +3673,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 18,
     "text": "The steady-state error of type 1 system with input $r(t)=\\dfrac{t^2}{2},\\ t\\ge 0$, is",
     "options": [
@@ -3793,7 +3692,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Higher-Order Approximation",
-    "book": "MADE EASY",
     "page": 18,
     "text": "Which one of the following conditions is justifying a second-order approximation?",
     "options": [
@@ -3813,7 +3711,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 18,
     "text": "A unity feedback system has $$G(s)=\\dfrac{K(2s+1)}{s(4s+1)(s+1)^2}$$ What is the value of $K$ if the steady-state value of error is to be less than 0.1 when an input $r(t)=1+5t$ is applied?",
     "options": [
@@ -3833,7 +3730,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 18,
     "text": "For the given control system, what is the value of $K$ so that there is 10% error in the steady state?",
     "figure": {
@@ -3976,7 +3872,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 18,
     "text": "In an underdamped second-order system the time required for the waveform to go from 0.1 of the final value to 0.9 of the final value is called",
     "options": [
@@ -3996,7 +3891,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 18,
     "text": "The open-loop transfer function of a unity feedback system is given by $$G(s)=\\dfrac{K}{s(\\tau s+1)}$$ By what factor should the amplifier gain $K$ be multiplied so that the damping ratio is increased from 0.25 to 0.75?",
     "options": [
@@ -4016,7 +3910,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Steady-State Error",
-    "book": "MADE EASY",
     "page": 19,
     "text": "Consider the speed control system shown in the figure wherein the inner loop corresponds to motor back e.m.f., the controller is an integrator with gain $K$ observes that the load is inertia only. What is the value of $K$ for which steady-state error to unit ramp input $\\left(V_r(s)=\\dfrac{1}{s^2}\\right)$ is less than 0.01 rad/sec?",
     "figure": {
@@ -4300,7 +4193,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 19,
     "text": "Consider the following statements regarding time response specifications:\n1. Delay time is the time required for the response to reach 10% to 90% or 5% to 95% or 0% to 100% of its final value.\n2. Peak time is the time required for the response to reach the first peak overshoot.\n3. Settling time is the time required for the response to reach and maintain beyond a specified tolerance band, i.e., either 3% or 5% of the initial value.\nWhich of the above statements are not correct?",
     "options": [
@@ -4320,7 +4212,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 19,
     "text": "A second-order system has a closed loop transfer function given by $$G(s)=\\dfrac{25}{s^2+8s+25}$$ The settling time for 5 percentage band in tolerance error is",
     "options": [
@@ -4340,7 +4231,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Second-Order Systems",
-    "book": "MADE EASY",
     "page": 19,
     "text": "The output of a standard second-order system for a unit-step input is given as $$y(t)=1-\\dfrac{2}{\\sqrt{3}}\\,e^{-t}\\cos\\!\\left(\\sqrt{3}\\,t-\\dfrac{\\pi}{6}\\right)$$ What is the transfer function of the system?",
     "options": [
@@ -4360,7 +4250,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 19,
     "text": "Consider a causal second-order system with the transfer function $G(s)=\\dfrac{1}{s^2+2s+1}$ with a unit-step $R(s)=\\dfrac{1}{s}$ as an input. Let $c(s)$ be the corresponding output. The time taken by the system output $c(t)$ to reach 94% of its steady-state value $\\lim_{t\\to\\infty}c(t)$, rounded off to two decimal places, is",
     "options": [
@@ -4380,7 +4269,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 19,
     "text": "A second-order system has a transfer function given by $$G(s)=\\dfrac{25}{s^2+8s+25}$$ If the system, initially at rest, is subjected to a unit-step input at $t=0$, the second peak in the response will occur at",
     "options": [
@@ -4400,7 +4288,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Error Constants & System Type",
-    "book": "MADE EASY",
     "page": 19,
     "text": "If the open loop transfer function of a servo system with unity feedback is $$G(s)=\\dfrac{10}{s(1+0.1s)}$$ then the acceleration, velocity and position error constants are respectively",
     "options": [
@@ -4420,7 +4307,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 19,
     "text": "A unity feedback system is characterized by an open-loop transfer function $G(s)=\\dfrac{K}{s(s+10)}$. If the damping ratio is 0.5, then the time to peak overshoot for the unit step input is",
     "options": [
@@ -4440,7 +4326,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--time-response-analysis",
     "topic": "Transient Specifications",
-    "book": "MADE EASY",
     "page": 20,
     "text": "Consider the following statements:\n1. Rise time for the underdamped system is the time required for the response to rise from 5% to 95% of its final value.\n2. The amount of maximum overshoot directly indicates the relative stability of the system.\n3. Settling time is the time required for the response to reach and maintain within a specified tolerance band, i.e. either 3% or 6% of the final value.\nWhich of the above statements are not correct?",
     "options": [
@@ -4460,7 +4345,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 4,
     "text": "The Laplace transform of $e^{-2t}\\sin(2\\omega t)$ is",
     "options": [
@@ -4479,7 +4363,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Motors & Components",
-    "book": "MADE EASY",
     "page": 4,
     "text": "In a closed loop system for which the output is the speed of a motor, the output rate control can be used to",
     "options": [
@@ -4498,7 +4381,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Motors & Components",
-    "book": "MADE EASY",
     "page": 4,
     "text": "In a servo-system, the device used for providing derivative feedback is known as",
     "options": [
@@ -4517,7 +4399,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Poles, Zeros & Minimum Phase",
-    "book": "MADE EASY",
     "page": 4,
     "text": "The transfer function of any stable system which has no zeros or poles in the right half of the s-plane is said to be",
     "options": [
@@ -4536,7 +4417,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Poles, Zeros & Minimum Phase",
-    "book": "MADE EASY",
     "page": 4,
     "text": "A dominant pole is determined as",
     "options": [
@@ -4555,7 +4435,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Signal Flow Graphs",
-    "book": "MADE EASY",
     "page": 4,
     "text": "Consider the following statements for signal flow graph:\n1. It represents linear as well as non-linear systems.\n2. It is not unique for a given system.\nWhich of the above statements is /are correct?",
     "options": [
@@ -4574,7 +4453,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Block Diagram Algebra",
-    "book": "MADE EASY",
     "page": 4,
     "text": "The open-loop transfer function of a system is $$\\dfrac{10K}{1+10s}$$ When the system is converted into a closed-loop with unity feedback, the time constant of the system is reduced by a factor of 20. The value of $K$ is",
     "options": [
@@ -4593,7 +4471,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Block Diagram Algebra",
-    "book": "MADE EASY",
     "page": 4,
     "text": "The closed-loop transfer function $\\dfrac{C(s)}{R(s)}$ of the system represented by the block diagram in the figure is",
     "figure": {
@@ -4800,7 +4677,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 4,
     "text": "The price for improvement in sensitivity by the use of feedback is paid in terms of",
     "options": [
@@ -4819,7 +4695,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Block Diagram Algebra",
-    "book": "MADE EASY",
     "page": 4,
     "text": "Consider the following open-loop transfer function: $$G=\\dfrac{K(s+2)}{(s+1)(s+4)}$$ The characteristic equation of the unity negative feedback will be",
     "options": [
@@ -4838,7 +4713,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Signal Flow Graphs",
-    "book": "MADE EASY",
     "page": 4,
     "text": "The signal flow graph of a system is constructed from its",
     "options": [
@@ -4857,7 +4731,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 5,
     "text": "The important aspects in the study of feedback systems are to control\n1. Sensitivity\n2. Effect of an internal disturbance\n3. Distortion in a nonlinear system",
     "options": [
@@ -4876,7 +4749,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 5,
     "text": "The subsystem that generates the input to the plant or process is known as",
     "options": [
@@ -4895,7 +4767,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 5,
     "text": "The open-loop DC gain of a unity negative feedback system with closed-loop transfer function $\\dfrac{s+4}{s^2+7s+13}$ is",
     "options": [
@@ -4914,7 +4785,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 2,
     "text": "**Assertion (A):** Feedback control systems offer more accurate control over open-loop systems.\n**Reason (R):** The feedback path establishes a link for input and output comparison and subsequent error correction.",
     "options": [
@@ -4933,7 +4803,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 2,
     "text": "Consider the following statements:\n1. The effect of feedback is to reduce the system error\n2. Feedback increases the gain of the system in one frequency range but decreases in another\n3. Feedback can cause a system that is originally stable to become unstable\nWhich of these statements are correct?",
     "options": [
@@ -4952,7 +4821,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Signal Flow Graphs",
-    "book": "MADE EASY",
     "page": 2,
     "text": "For the signal flow diagram shown in the given figure, the transmittance between $x_2$ and $x_1$ is",
     "figure": {
@@ -5195,7 +5063,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 2,
     "text": "Consider the following statements with respect to feedback control systems:\n1. Accuracy cannot be obtained by adjusting loop gain.\n2. Feedback decreases overall gain.\n3. Introduction of noise due to sensor reduces overall accuracy.\n4. Introduction of feedback may lead to the possibility of instability of closed loop system.\nWhich of the statements given above are correct?",
     "options": [
@@ -5214,7 +5081,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 2,
     "text": "A control system whose step response is $-0.5\\,(1+e^{-2t})$ is cascaded to another control block whose impulse response is $e^{-t}$. What is the transfer function of the cascaded combination?",
     "options": [
@@ -5233,7 +5099,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 2,
     "text": "If the initial conditions for a system are inherently zero, what does it physically mean?",
     "options": [
@@ -5252,7 +5117,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 2,
     "text": "The impulse response of a linear time invariant system is given as $g(t)=e^{-t},\\ t>0$. The transfer function of the system is equal to",
     "options": [
@@ -5271,7 +5135,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Motors & Components",
-    "book": "MADE EASY",
     "page": 3,
     "text": "In case of DC servo-motor the back-emf is equivalent to an “electric friction” which tends to",
     "options": [
@@ -5290,7 +5153,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 3,
     "text": "The transfer function of a linear-time-invariant system is given as $\\dfrac{1}{s+1}$. What is the steady-state value of the unit-impulse response?",
     "options": [
@@ -5309,7 +5171,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Feedback Basics",
-    "book": "MADE EASY",
     "page": 3,
     "text": "In closed loop control system, what is the sensitivity of the gain of the overall system, $M$ to the variation in $G$?",
     "options": [
@@ -5328,7 +5189,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 3,
     "text": "A linear time-invariant system initially at rest, when subjected to a unit-step input, gives a response $y(t)=te^{-t},\\ t>0$. The transfer function of the system is:",
     "options": [
@@ -5347,7 +5207,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 3,
     "text": "Consider the function $$F(s)=\\dfrac{5}{s(s^2+3s+2)}$$ where $F(s)$ is Laplace transform of function $f(t)$. The initial value of $f(t)$ is:",
     "options": [
@@ -5366,7 +5225,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Block Diagram Algebra",
-    "book": "MADE EASY",
     "page": 3,
     "text": "The transfer function from $d(s)$ to $y(s)$ is",
     "figure": {
@@ -5572,7 +5430,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Block Diagram Algebra",
-    "book": "MADE EASY",
     "page": 3,
     "text": "What is the unit impulse response of the system shown in figure for $t\\ge 0$?",
     "figure": {
@@ -5673,7 +5530,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Motors & Components",
-    "book": "MADE EASY",
     "page": 3,
     "text": "An electric motor is developing 10 kW at a speed of 900 rpm. The torque available at the shaft is",
     "options": [
@@ -5692,7 +5548,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Poles, Zeros & Minimum Phase",
-    "book": "MADE EASY",
     "page": 3,
     "text": "**Statement (I):** Many of the linear control system transfer functions do not have poles or zeros in the right half of s-plane.\n**Statement (II):** These are called minimum-phase transfer functions.",
     "options": [
@@ -5711,7 +5566,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Motors & Components",
-    "book": "MADE EASY",
     "page": 3,
     "text": "A tachometer has a sensitivity of 5 V/1000 rpm. The gain constant of the tachometer is",
     "options": [
@@ -5730,7 +5584,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--modeling-and-block-diagrams",
     "topic": "Transfer Functions & Laplace",
-    "book": "MADE EASY",
     "page": 3,
     "text": "The closed loop transfer function of a unity negative feedback system is $\\dfrac{100}{s^2+8s+100}$. Its open loop transfer function is",
     "options": [
@@ -5749,7 +5602,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 40,
     "text": "The system represented by $$5s^6+8s^5+12s^4+20s^3+100s^2+150s+200=0$$ is",
     "options": [
@@ -5768,7 +5620,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 40,
     "text": "For the unity feedback system given by $$G(s)=\\dfrac{K}{s(s+1)(s+2)}$$ the range of $K$ for stability is",
     "options": [
@@ -5787,7 +5638,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The characteristic equation of a control system is given as $$s^4+4s^3+4s^2+3s+K=0$$ What is the value of $K$ for which this system is marginally stable?",
     "options": [
@@ -5806,7 +5656,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The characteristic equation of the below closed-loop system is",
     "figure": {
@@ -5985,7 +5834,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The characteristic equation of a control system is given as $$s^4+8s^3+24s^2+32s+K=0$$ What is the value of $K$ for which the system is unstable?",
     "options": [
@@ -6004,7 +5852,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The characteristic equation of a particular system is given by $s^3+2s^2+6s+12=0$. The damping ratio $\\delta$ will be",
     "options": [
@@ -6023,7 +5870,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The range of $K$ for stability of a feedback system whose open-loop transfer function is $$G(s)=\\dfrac{K}{s(s+1)(s+2)}$$",
     "options": [
@@ -6042,7 +5888,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The critical value of gain for a system is 40. The system is operating at a gain of 20. The gain margin of the system is",
     "options": [
@@ -6061,7 +5906,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "A feedback system with characteristic equation $s^4+20Ks^3+5s^2+10s+15=0$ is",
     "options": [
@@ -6080,7 +5924,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The system having the characteristic equation $s^3+4s^2+s-6+K=0$ will be stable for",
     "options": [
@@ -6099,7 +5942,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The loop transfer function of a system is $\\dfrac{K}{s(s+1)(s+5)}$. The loop gain $K$ is adjusted for inducing sustained oscillations. What is the value of $K$ for this objective?",
     "options": [
@@ -6118,7 +5960,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The number of roots of the equation $2s^4+s^3+3s^2+5s+7=0$ which lie in the right half of s-plane is",
     "options": [
@@ -6137,7 +5978,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 38,
     "text": "Which one of the following statements is correct?",
     "options": [
@@ -6156,7 +5996,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 38,
     "text": "The effects of feedback on stability and sensitivity are",
     "options": [
@@ -6175,7 +6014,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 39,
     "text": "Given that the transfer function $G(s)=\\dfrac{K}{s^2(1+sT)}$, the type and order of this system are respectively",
     "options": [
@@ -6194,7 +6032,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "The oscillation frequency of the system with the characteristic equation $$s^6+2s^5+3s^4+4s^3+3s^2+2s+1=0$$ is",
     "options": [
@@ -6213,7 +6050,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "The feedback system with characteristic equation $$s^4+20Ks^3+5s^2+10s+15=0$$ is",
     "options": [
@@ -6232,7 +6068,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "The characteristic equation of a certain feedback control system is given by $s^4+4s^3+13s^2+36s+K=0$. The range of values of $K$ for which the feedback system is stable, is given by",
     "options": [
@@ -6251,7 +6086,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "A unity feedback system has open-loop transfer function with two of its poles located at $-0.1$, $1$; and two zeros located at $-2$ and $-1$ with a variable gain $K$. For what value(s) of $K$ would the closed-loop system have one pole in the right half of the s-plane.",
     "options": [
@@ -6270,7 +6104,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "The open-loop transfer function of a unity feedback control system is $$G(s)H(s)=\\dfrac{10}{s(s+2)(s+K)}$$ Here $K$ is a variable parameter. The system will be stable for all values of",
     "options": [
@@ -6289,7 +6122,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "Consider the stability of the system shown in the figure when analyzed with a positive real value of gain $K$ in\n1. open-loop configuration\n2. closed-loop configuration",
     "figure": {
@@ -6425,7 +6257,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "If the characteristic equation of a feedback control system is given by, $$s^4+20s^3+15s^2+2s+K=0$$ then the range of values of $K$ for the system to be stable will be",
     "options": [
@@ -6444,7 +6275,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 39,
     "text": "If all the roots of the characteristic equation have negative real parts, the system is",
     "options": [
@@ -6463,7 +6293,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Stability Concepts",
-    "book": "MADE EASY",
     "page": 39,
     "text": "If any root of the characteristic equation has a positive real part or if there is a repeated root on the $j\\omega$-axis, then the system is",
     "options": [
@@ -6482,7 +6311,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "A feedback system has an open-loop transfer function of $$G(s)H(s)=\\dfrac{K(1-s)}{s(s^2+5s+9)}$$ By using the Routh criterion, the maximum value of $K$ for the closed-loop system to be stable is",
     "options": [
@@ -6501,7 +6329,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Routh-Hurwitz Criterion",
-    "book": "MADE EASY",
     "page": 39,
     "text": "A feedback system has an open loop transfer function of $$G(s)H(s)=\\dfrac{K(1-s)}{s(s^2+5s+9)}$$ The maximum value of $K$ for the closed loop system to be stable is",
     "options": [
@@ -6520,7 +6347,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 48,
     "text": "Which one of the following application softwares is used to obtain an accurate root locus plot?",
     "options": [
@@ -6539,7 +6365,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 48,
     "text": "Which one of the following techniques is utilized to determine the actual point at which the root locus crosses the imaginary axis?",
     "options": [
@@ -6558,7 +6383,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 48,
     "text": "The root loci of a feedback control system for large values of $s$ are asymptotic to the straight lines with angles $\\theta$ to the real axis given by which one of the following?",
     "after": "where $p=$ Number of finite poles of $G(s)H(s)$, $z=$ Number of finite zeros of $G(s)H(s)$ and $k=0,1,2,\\ldots$",
@@ -6578,7 +6402,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 48,
     "text": "**Assertion (A):** The number of branches of root locus terminating on infinity is equal to the number of open loop poles minus the number of zeros.\n**Reason (R):** Segment of the real axis having an odd number of real axis open loop poles plus zeros to their right are parts of the root locus.",
     "options": [
@@ -6597,7 +6420,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 48,
     "text": "Which one of the following is not a property of root loci?",
     "options": [
@@ -6616,7 +6438,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 48,
     "text": "In root locus, what is the number of separate loci?",
     "options": [
@@ -6635,7 +6456,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 48,
     "text": "For a given unity feedback system with $$G(s)=\\dfrac{K(s+3)}{s(s+1)(s+2)(s+5)}$$ what is the real axis intercept for root locus asymptotes?",
     "options": [
@@ -6654,7 +6474,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 48,
     "text": "Which one of the following open-loop transfer functions has root locus parallel to imaginary axis?",
     "options": [
@@ -6673,7 +6492,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 48,
     "text": "What is the number of root-locus segments which do not terminate on zeros?",
     "options": [
@@ -6692,7 +6510,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 48,
     "text": "Consider the root loci plots:",
     "figure": {
@@ -7075,7 +6892,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "Which one of the following statements is correct for root loci?",
     "options": [
@@ -7094,7 +6910,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "Which one of the following is correct? The root locus is the path of the roots of the characteristic equation traced out in the s-plane",
     "options": [
@@ -7113,7 +6928,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Breakaway Points",
-    "book": "MADE EASY",
     "page": 49,
     "text": "Consider the equation $$s^2+2s+2+K(s+2)=0.$$ Where do the roots of this equation break on the root loci plot?",
     "options": [
@@ -7132,7 +6946,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "How many number of branches the root loci of the equation $s(s+2)(s+3)+K(s+1)=0$ have?",
     "options": [
@@ -7151,7 +6964,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "If the gain of the system is reduced to zero value, the roots of the system in the s-plane",
     "options": [
@@ -7170,7 +6982,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "The addition of open loop zero pulls the root-loci towards",
     "options": [
@@ -7189,7 +7000,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "Where are the $K=\\pm\\infty$ points on the root loci of the characteristic equation of the closed loop control system located at?",
     "options": [
@@ -7208,7 +7018,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 49,
     "text": "The characteristic equation of a control system is given as $$1+\\dfrac{K(s+1)}{s(s+4)(s^2+2s+2)}=0$$ For large values of $s$, the root loci for $K\\ge0$ are asymptotic to asymptotes, where do the asymptotes intersect on the real axis?",
     "options": [
@@ -7227,7 +7036,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 49,
     "text": "Where are the $K=0$ points on the root loci of the characteristic equation of the closed loop control system located at?",
     "options": [
@@ -7246,7 +7054,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 50,
     "text": "Given the root locus of a system $$G(s)=\\dfrac{4K}{(s+1)(s+3)}$$ What will be the gain for obtaining the damping ratio 0.707?",
     "figure": {
@@ -7363,7 +7170,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 50,
     "text": "The number of individual loci in a root locus plot is equal to",
     "options": [
@@ -7382,7 +7188,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 50,
     "text": "**Statement (I):** Root loci are symmetrical with respect to real axis of the s-plane.\n**Statement (II):** Root loci are normally symmetrical with respect to the perpendicular axis of symmetry of the pole-zero combination of the loop transfer function.",
     "options": [
@@ -7401,7 +7206,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 50,
     "text": "If a feedback control system has its open-loop transfer function $$G(s)H(s)=\\dfrac{K}{[s(s+2)(s^2+2s+5)]}$$ the coordinates of the centroid of the asymptotes of its root-locus are",
     "options": [
@@ -7420,7 +7224,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 50,
     "text": "If root loci plots of a particular control system do not intersect the imaginary axis at any point, then the gain margin of the system will be",
     "options": [
@@ -7439,7 +7242,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 50,
     "text": "Consider the transfer function $$KG(s)H(s)=\\dfrac{K}{s^3+4s^2+s-6}$$ The root-locus plot of the system passes through $s=0$. The value of $K$ at this point will be",
     "options": [
@@ -7458,7 +7260,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 50,
     "text": "A system has its open-loop transfer function of $\\dfrac{K}{s(s^2+6s+10)}$. The break-points are at $s=-1.18$ and $s=-2.82$, the centroid is at $s=-2$, while the asymptotic angles are $\\pm60^\\circ$ and $\\pm180^\\circ$. The value of $K$ for the closed loop system to be oscillatory and the frequency of oscillations are respectively:",
     "options": [
@@ -7477,7 +7278,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 50,
     "text": "When the number of poles is equal to the number of zeros, how many branches of root locus tend towards infinity?",
     "options": [
@@ -7496,7 +7296,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 50,
     "text": "The open-loop transfer function of a unity feedback control system is $G(s)=\\dfrac{1}{(s+2)^2}$. The closed-loop transfer function will have poles at",
     "options": [
@@ -7515,7 +7314,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 50,
     "text": "The number of branches of the root loci of the equation $s(s+4)(s+5)+K(s+2)=0$ is (when $K$ varies from $-\\infty$ to $+\\infty$)",
     "options": [
@@ -7534,7 +7332,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Breakaway Points",
-    "book": "MADE EASY",
     "page": 51,
     "text": "Consider the system with $G(s)=\\dfrac{K(s+2)}{s^2+2s+3}$ and $H(s)=1$. The breakaway point(s) of the root loci is/are at",
     "options": [
@@ -7553,7 +7350,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 51,
     "text": "The main objectives of drawing the root-locus plot are\n1. To obtain a clear picture of the open-loop poles and zeros of the system.\n2. To obtain a clear picture of the transient response of the system for varying gain, $K$.\n3. To find the range of $K$ to make the system stable.\nWhich of the above statements are correct?",
     "options": [
@@ -7572,7 +7368,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 51,
     "text": "A unity feedback system has open-loop poles at $s=-2\\pm j2$, $s=-1$ and $s=0$ and a zero at $s=-3$. What are the angles made by the root-loci asymptotes with the real axis?",
     "options": [
@@ -7591,7 +7386,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 51,
     "text": "**Statement (I):** The complex conjugate poles and zeros of the open-loop transfer function have no effect on the root-loci on the real axis.\n**Statement (II):** Angle contribution of such a pair of conjugate poles or zeros is $2\\pi$ radians on the real axis.",
     "options": [
@@ -7610,7 +7404,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 51,
     "text": "Consider that in a system loop transfer function, addition of a pole results in the following:\n1. Root locus gets pulled to the right-hand side.\n2. Steady-state error is increased.\n3. System response gets slower.\nWhich of the above are correct?",
     "options": [
@@ -7629,7 +7422,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Breakaway Points",
-    "book": "MADE EASY",
     "page": 51,
     "text": "For the open-loop system $$G(s)H(s)=\\dfrac{K}{s(s+1)(s+2)}$$ the breakaway point is",
     "options": [
@@ -7648,7 +7440,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 51,
     "text": "Consider a feedback system with the characteristic equation $$1+K\\dfrac{1}{s(s+1)(s+2)}=0$$ The asymptotes of the three branches of root locus plot of this system will form the following angles with the real axis",
     "options": [
@@ -7667,7 +7458,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 51,
     "text": "The angle of departure from a real open-loop pole and the angle of arrival at a real open-loop zero is always equal to",
     "options": [
@@ -7686,7 +7476,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 51,
     "text": "Which one of the following techniques can be used to analyze and design the effect of loop gain upon the system's transient response and stability?",
     "options": [
@@ -7705,7 +7494,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Breakaway Points",
-    "book": "MADE EASY",
     "page": 51,
     "text": "What are the breakaway points of the root locus of a unity feedback system with open loop transfer function $G(s)=\\dfrac{K(s+2)}{(s+1)^2}$?",
     "options": [
@@ -7724,7 +7512,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 47,
     "text": "The intersection of asymptotes of root-loci of a system with open-loop transfer function $$G(s)H(s)=\\dfrac{K}{s(s+1)(s+3)}$$ is",
     "options": [
@@ -7743,7 +7530,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Breakaway Points",
-    "book": "MADE EASY",
     "page": 47,
     "text": "The root locus plot of the system having the loop transfer function $$G(s)H(s)=\\dfrac{K}{s(s+4)(s^2+4s+5)}$$ has",
     "options": [
@@ -7762,7 +7548,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Asymptotes & Centroid",
-    "book": "MADE EASY",
     "page": 47,
     "text": "An open loop transfer function is given by $$G(s)H(s)=\\dfrac{K(s+1)}{s(s+2)(s^2+2s+2)}$$ It has",
     "options": [
@@ -7781,7 +7566,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 47,
     "text": "Which of the following is the open loop transfer function of the root loci shown in figure?",
     "figure": {
@@ -7910,7 +7694,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 47,
     "text": "The instrument used for plotting the root locus is called",
     "options": [
@@ -7929,7 +7712,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Properties",
-    "book": "MADE EASY",
     "page": 47,
     "text": "A control system has $$G(s)H(s)=\\dfrac{K(s+1)}{s(s+3)(s+4)}$$ Root locus of the system can lie on the real axis",
     "options": [
@@ -7948,7 +7730,6 @@
     "subjectId": "p2-control-systems",
     "chapterId": "p2-control-systems--stability-and-root-locus",
     "topic": "Root Locus Plots & Gain",
-    "book": "MADE EASY",
     "page": 47,
     "text": "The below figure shows the root locus of a unity feedback system. The open loop transfer function of the system is",
     "figure": {

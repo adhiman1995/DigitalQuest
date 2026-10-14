@@ -3,15 +3,15 @@
 //
 // batch.json: [{ "image": "<path relative to question-bank/>", "questions": [ Question, ... ] }]
 // Question = {
-//   number: "2.107", year: 2022, topic: "Steady-State Error", page: 19, book: "MADE EASY",
+//   number: "2.107", year: 2022, topic: "Steady-State Error", page: 19,
 //   text:    "LaTeX-typeset text: inline $x$, display $$x$$, **bold**",
 //   options: ["$5$", "$7$", "$10$", "$14$"],
 //   lists?:  [{ title, items: [[key, text], ...] }]      // match-the-following lists
 //   table?:  { head: [...], rows: [[...], ...] }
 //   figure?: { type: 'block' | 'plot' | 'grid', ... }     // vector diagram spec, see scripts/authoring/
 //   after?:  "text shown below the figure/table",
-//   answer?: "B"      // ONLY when verified against the book's printed answer key
-//   marked?: "B"      // pen mark seen in the book (NOT a verified answer)
+//   answer?: "B"      // ONLY when verified against a printed answer key
+//   marked?: "B"      // pen mark seen on the source page (NOT a verified answer)
 // }
 // Questions are never stored as images. The source image is only hashed, so it is never re-processed.
 const fs = require('fs');
@@ -45,7 +45,6 @@ for (const item of batch) {
       subjectId: folder.subject.id,
       chapterId: folder.chapter.id,
       topic: q.topic ?? null,
-      book: q.book ?? null,
       page: q.page ?? null,
       text: q.text,
       ...(q.lists && { lists: q.lists }),

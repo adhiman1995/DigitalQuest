@@ -106,7 +106,7 @@ export default function QuestionCard({ q, subjectName, state, toggle, setRespons
               {reveal ? `Answer: (${q.answer.toLowerCase()})` : 'Show answer'}
             </button>
           ) : (
-            <span className="muted" title="Add the book's answer-key page to verify answers">Answer not verified yet</span>
+            <span className="muted" title="The answer key for this question hasn't been added yet">Answer not verified yet</span>
           )}
           {selected && (
             <span className={`saved ${verdict || ''}`}>
@@ -122,7 +122,7 @@ export default function QuestionCard({ q, subjectName, state, toggle, setRespons
             {state.bookmarks[q.id] ? '★' : '☆'}
           </button>
         </div>
-        <span className="qsource">{[q.book, subjectName, q.page && `p. ${q.page}`].filter(Boolean).join(' · ')}</span>
+        <span className="qsource">{subjectName}</span>
       </footer>
     </article>
   );

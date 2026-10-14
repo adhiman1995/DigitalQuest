@@ -8,7 +8,7 @@ S4 = ["1, 2 and 3", "1 and 2 only", "1 and 3 only", "2 and 3 only"]
 
 QS = []   # (image_key, question dict)
 def Q(img, n, year, page, topic, text, opts, key=None, mark=None, fig=None, lists=None, table=None, after=None):
-    d = {"number": n, "year": year, "page": page, "topic": topic, "book": "MADE EASY", "text": text, "options": opts}
+    d = {"number": n, "year": year, "page": page, "topic": topic, "text": text, "options": opts}
     if key: d["answer"] = key
     if mark: d["marked"] = mark
     if fig: d["figure"] = fig

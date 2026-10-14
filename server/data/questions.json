@@ -7832,5 +7832,4553 @@
     ],
     "answer": null,
     "marked": "D"
+  },
+  {
+    "id": "a64c486e48-1",
+    "number": "5.1",
+    "year": 2000,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency Response Basics",
+    "page": 57,
+    "text": "Match List-I (Scientist) with List-II (Contribution in the area of) and select the correct answer:",
+    "lists": [
+      {
+        "title": "List-I",
+        "items": [
+          [
+            "A",
+            "Bode"
+          ],
+          [
+            "B",
+            "Evans"
+          ],
+          [
+            "C",
+            "Nyquist"
+          ]
+        ]
+      },
+      {
+        "title": "List-II",
+        "items": [
+          [
+            "1",
+            "Asymptotic plots"
+          ],
+          [
+            "2",
+            "Polar plots"
+          ],
+          [
+            "3",
+            "Root-locus technique"
+          ],
+          [
+            "4",
+            "Constant M and N plots"
+          ]
+        ]
+      }
+    ],
+    "options": [
+      "A–1, B–4, C–2",
+      "A–2, B–3, C–4",
+      "A–3, B–1, C–4",
+      "A–1, B–3, C–2"
+    ],
+    "answer": "D",
+    "marked": "A"
+  },
+  {
+    "id": "a64c486e48-2",
+    "number": "5.2",
+    "year": 2000,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 57,
+    "text": "The polar plot (for positive frequencies) for the open-loop transfer function of a unity feedback control system is shown in the given figure. The phase margin and the gain margin of the system are respectively",
+    "figure": {
+      "type": "plot",
+      "w": 400,
+      "h": 300,
+      "x": [
+        -1.35,
+        2
+      ],
+      "y": [
+        -1.25,
+        1.25
+      ],
+      "xlabel": "\\mathrm{Re}\\,G(j\\omega)",
+      "ylabel": "\\mathrm{Img}\\,G(j\\omega)",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 10,
+        "r": 90,
+        "t": 24,
+        "b": 12
+      },
+      "scale": 1,
+      "circle": {
+        "r": 1,
+        "cx": 0,
+        "cy": 0
+      },
+      "rays": [
+        [
+          1.55,
+          -0.9
+        ]
+      ],
+      "curves": [
+        {
+          "fn": "points",
+          "pts": [
+            [
+              1.5,
+              0.5
+            ],
+            [
+              1.15,
+              -0.1
+            ],
+            [
+              0.8,
+              -0.45
+            ],
+            [
+              0.3,
+              -0.55
+            ],
+            [
+              -0.1,
+              -0.4
+            ],
+            [
+              -0.28,
+              -0.05
+            ],
+            [
+              -0.2,
+              0.2
+            ],
+            [
+              -0.05,
+              0.1
+            ],
+            [
+              0,
+              -0.05
+            ]
+          ],
+          "arrow": true
+        }
+      ],
+      "labels": [
+        {
+          "x": -1,
+          "y": 0.14,
+          "tex": "-1"
+        },
+        {
+          "x": -0.25,
+          "y": 0.28,
+          "tex": "-0.25"
+        },
+        {
+          "x": 1,
+          "y": 0.14,
+          "tex": "1"
+        },
+        {
+          "x": 0.12,
+          "y": 1.1,
+          "tex": "+j1"
+        },
+        {
+          "x": 0.12,
+          "y": -1.1,
+          "tex": "-j1"
+        },
+        {
+          "x": 0.62,
+          "y": -0.2,
+          "tex": "30^\\circ"
+        }
+      ]
+    },
+    "options": [
+      "$150^\\circ$ and $4$",
+      "$150^\\circ$ and $3/4$",
+      "$30^\\circ$ and $4$",
+      "$30^\\circ$ and $3/4$"
+    ],
+    "answer": "A",
+    "marked": "A"
+  },
+  {
+    "id": "a64c486e48-3",
+    "number": "5.3",
+    "year": 2001,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 57,
+    "text": "The open loop transfer function of a system is $$G(s)H(s)=\\dfrac{K}{(1+s)(1+2s)(1+3s)}$$ The phase crossover frequency $\\omega_{pc}$ is",
+    "options": [
+      "$\\sqrt{2}$",
+      "$1$",
+      "zero",
+      "$\\sqrt{3}$"
+    ],
+    "answer": "B",
+    "marked": null
+  },
+  {
+    "id": "a64c486e48-4",
+    "number": "5.4",
+    "year": 2001,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 57,
+    "text": "Nyquist plot shown in the given figure is for a type",
+    "figure": {
+      "type": "plot",
+      "w": 330,
+      "h": 250,
+      "x": [
+        -0.7,
+        1.9
+      ],
+      "y": [
+        -1.7,
+        1.7
+      ],
+      "xlabel": "\\mathrm{Re}",
+      "ylabel": "\\mathrm{Img}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 10,
+        "r": 34,
+        "t": 22,
+        "b": 12
+      },
+      "curves": [
+        {
+          "fn": "points",
+          "pts": [
+            [
+              -0.1,
+              -1.6
+            ],
+            [
+              -0.1,
+              -0.9
+            ],
+            [
+              -0.3,
+              -0.2
+            ],
+            [
+              -0.27,
+              0.15
+            ],
+            [
+              -0.1,
+              0.9
+            ],
+            [
+              -0.1,
+              1.6
+            ]
+          ],
+          "arrow": true
+        }
+      ],
+      "labels": [],
+      "scale": 1,
+      "circle": {
+        "r": 1.55,
+        "cx": 0,
+        "cy": 0
+      }
+    },
+    "options": [
+      "zero system",
+      "one system",
+      "two system",
+      "three system"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "a64c486e48-5",
+    "number": "5.5",
+    "year": 2001,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 57,
+    "text": "The open-loop transfer function of a unity feedback control system is given as $$G(s)=\\dfrac{1}{s(1+sT_1)(1+sT_2)}$$ The phase crossover frequency and the gain margin are, respectively",
+    "options": [
+      "$\\dfrac{1}{\\sqrt{T_1T_2}}$ and $\\dfrac{T_1+T_2}{T_1T_2}$",
+      "$\\sqrt{T_1T_2}$ and $\\dfrac{T_1+T_2}{T_1T_2}$",
+      "$\\dfrac{1}{\\sqrt{T_1T_2}}$ and $\\dfrac{T_1T_2}{T_1+T_2}$",
+      "$\\sqrt{T_1T_2}$ and $\\dfrac{T_1T_2}{T_1+T_2}$"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "a64c486e48-6",
+    "number": "5.6",
+    "year": 2001,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 57,
+    "text": "An open loop transfer function of a unity feedback control system has two finite zeros, two poles at origin and two pairs of complex conjugate poles. The slope of high frequency asymptote in Bode magnitude plot will be",
+    "options": [
+      "$+40$ dB/decade",
+      "$0$ dB/decade",
+      "$-40$ dB/decade",
+      "$-80$ dB/decade"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "47f8ae67ed-1",
+    "number": "5.7",
+    "year": 2001,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 58,
+    "text": "Open loop transfer function of a system having one zero with a positive real value is called",
+    "options": [
+      "zero phase function",
+      "negative phase function",
+      "positive phase function",
+      "non-minimum phase function"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "47f8ae67ed-2",
+    "number": "5.8",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 58,
+    "text": "The Nyquist plot of $$G(s)H(s)=\\dfrac{10}{s^2(1+0.5s)(1+s)}$$",
+    "options": [
+      "will start ($\\omega=\\infty$) in the first quadrant and will terminate ($\\omega=0$) in the second quadrant",
+      "will start ($\\omega=\\infty$) in the fourth quadrant and will terminate ($\\omega=0$) in the second quadrant",
+      "will start ($\\omega=\\infty$) in the second quadrant and will terminate ($\\omega=0$) in the third quadrant",
+      "will start ($\\omega=\\infty$) in the first quadrant and will terminate ($\\omega=0$) in the fourth quadrant"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "47f8ae67ed-3",
+    "number": "5.9",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 58,
+    "text": "Which of the following is the Nyquist diagram for the open loop function $$G(s)\\cdot H(s)=\\dfrac{5}{s(1+0.1s)(1+0.01s)}\\ ?$$",
+    "figure": {
+      "type": "grid",
+      "cols": 2,
+      "items": [
+        {
+          "cap": "(a)",
+          "fig": {
+            "type": "plot",
+            "w": 210,
+            "h": 150,
+            "x": [
+              -1.6,
+              1.6
+            ],
+            "y": [
+              -0.9,
+              0.9
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    0.5,
+                    -0.05
+                  ],
+                  [
+                    0.4,
+                    -0.38
+                  ],
+                  [
+                    0.05,
+                    -0.5
+                  ],
+                  [
+                    -0.28,
+                    -0.35
+                  ],
+                  [
+                    -0.3,
+                    -0.05
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": -1,
+                "y": -0.22,
+                "tex": "-1"
+              }
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "cap": "(b)",
+          "fig": {
+            "type": "plot",
+            "w": 210,
+            "h": 150,
+            "x": [
+              -1.6,
+              1.6
+            ],
+            "y": [
+              -0.9,
+              0.9
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    -1.1,
+                    0
+                  ],
+                  [
+                    -0.85,
+                    0.35
+                  ],
+                  [
+                    -0.5,
+                    0.5
+                  ],
+                  [
+                    -0.2,
+                    0.33
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": -1,
+                "y": -0.22,
+                "tex": "-1"
+              }
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "cap": "(c)",
+          "fig": {
+            "type": "plot",
+            "w": 210,
+            "h": 190,
+            "x": [
+              -1.6,
+              1.6
+            ],
+            "y": [
+              -1.6,
+              1.4
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    0,
+                    -1.5
+                  ],
+                  [
+                    -0.08,
+                    -0.9
+                  ],
+                  [
+                    -0.05,
+                    -0.2
+                  ],
+                  [
+                    0.05,
+                    0.5
+                  ],
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    -0.2,
+                    1.1
+                  ],
+                  [
+                    -0.35,
+                    0.6
+                  ],
+                  [
+                    -0.35,
+                    0
+                  ],
+                  [
+                    -0.22,
+                    -0.45
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": -1,
+                "y": -0.22,
+                "tex": "-1"
+              }
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "cap": "(d)",
+          "fig": {
+            "type": "plot",
+            "w": 210,
+            "h": 150,
+            "x": [
+              -1.6,
+              1.6
+            ],
+            "y": [
+              -0.7,
+              0.9
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    0.8,
+                    0.3
+                  ],
+                  [
+                    0.45,
+                    0.5
+                  ],
+                  [
+                    0.15,
+                    0.4
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": -1,
+                "y": -0.22,
+                "tex": "-1"
+              }
+            ],
+            "scale": 1
+          }
+        }
+      ]
+    },
+    "options": [
+      "Plot (a)",
+      "Plot (b)",
+      "Plot (c)",
+      "Plot (d)"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "47f8ae67ed-4",
+    "number": "5.10",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 58,
+    "text": "Consider the following statements associated with phase and gain margins:\n1. They are a measure of closeness of the polar plot to the $-1+j0$ point\n2. For a non-minimum phase to be stable it must have positive phase and gain margins\n3. For a minimum phase system to be stable, both the margins must be positive\nWhich of the above statements is/are correct?",
+    "options": [
+      "2 and 3",
+      "1 and 3",
+      "1 and 2",
+      "1 alone"
+    ],
+    "answer": "B",
+    "marked": "B"
+  },
+  {
+    "id": "47f8ae67ed-5",
+    "number": "5.11",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 58,
+    "text": "**Assertion (A):** $G(s)=\\dfrac{10(s-25)}{s(s+1)(s+5)}$ represents a non-minimum phase transfer function.\n**Reason (R):** A minimum phase transfer function has the property that its magnitude and phase are uniquely related.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is NOT the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "47f8ae67ed-6",
+    "number": "5.12",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 58,
+    "text": "**Assertion (A):** The bandwidth of a control system indicates the noise filtering characteristic of the system.\n**Reason (R):** The bandwidth is a measure of ability of a control system to reproduce the input signal.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is NOT the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "47f8ae67ed-7",
+    "number": "5.13",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 58,
+    "text": "**Assertion (A):** Addition of a pole to the open loop transfer function of a system increases the rise time of the closed-loop step-response.\n**Reason (R):** Additional pole has the effect of reducing the bandwidth of the system.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is NOT the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "47f8ae67ed-8",
+    "number": "5.14",
+    "year": 2002,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency-Domain Compensation",
+    "page": 58,
+    "text": "Consider the following performance characteristics:\n1. Reduced velocity constant for a given relative stability.\n2. Reduced gain cross-over frequency\n3. Reduced bandwidth\n4. Reduced resonance peak of the system\nWhich of these performance characteristics are achieved with the phase-lag compensation?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2, 3 and 4",
+      "1, 2, 3 and 4"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "47f8ae67ed-9",
+    "number": "5.15",
+    "year": 2003,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 58,
+    "text": "Consider the following open loop frequency response of a unity feedback system:",
+    "table": {
+      "head": [
+        "$\\omega$ (rad/s)",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "10"
+      ],
+      "rows": [
+        [
+          "$|G(j\\omega)|$",
+          "7.5",
+          "4.8",
+          "3.15",
+          "2.25",
+          "1.70",
+          "1.00",
+          "0.64"
+        ],
+        [
+          "$\\angle G(j\\omega)$",
+          "$-118^\\circ$",
+          "$-130^\\circ$",
+          "$-140^\\circ$",
+          "$-150^\\circ$",
+          "$-157^\\circ$",
+          "$-170^\\circ$",
+          "$-180^\\circ$"
+        ]
+      ]
+    },
+    "after": "The gain and phase margin of the system are respectively",
+    "options": [
+      "$0.00$ dB, $-180^\\circ$",
+      "$3.86$ dB, $-180^\\circ$",
+      "$0.00$ dB, $-10^\\circ$",
+      "$3.86$ dB, $10^\\circ$"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "47f8ae67ed-10",
+    "number": "5.16",
+    "year": 2003,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 59,
+    "text": "The Nyquist plot shown below matches with the transfer function",
+    "figure": {
+      "type": "plot",
+      "w": 380,
+      "h": 230,
+      "x": [
+        -2.4,
+        1.9
+      ],
+      "y": [
+        -1.25,
+        1.25
+      ],
+      "xlabel": "\\mathrm{Re}",
+      "ylabel": "\\mathrm{Img}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 10,
+        "r": 34,
+        "t": 22,
+        "b": 12
+      },
+      "curves": [
+        {
+          "fn": "points",
+          "pts": [
+            [
+              -0.1,
+              0
+            ],
+            [
+              -1.2,
+              0
+            ],
+            [
+              -2.2,
+              0
+            ]
+          ]
+        },
+        {
+          "fn": "points",
+          "pts": [
+            [
+              -0.1,
+              0.02
+            ],
+            [
+              -0.72,
+              0.15
+            ],
+            [
+              -0.92,
+              0.4
+            ],
+            [
+              -0.62,
+              0.8
+            ],
+            [
+              0,
+              0.93
+            ],
+            [
+              0.43,
+              0.7
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "fn": "points",
+          "pts": [
+            [
+              1,
+              0
+            ],
+            [
+              0.43,
+              -0.7
+            ],
+            [
+              0,
+              -0.93
+            ],
+            [
+              -0.62,
+              -0.8
+            ],
+            [
+              -0.92,
+              -0.4
+            ],
+            [
+              -0.72,
+              -0.15
+            ],
+            [
+              -0.1,
+              -0.02
+            ]
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "tex": "\\omega=\\infty",
+          "anchor": "end",
+          "size": 12
+        },
+        {
+          "x": 1.02,
+          "y": 0.2,
+          "tex": "1.0",
+          "anchor": "start",
+          "size": 12
+        },
+        {
+          "x": 1.02,
+          "y": -0.2,
+          "tex": "\\omega=0",
+          "anchor": "start",
+          "size": 12
+        }
+      ],
+      "scale": 1
+    },
+    "options": [
+      "$\\dfrac{1}{(s+1)^3}$",
+      "$\\dfrac{1}{(s+1)^2}$",
+      "$\\dfrac{1}{s^2+2s+2}$",
+      "$\\dfrac{1}{s+1}$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "47f8ae67ed-11",
+    "number": "5.17",
+    "year": 2003,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 59,
+    "text": "The phase margin (PM) and the damping ratio ($\\xi$) are related by",
+    "options": [
+      "$PM=90^\\circ-\\tan^{-1}\\left\\{\\dfrac{\\sqrt{-2\\xi^2+\\sqrt{1+4\\xi^4}}}{2}\\right\\}$",
+      "$PM=\\tan^{-1}\\left\\{\\dfrac{2\\xi}{\\sqrt{-2\\xi^2+\\sqrt{1+4\\xi^4}}}\\right\\}$",
+      "$PM=90^\\circ+\\tan^{-1}\\left\\{\\dfrac{\\sqrt{2\\xi^2+\\sqrt{1+4\\xi^4}}}{2\\xi}\\right\\}$",
+      "$PM=180^\\circ-\\tan^{-1}\\left\\{\\dfrac{\\sqrt{2\\xi^2-\\sqrt{1+4\\xi^4}}}{2}\\right\\}$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "47f8ae67ed-12",
+    "number": "5.18",
+    "year": 2003,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 59,
+    "text": "Consider the following statements regarding the frequency response of a system as shown below:\n1. The type of the system is one\n2. $\\omega_3=$ static error coefficient (numerically)\n3. $\\omega_2=\\dfrac{\\omega_1+\\omega_3}{2}$\nSelect the correct answer using the code given below:",
+    "figure": {
+      "type": "plot",
+      "w": 420,
+      "h": 270,
+      "x": [
+        0,
+        9.6
+      ],
+      "y": [
+        -1,
+        5.4
+      ],
+      "xlabel": "\\mathrm{Log}\\ \\omega",
+      "ylabel": "\\mathrm{Magnitude\\ (dB)}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 14,
+        "r": 44,
+        "t": 24,
+        "b": 22
+      },
+      "lines": [
+        {
+          "from": [
+            0,
+            4.9
+          ],
+          "to": [
+            3.2,
+            2.9
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            2.9
+          ],
+          "to": [
+            5.2,
+            0
+          ]
+        },
+        {
+          "from": [
+            5.2,
+            0
+          ],
+          "to": [
+            5.55,
+            -0.5
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            2.9
+          ],
+          "to": [
+            3.3821875,
+            2.8003125
+          ]
+        },
+        {
+          "from": [
+            3.53125,
+            2.71875
+          ],
+          "to": [
+            3.7134375000000004,
+            2.6190625
+          ]
+        },
+        {
+          "from": [
+            3.8625000000000003,
+            2.5375
+          ],
+          "to": [
+            4.0446875,
+            2.4378124999999997
+          ]
+        },
+        {
+          "from": [
+            4.19375,
+            2.35625
+          ],
+          "to": [
+            4.3759375,
+            2.2565625
+          ]
+        },
+        {
+          "from": [
+            4.525,
+            2.175
+          ],
+          "to": [
+            4.7071875,
+            2.0753125
+          ]
+        },
+        {
+          "from": [
+            4.85625,
+            1.99375
+          ],
+          "to": [
+            5.038437500000001,
+            1.8940625
+          ]
+        },
+        {
+          "from": [
+            5.1875,
+            1.8125
+          ],
+          "to": [
+            5.3696874999999995,
+            1.7128125
+          ]
+        },
+        {
+          "from": [
+            5.518750000000001,
+            1.6312499999999999
+          ],
+          "to": [
+            5.7009375,
+            1.5315625
+          ]
+        },
+        {
+          "from": [
+            5.85,
+            1.45
+          ],
+          "to": [
+            6.032187500000001,
+            1.3503124999999998
+          ]
+        },
+        {
+          "from": [
+            6.18125,
+            1.26875
+          ],
+          "to": [
+            6.3634375,
+            1.1690625
+          ]
+        },
+        {
+          "from": [
+            6.5125,
+            1.0875
+          ],
+          "to": [
+            6.694687500000001,
+            0.9878124999999998
+          ]
+        },
+        {
+          "from": [
+            6.84375,
+            0.90625
+          ],
+          "to": [
+            7.0259375,
+            0.8065624999999996
+          ]
+        },
+        {
+          "from": [
+            7.175,
+            0.7250000000000001
+          ],
+          "to": [
+            7.3571875,
+            0.6253124999999997
+          ]
+        },
+        {
+          "from": [
+            7.50625,
+            0.5437500000000002
+          ],
+          "to": [
+            7.6884375,
+            0.4440624999999998
+          ]
+        },
+        {
+          "from": [
+            7.8375,
+            0.3624999999999998
+          ],
+          "to": [
+            8.0196875,
+            0.2628124999999999
+          ]
+        },
+        {
+          "from": [
+            8.16875,
+            0.1812499999999999
+          ],
+          "to": [
+            8.3509375,
+            0.08156249999999998
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            2.9
+          ],
+          "to": [
+            3.2,
+            2.700625
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            2.5375
+          ],
+          "to": [
+            3.2,
+            2.338125
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            2.175
+          ],
+          "to": [
+            3.2,
+            1.975625
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            1.8125
+          ],
+          "to": [
+            3.2,
+            1.613125
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            1.45
+          ],
+          "to": [
+            3.2,
+            1.250625
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            1.0875
+          ],
+          "to": [
+            3.2,
+            0.888125
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            0.7250000000000001
+          ],
+          "to": [
+            3.2,
+            0.5256250000000002
+          ]
+        },
+        {
+          "from": [
+            3.2,
+            0.3624999999999998
+          ],
+          "to": [
+            3.2,
+            0.16312499999999996
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "x": 3.2,
+          "y": -0.45,
+          "tex": "\\omega_1"
+        },
+        {
+          "x": 5.2,
+          "y": -0.45,
+          "tex": "\\omega_2"
+        },
+        {
+          "x": 8.5,
+          "y": -0.45,
+          "tex": "\\omega_3"
+        },
+        {
+          "x": -0.35,
+          "y": -0.3,
+          "tex": "O"
+        },
+        {
+          "x": 5.3,
+          "y": 4.2,
+          "tex": "20\\ \\mathrm{dB/decade}"
+        },
+        {
+          "x": 7.3,
+          "y": 2.2,
+          "tex": "40\\ \\mathrm{dB/decade}"
+        }
+      ],
+      "scale": 1
+    },
+    "options": [
+      "1, 2 and 3",
+      "1 and 2",
+      "2 and 3",
+      "1 and 3"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "47f8ae67ed-13",
+    "number": "5.19",
+    "year": 2003,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency-Domain Compensation",
+    "page": 59,
+    "text": "A closed loop system, employing lag-lead compensator $G_c(s)$ is shown in the figure given below: $$G_c(s)=\\left[\\dfrac{1+\\tau_1 s}{1+\\tau_1 s/\\beta}\\right]\\left[\\dfrac{1+\\tau_2 s}{1+\\beta\\tau_2 s}\\right],\\quad \\beta<1$$ If $G(s)$ has 3 poles in the left half of a s-plane, then the shape of the Bode plot for $|G(s)G_c(s)|$ in the highest frequency range will be",
+    "figure": {
+      "type": "block",
+      "w": 561,
+      "h": 200,
+      "nodes": [
+        {
+          "k": "sum",
+          "x": 100,
+          "y": 70,
+          "r": 15,
+          "signs": [
+            {
+              "at": "l",
+              "t": "+"
+            },
+            {
+              "at": "b",
+              "t": "−"
+            }
+          ]
+        },
+        {
+          "k": "box",
+          "x": 210,
+          "y": 70,
+          "w": 90,
+          "h": 60,
+          "tex": "G_c(s)",
+          "size": 16
+        },
+        {
+          "k": "box",
+          "x": 346,
+          "y": 70,
+          "w": 90,
+          "h": 60,
+          "tex": "G(s)",
+          "size": 16
+        }
+      ],
+      "edges": [
+        {
+          "p": [
+            [
+              22,
+              70
+            ],
+            [
+              85,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              115,
+              70
+            ],
+            [
+              165,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              255,
+              70
+            ],
+            [
+              301,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              391,
+              70
+            ],
+            [
+              481,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              436,
+              70
+            ],
+            [
+              436,
+              170
+            ],
+            [
+              100,
+              170
+            ],
+            [
+              100,
+              85
+            ]
+          ],
+          "arrow": true
+        }
+      ],
+      "dots": [
+        [
+          436,
+          70
+        ]
+      ],
+      "labels": [
+        {
+          "x": 8,
+          "y": 44,
+          "anchor": "start",
+          "size": 15,
+          "tex": "\\text{Input}"
+        },
+        {
+          "x": 489,
+          "y": 70,
+          "anchor": "start",
+          "size": 15,
+          "tex": "\\text{Output}"
+        }
+      ]
+    },
+    "options": [
+      "$-20$ dB/decade",
+      "$-40$ dB/decade",
+      "$-60$ dB/decade",
+      "$-80$ dB/decade"
+    ],
+    "answer": "C",
+    "marked": "C"
+  },
+  {
+    "id": "47f8ae67ed-14",
+    "number": "5.20",
+    "year": 2004,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 59,
+    "text": "The forward path transfer function of a unity feedback system is given by $$G(s)=\\dfrac{100}{s^2+10s+100}$$ The frequency response of this system will exhibit the resonance peak at",
+    "options": [
+      "$10$ rad/s",
+      "$8.66$ rad/s",
+      "$7.07$ rad/s",
+      "$5$ rad/s"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "47f8ae67ed-15",
+    "number": "5.21",
+    "year": 2004,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 59,
+    "text": "Consider the following Nyquist plot. With which one of the following transfer functions does the above Nyquist plot match?",
+    "figure": {
+      "type": "plot",
+      "w": 380,
+      "h": 230,
+      "x": [
+        -2.4,
+        1.9
+      ],
+      "y": [
+        -1.25,
+        1.25
+      ],
+      "xlabel": "\\mathrm{Re}",
+      "ylabel": "\\mathrm{Img}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 10,
+        "r": 34,
+        "t": 22,
+        "b": 12
+      },
+      "curves": [
+        {
+          "fn": "points",
+          "pts": [
+            [
+              -0.1,
+              0
+            ],
+            [
+              -1.2,
+              0
+            ],
+            [
+              -2.2,
+              0
+            ]
+          ]
+        },
+        {
+          "fn": "points",
+          "pts": [
+            [
+              -0.1,
+              0.02
+            ],
+            [
+              -0.72,
+              0.15
+            ],
+            [
+              -0.92,
+              0.4
+            ],
+            [
+              -0.62,
+              0.8
+            ],
+            [
+              0,
+              0.93
+            ],
+            [
+              0.43,
+              0.7
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "fn": "points",
+          "pts": [
+            [
+              1,
+              0
+            ],
+            [
+              0.43,
+              -0.7
+            ],
+            [
+              0,
+              -0.93
+            ],
+            [
+              -0.62,
+              -0.8
+            ],
+            [
+              -0.92,
+              -0.4
+            ],
+            [
+              -0.72,
+              -0.15
+            ],
+            [
+              -0.1,
+              -0.02
+            ]
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "tex": "\\omega=\\infty",
+          "anchor": "end",
+          "size": 12
+        },
+        {
+          "x": 1.02,
+          "y": 0.2,
+          "tex": "1.0",
+          "anchor": "start",
+          "size": 12
+        },
+        {
+          "x": 1.02,
+          "y": -0.2,
+          "tex": "\\omega=0",
+          "anchor": "start",
+          "size": 12
+        }
+      ],
+      "scale": 1
+    },
+    "options": [
+      "$\\dfrac{1}{(s+1)^3}$",
+      "$\\dfrac{1}{(s+1)^2}$",
+      "$\\dfrac{1}{s^2+2s+2}$",
+      "$\\dfrac{1}{s+1}$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "aae70a5723-1",
+    "number": "5.22",
+    "year": 2004,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 60,
+    "text": "The forward path transfer function of a unity feedback system is given by $G(s)=\\dfrac{1}{(1+s)^2}$. What is the phase margin for this system?",
+    "options": [
+      "$-\\pi$ rad",
+      "$0$ rad",
+      "$\\pi/2$ rad",
+      "$\\pi$ rad"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "aae70a5723-2",
+    "number": "5.23",
+    "year": 2004,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 60,
+    "text": "**Assertion (A):** The bandwidth of a control system indicates the noise filtering characteristic of the system.\n**Reason (R):** The bandwidth is a measure of ability of a control system to reproduce the input signal.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is NOT the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "aae70a5723-3",
+    "number": "5.24",
+    "year": 2004,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 60,
+    "text": "Which one of the following statements is correct in respect of the theory of stability?",
+    "options": [
+      "Phase margin is the phase angle lagging, in short of $180^\\circ$, at the frequency corresponding to a gain of 10.",
+      "Gain margin is the value by which the gain falls short of unity, at a frequency corresponding to $90^\\circ$ phase lag.",
+      "Routh-Hurwitz criterion can determine the degree of stability",
+      "Gain margin and phase margin are the measure of the degree of stability"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "aae70a5723-4",
+    "number": "5.25",
+    "year": 2004,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 60,
+    "text": "If $X(s)=1/(1+s)$ is the given network function, which one of the following describes the correct Bode plot?",
+    "options": [
+      "A straight line with a slope of $-20$ dB/decade",
+      "A straight line with a slope of $20$ dB/decade passing through the point 0 dB and 1 rad/s",
+      "Constant at 0 dB for $\\omega<1$ and a slope of $+20$ dB/decade for $\\omega>1$",
+      "Constant at 0 dB for $\\omega<1$ and a slope of $-20$ dB/decade for $\\omega>1$"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "aae70a5723-5",
+    "number": "5.26",
+    "year": 2005,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 60,
+    "text": "Consider the following statements: The frequency response of a control system has very sharp cut off characteristics. This implies that:\n1. It has large peak resonance.\n2. It has large bandwidth.\n3. It is a less stable system.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3",
+      "1 and 3",
+      "1, 2 and 3"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "aae70a5723-6",
+    "number": "5.27",
+    "year": 2005,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 60,
+    "text": "For the minimum phase system to be stable:",
+    "options": [
+      "Phase margin should be negative and gain margin should be positive",
+      "Phase margin should be positive and gain margin should be negative",
+      "Both phase margin and gain margin should be positive",
+      "Both phase margin and gain margin should be negative"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "aae70a5723-7",
+    "number": "5.28",
+    "year": 2005,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 60,
+    "text": "For a stable closed loop system, the gain at phase cross-over frequency should always be:",
+    "options": [
+      "$>20$ dB",
+      "$>6$ dB",
+      "$<6$ dB",
+      "$<0$ dB"
+    ],
+    "answer": "D",
+    "marked": null
+  },
+  {
+    "id": "aae70a5723-8",
+    "number": "5.29",
+    "year": 2005,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 60,
+    "text": "If the gain of the open loop system is doubled, the gain margin of the system is",
+    "options": [
+      "not affected",
+      "doubled",
+      "halved",
+      "one fourth of original value"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "aae70a5723-9",
+    "number": "5.30",
+    "year": 2005,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency Response Basics",
+    "page": 60,
+    "text": "Match List-I (Frequency Response) with List-II (Time Response) and select the correct answer using the code given below the Lists:",
+    "lists": [
+      {
+        "title": "List-I",
+        "items": [
+          [
+            "A",
+            "Bandwidth"
+          ],
+          [
+            "B",
+            "Phase margin"
+          ],
+          [
+            "C",
+            "Response peak"
+          ],
+          [
+            "D",
+            "Gain margin"
+          ]
+        ]
+      },
+      {
+        "title": "List-II",
+        "items": [
+          [
+            "1",
+            "Overshoot"
+          ],
+          [
+            "2",
+            "Stability"
+          ],
+          [
+            "3",
+            "Speed of time response"
+          ],
+          [
+            "4",
+            "Damping ratio"
+          ]
+        ]
+      }
+    ],
+    "options": [
+      "A–3, B–2, C–1, D–4",
+      "A–1, B–4, C–3, D–2",
+      "A–3, B–4, C–1, D–2",
+      "A–1, B–2, C–3, D–4"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "aae70a5723-10",
+    "number": "5.31",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 61,
+    "text": "For a unity feedback control system the damping ratio is 0.421. What is the resonance magnitude?",
+    "options": [
+      "$M_r=1$",
+      "$M_r=0.707$",
+      "$M_r=1.30$",
+      "$M_r=1.95$"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "aae70a5723-11",
+    "number": "5.32",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 61,
+    "text": "Consider the following statements for a minimum phase system:\n1. All the poles of the transfer function should lie in the left of s-plane.\n2. The zeros of the transfer function can lie anywhere in the s-plane\n3. Given the magnitude characteristic over the entire frequency range, the phase angle characteristic can be uniquely determined.\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "Only 1 and 2",
+      "Only 2 and 3",
+      "Only 1 and 3"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "aae70a5723-12",
+    "number": "5.33",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 61,
+    "text": "Consider the following statements regarding the asymptotic Bode plots used for frequency response analysis:\n1. The deviation of the actual magnitude response for a zero on real axis is 3 dB at the corner frequency.\n2. The phase angle for a pair of complex conjugate poles at undamped frequency depends upon the value of damping ratio.\nWhat of the statements given above is/are correct?",
+    "options": [
+      "Only 1",
+      "Only 2",
+      "Both 1 and 2",
+      "Neither 1 and 2"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "aae70a5723-13",
+    "number": "5.34",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 61,
+    "text": "Consider the unity feedback system with $$G(s)=\\dfrac{2}{s(s+1)(2s+1)}$$ What is the gain margin of the system?",
+    "figure": {
+      "type": "block",
+      "w": 475,
+      "h": 200,
+      "nodes": [
+        {
+          "k": "sum",
+          "x": 100,
+          "y": 70,
+          "r": 15,
+          "signs": [
+            {
+              "at": "l",
+              "t": "+"
+            },
+            {
+              "at": "b",
+              "t": "−"
+            }
+          ]
+        },
+        {
+          "k": "box",
+          "x": 240,
+          "y": 70,
+          "w": 150,
+          "h": 60,
+          "tex": "G(s)",
+          "size": 16
+        }
+      ],
+      "edges": [
+        {
+          "p": [
+            [
+              22,
+              70
+            ],
+            [
+              85,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              115,
+              70
+            ],
+            [
+              165,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              315,
+              70
+            ],
+            [
+              405,
+              70
+            ]
+          ],
+          "arrow": true
+        },
+        {
+          "p": [
+            [
+              360,
+              70
+            ],
+            [
+              360,
+              170
+            ],
+            [
+              100,
+              170
+            ],
+            [
+              100,
+              85
+            ]
+          ],
+          "arrow": true
+        }
+      ],
+      "dots": [
+        [
+          360,
+          70
+        ]
+      ],
+      "labels": [
+        {
+          "x": 8,
+          "y": 44,
+          "anchor": "start",
+          "size": 15,
+          "tex": "R(s)"
+        },
+        {
+          "x": 413,
+          "y": 70,
+          "anchor": "start",
+          "size": 15,
+          "tex": "C(s)"
+        }
+      ]
+    },
+    "options": [
+      "$3/4$",
+      "$4/3$",
+      "$1/2$",
+      "$3/5$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "aae70a5723-14",
+    "number": "5.35",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 61,
+    "text": "The system having characteristic equation $s^4+2s^3+3s^2+2s+K=0$ is to be used as an oscillator. What are the values of $K$ and the frequency of oscillation $\\omega$?",
+    "options": [
+      "$K=1$ and $\\omega=1$ r/s",
+      "$K=1$ and $\\omega=2$ r/s",
+      "$K=2$ and $\\omega=1$ r/s",
+      "$K=2$ and $\\omega=2$ r/s"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "aae70a5723-15",
+    "number": "5.36",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 61,
+    "text": "For a stable system, what are the restrictions on the gain margin and phase margin?",
+    "options": [
+      "Both gain margin and phase margin are negative",
+      "Gain margin is negative and phase margin is positive",
+      "Gain margin is positive and phase margin is negative",
+      "Both gain margin and phase margin are positive"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "aae70a5723-16",
+    "number": "5.37",
+    "year": 2006,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 61,
+    "text": "**Assertion (A):** The closed loop stability can be determined from the poles of an open loop system and the polar plot of frequency response.\n**Reason (R):** Unstable system has right half-poles.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is NOT the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": "B",
+    "marked": "A"
+  },
+  {
+    "id": "aae70a5723-17",
+    "number": "5.38",
+    "year": 2007,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 61,
+    "text": "Which one of the following statements is correct for gain margin and phase margin of two closed-loop systems having loop functions $G(s)H(s)$ and $\\exp(-s)\\,G(s)H(s)$?",
+    "options": [
+      "Both gain and phase margins of the two systems will be identical.",
+      "Both gain and phase margins of $G(s)H(s)$ will be more.",
+      "Gain margins of the two systems are the same but phase margin of $G(s)H(s)$ will be more.",
+      "Phase margins of the two systems are the same but gain margin of $G(s)H(s)$ will be less."
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "aae70a5723-18",
+    "number": "5.39",
+    "year": 2007,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 61,
+    "text": "Consider the following statements with reference to relative stability of a system:\n1. Phase margin is related to effective damping of the system.\n2. Gain margin gives better estimate of damping ratio than phase margin.\n3. When expressed in dB, gain margin is negative for a stable system.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "69c3912485-1",
+    "number": "5.40",
+    "year": 2007,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Polar Plot",
+    "page": 62,
+    "text": "Which one of the following polar plots corresponds to $$G(j\\omega)=\\dfrac{1}{(j\\omega)^2(1+j\\omega T)}\\ ?$$",
+    "figure": {
+      "type": "grid",
+      "cols": 2,
+      "items": [
+        {
+          "cap": "(a)",
+          "fig": {
+            "type": "plot",
+            "w": 230,
+            "h": 170,
+            "x": [
+              -1.1,
+              1.3
+            ],
+            "y": [
+              -1,
+              0.8
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    0.75,
+                    0.05
+                  ],
+                  [
+                    0.6,
+                    -0.4
+                  ],
+                  [
+                    0.1,
+                    -0.8
+                  ],
+                  [
+                    -0.45,
+                    -0.55
+                  ],
+                  [
+                    -0.65,
+                    0.05
+                  ],
+                  [
+                    -0.45,
+                    0.4
+                  ],
+                  [
+                    -0.1,
+                    0.55
+                  ],
+                  [
+                    0.03,
+                    0.32
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": 0.3,
+                "y": 0.2,
+                "tex": "\\omega=0",
+                "anchor": "start",
+                "size": 11
+              }
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "cap": "(b)",
+          "fig": {
+            "type": "plot",
+            "w": 230,
+            "h": 170,
+            "x": [
+              -1.2,
+              1.3
+            ],
+            "y": [
+              -1.2,
+              0.8
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    -0.9,
+                    -1.1
+                  ],
+                  [
+                    -0.8,
+                    -0.2
+                  ],
+                  [
+                    -0.6,
+                    0.35
+                  ],
+                  [
+                    -0.35,
+                    0.55
+                  ],
+                  [
+                    -0.12,
+                    0.4
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": 0.05,
+                "y": 0.22,
+                "tex": "\\omega=\\infty",
+                "anchor": "start",
+                "size": 11
+              }
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "cap": "(c)",
+          "fig": {
+            "type": "plot",
+            "w": 230,
+            "h": 130,
+            "x": [
+              -1.7,
+              1.2
+            ],
+            "y": [
+              -0.5,
+              0.8
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    -1.5,
+                    0.12
+                  ],
+                  [
+                    -1,
+                    0.15
+                  ],
+                  [
+                    -0.5,
+                    0.3
+                  ],
+                  [
+                    -0.2,
+                    0.35
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": -1.45,
+                "y": 0.5,
+                "tex": "0\\leftarrow\\omega",
+                "size": 11
+              },
+              {
+                "x": 0.05,
+                "y": 0.25,
+                "tex": "\\omega=\\infty",
+                "anchor": "start",
+                "size": 11
+              }
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "cap": "(d)",
+          "fig": {
+            "type": "plot",
+            "w": 230,
+            "h": 150,
+            "x": [
+              -1.7,
+              1.2
+            ],
+            "y": [
+              -0.5,
+              1
+            ],
+            "xlabel": "\\mathrm{Re}",
+            "ylabel": "\\mathrm{Img}",
+            "ylabelDx": 8,
+            "margin": {
+              "l": 10,
+              "r": 32,
+              "t": 22,
+              "b": 12
+            },
+            "curves": [
+              {
+                "fn": "points",
+                "pts": [
+                  [
+                    -1.5,
+                    0.1
+                  ],
+                  [
+                    -0.9,
+                    0.2
+                  ],
+                  [
+                    -0.4,
+                    0.5
+                  ],
+                  [
+                    -0.05,
+                    0.85
+                  ],
+                  [
+                    0.3,
+                    0.65
+                  ],
+                  [
+                    0.3,
+                    0.2
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "arrow": true
+              }
+            ],
+            "labels": [
+              {
+                "x": -1.45,
+                "y": 0.5,
+                "tex": "0\\leftarrow\\omega",
+                "size": 11
+              },
+              {
+                "x": 0.05,
+                "y": -0.2,
+                "tex": "\\omega=\\infty",
+                "anchor": "start",
+                "size": 11
+              }
+            ],
+            "scale": 1
+          }
+        }
+      ]
+    },
+    "options": [
+      "Plot (a)",
+      "Plot (b)",
+      "Plot (c)",
+      "Plot (d)"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "69c3912485-2",
+    "number": "5.41",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 62,
+    "text": "A system with gain margin close to unity or a phase margin close to zero is",
+    "options": [
+      "relatively stable",
+      "oscillatory",
+      "stable",
+      "highly stable"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-3",
+    "number": "5.42",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 62,
+    "text": "The open-loop transfer function of a unity feedback control system is given by $G(s)=Ke^{-Ts}$ where $K$ and $T$ are variables and are greater than zero. The stability of the closed-loop system depends on",
+    "options": [
+      "$K$ only",
+      "Both $K$ and $T$",
+      "$T$ only",
+      "Neither $K$ nor $T$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-4",
+    "number": "5.43",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 62,
+    "text": "Match List-I (Shape of Nyquist Plot) with List-II (Gain Margin) and select the correct answer using the codes given below the lists:",
+    "lists": [
+      {
+        "title": "List-I",
+        "items": [
+          [
+            "A",
+            "The plot does not intersect negative real axis"
+          ],
+          [
+            "B",
+            "The plot intersects negative real axis between $0$ and $(-1, j0)$"
+          ],
+          [
+            "C",
+            "The plot passes through the point $(-1, j0)$"
+          ],
+          [
+            "D",
+            "The plot encloses the point $(-1, j0)$"
+          ]
+        ]
+      },
+      {
+        "title": "List-II",
+        "items": [
+          [
+            "1",
+            "$<0$ dB"
+          ],
+          [
+            "2",
+            "$0$ dB"
+          ],
+          [
+            "3",
+            "$>0$ dB"
+          ],
+          [
+            "4",
+            "$\\infty$ dB"
+          ]
+        ]
+      }
+    ],
+    "options": [
+      "A–3, B–4, C–1, D–2",
+      "A–4, B–3, C–2, D–1",
+      "A–3, B–4, C–2, D–1",
+      "A–4, B–3, C–1, D–2"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-5",
+    "number": "5.44",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 62,
+    "text": "The gain-phase plot of a linear control system is shown in the below figure. What are the gain-margin (GM) and the phase-margin (PM) of the system?",
+    "figure": {
+      "type": "plot",
+      "w": 460,
+      "h": 300,
+      "x": [
+        -0.7,
+        3
+      ],
+      "y": [
+        -1.2,
+        1.25
+      ],
+      "xlabel": "\\text{Phase (degrees)}",
+      "ylabel": "\\text{Gain (dB)}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 10,
+        "r": 100,
+        "t": 24,
+        "b": 12
+      },
+      "scale": 1,
+      "curves": [
+        {
+          "fn": "points",
+          "pts": [
+            [
+              0.45,
+              -1
+            ],
+            [
+              0.6,
+              -0.5
+            ],
+            [
+              0.85,
+              -0.15
+            ],
+            [
+              1.1,
+              0
+            ],
+            [
+              1.25,
+              0.12
+            ],
+            [
+              1.6,
+              0.4
+            ],
+            [
+              2.1,
+              0.7
+            ],
+            [
+              2.3,
+              1
+            ]
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "from": [
+            1.2,
+            -1.15
+          ],
+          "to": [
+            1.2,
+            -1.0445833333333332
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            -0.9583333333333333
+          ],
+          "to": [
+            1.2,
+            -0.8529166666666665
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            -0.7666666666666666
+          ],
+          "to": [
+            1.2,
+            -0.6612499999999999
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            -0.575
+          ],
+          "to": [
+            1.2,
+            -0.46958333333333324
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            -0.3833333333333333
+          ],
+          "to": [
+            1.2,
+            -0.2779166666666667
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            -0.19166666666666665
+          ],
+          "to": [
+            1.2,
+            -0.08625000000000016
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0
+          ],
+          "to": [
+            1.2,
+            0.10541666666666649
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.19166666666666665
+          ],
+          "to": [
+            1.2,
+            0.29708333333333337
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.3833333333333333
+          ],
+          "to": [
+            1.2,
+            0.48875
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.575
+          ],
+          "to": [
+            1.2,
+            0.6804166666666667
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.7666666666666666
+          ],
+          "to": [
+            1.2,
+            0.8720833333333333
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.958333333333333
+          ],
+          "to": [
+            1.2,
+            1.0637499999999998
+          ]
+        }
+      ],
+      "dots": [
+        [
+          1.1,
+          0
+        ]
+      ],
+      "labels": [
+        {
+          "x": 0.3,
+          "y": -0.16,
+          "tex": "-270^\\circ"
+        },
+        {
+          "x": 1.2,
+          "y": -0.16,
+          "tex": "-180^\\circ",
+          "anchor": "start"
+        },
+        {
+          "x": 2.1,
+          "y": -0.16,
+          "tex": "-90^\\circ"
+        },
+        {
+          "x": -0.1,
+          "y": 0.8,
+          "tex": "20\\,\\mathrm{dB}",
+          "anchor": "end"
+        },
+        {
+          "x": -0.1,
+          "y": -0.8,
+          "tex": "-20\\,\\mathrm{dB}",
+          "anchor": "end"
+        },
+        {
+          "x": 0.95,
+          "y": -1,
+          "tex": "\\omega=\\infty",
+          "anchor": "start",
+          "size": 12
+        },
+        {
+          "x": 0.7,
+          "y": 0.28,
+          "tex": "\\omega_{pc}",
+          "size": 12
+        }
+      ]
+    },
+    "options": [
+      "GM $>0$ dB and PM $>0$ degree",
+      "GM $>0$ dB and PM $<0$ degree",
+      "GM $<0$ dB and PM $>0$ degree",
+      "GM $<0$ dB and PM $<0$ degree"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-6",
+    "number": "5.45",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 62,
+    "text": "What is the gain margin of a system when the magnitude of the polar plot at phase cross over is 'a'?",
+    "options": [
+      "$1/a$",
+      "$-a$",
+      "zero",
+      "$a$"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "69c3912485-7",
+    "number": "5.46",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 62,
+    "text": "What is the value of the damping ratio of a second order system when the value of the resonant peak is unity?",
+    "options": [
+      "$\\sqrt{2}$",
+      "Unity",
+      "$1/\\sqrt{2}$",
+      "Zero"
+    ],
+    "answer": "C",
+    "marked": "C"
+  },
+  {
+    "id": "69c3912485-8",
+    "number": "5.47",
+    "year": 2008,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 63,
+    "text": "The closed loop transfer function of a control system is $$\\dfrac{K}{s(s+1)(s+5)+K}$$ What is the frequency of the sustained oscillations for marginally stable condition?",
+    "options": [
+      "$\\sqrt{5}$ rad/s",
+      "$\\sqrt{6}$ rad/s",
+      "$5$ rad/s",
+      "$6$ rad/s"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "69c3912485-9",
+    "number": "5.48",
+    "year": 2010,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 63,
+    "text": "In the Bode plot of a unity feedback control system, the value of phase angle of $G(j\\omega)$ is $-90^\\circ$ at the gain cross over frequency of the Bode plot, the phase margin of the system is",
+    "options": [
+      "$-180^\\circ$",
+      "$+180^\\circ$",
+      "$-90^\\circ$",
+      "$+90^\\circ$"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "69c3912485-10",
+    "number": "5.49",
+    "year": 2010,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 63,
+    "text": "The Nyquist plot of loop transfer function $G(s)H(s)$ of a closed loop control system passes through the point $(-1, j0)$ in the $G(s)H(s)$ plane. The phase margin of the system is",
+    "options": [
+      "$0^\\circ$",
+      "$45^\\circ$",
+      "$90^\\circ$",
+      "$180^\\circ$"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "69c3912485-11",
+    "number": "5.50",
+    "year": 2010,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 63,
+    "text": "The magnitude and phase of the transfer function $G(s)=\\dfrac{1}{s+1}$ at $\\omega=1$ is",
+    "options": [
+      "$0.707$ and $45^\\circ$",
+      "$-3$ dB and $0.78$ rad",
+      "$0.707$ and $-45^\\circ$",
+      "$3$ dB and $-90^\\circ$"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "69c3912485-12",
+    "number": "5.51",
+    "year": 2010,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 63,
+    "text": "The transfer function $G(s)=\\dfrac{1}{3s+1}$ has a corner frequency",
+    "options": [
+      "$3$ rad/s",
+      "$0.33$ rad/s",
+      "$1$ rad/s",
+      "$30$ rad/s"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-13",
+    "number": "5.52",
+    "year": 2011,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 63,
+    "text": "What are the gain and phase angle of a system having the transfer function $G(s)=(s+1)$ at a frequency of 1 rad/sec?",
+    "options": [
+      "$0.41$ and $0^\\circ$",
+      "$1.41$ and $45^\\circ$",
+      "$1.41$ and $-45^\\circ$",
+      "$2.41$ and $90^\\circ$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-14",
+    "number": "5.53",
+    "year": 2011,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 63,
+    "text": "For the Bode plot of the system $$G(s)=\\dfrac{10}{0.66s^2+2.33s+1}$$ the corner frequencies are",
+    "options": [
+      "$0.66$ and $0.33$",
+      "$0.22$ and $2.00$",
+      "$0.30$ and $2.33$",
+      "$0.50$ and $3.00$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "69c3912485-15",
+    "number": "5.54",
+    "year": 2011,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 63,
+    "text": "If the gain margin of a system in decibels is negative, the system is",
+    "options": [
+      "Stable",
+      "Marginally stable",
+      "Unstable",
+      "Could be stable or unstable or marginally stable"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "69c3912485-16",
+    "number": "5.55",
+    "year": 2011,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 63,
+    "text": "System is said to be marginally stable, if",
+    "options": [
+      "Gain crossover frequency $>$ Phase crossover frequency",
+      "Gain crossover frequency $=$ Phase crossover frequency",
+      "Gain crossover frequency $<$ Phase crossover frequency",
+      "Gain crossover frequency $\\neq$ Phase crossover frequency"
+    ],
+    "answer": "B",
+    "marked": "B"
+  },
+  {
+    "id": "69c3912485-17",
+    "number": "5.56",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 63,
+    "text": "**Statement (I):** Nyquist criterion is a powerful tool to determine stability of a closed loop system using open loop transfer function.\n**Statement (II):** Nyquist criterion relates the locations of poles and zeros of the closed loop transfer function.",
+    "options": [
+      "Both Statement (I) and Statement (II) are individually true and Statement (II) is the correct explanation of Statement (I)",
+      "Both Statement (I) and Statement (II) are individually true but Statement (II) is not the correct explanation of Statement (I)",
+      "Statement (I) is true but Statement (II) is false",
+      "Statement (I) is false but Statement (II) is true"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "69c3912485-18",
+    "number": "5.57",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 63,
+    "text": "**Statement (I):** All the systems which exhibit overshoot in transient response will also exhibit resonance peak in frequency response.\n**Statement (II):** A large resonance peak in frequency response corresponds to a large overshoot in transient response.",
+    "options": [
+      "Both Statement (I) and Statement (II) are individually true and Statement (II) is the correct explanation of Statement (I)",
+      "Both Statement (I) and Statement (II) are individually true but Statement (II) is not the correct explanation of Statement (I)",
+      "Statement (I) is true but Statement (II) is false",
+      "Statement (I) is false but Statement (II) is true"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "406016ea44-1",
+    "number": "5.58",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 64,
+    "text": "**Statement (I):** The phase angle plot in Bode diagram is not affected by the variation in open loop gain of the system.\n**Statement (II):** The variation in gain of the system has no effect on the phase margin.",
+    "options": [
+      "Both Statement (I) and Statement (II) are individually true and Statement (II) is the correct explanation of Statement (I)",
+      "Both Statement (I) and Statement (II) are individually true but Statement (II) is not the correct explanation of Statement (I)",
+      "Statement (I) is true but Statement (II) is false",
+      "Statement (I) is false but Statement (II) is true"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "406016ea44-2",
+    "number": "5.59",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 64,
+    "text": "For a unity feedback control system, if its open-loop transfer function is given by $$G(s)H(s)=\\dfrac{10}{(s+5)^3}$$ then its gain margin will be",
+    "options": [
+      "$20$ dB",
+      "$40$ dB",
+      "$60$ dB",
+      "$80$ dB"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-3",
+    "number": "5.60",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 64,
+    "text": "The gain cross-over frequency and phase margin of the transfer function $\\dfrac{1}{s(s+1)}$ are",
+    "options": [
+      "$1$ rad/s and $45^\\circ$",
+      "$2$ rad/s and $45^\\circ$",
+      "$2$ rad/s and $135^\\circ$",
+      "$1$ rad/s and $135^\\circ$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "406016ea44-4",
+    "number": "5.61",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 64,
+    "text": "For a type 1 system, the low frequency asymptote of its Bode plot will have a slope of",
+    "options": [
+      "$0$ dB/decade",
+      "$6$ dB/decade",
+      "$20$ dB/decade",
+      "$-20$ dB/decade"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "406016ea44-5",
+    "number": "5.62",
+    "year": 2012,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency Response Basics",
+    "page": 64,
+    "text": "The unit step response $y(t)$ of a linear system is $y(t)=(1-3e^{-t}+3e^{-2t})\\,u(t)$. For the system function, the frequency at which the forced response becomes zero is",
+    "options": [
+      "$\\dfrac{1}{\\sqrt{2}}$ rad/s",
+      "$\\dfrac{1}{2}$ rad/s",
+      "$\\sqrt{2}$ rad/s",
+      "$2$ rad/s"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "406016ea44-6",
+    "number": "5.63",
+    "year": 2013,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 64,
+    "text": "In a feedback control system, phase margin (PM) is\n1. Directly proportional to $\\xi$\n2. Inversely proportional to $\\xi$\n3. Independent of $\\xi$\n4. Zero when $\\xi=0$\nWhich of the above statements are correct?",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "3 and 4",
+      "1 and 4"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "406016ea44-7",
+    "number": "5.64",
+    "year": 2013,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 64,
+    "text": "The gain margin in dBs of a unity feedback control system whose open-loop transfer function $$G(s)H(s)=\\dfrac{1}{s(s+1)}$$ is",
+    "options": [
+      "$0$",
+      "$1$",
+      "$-1$",
+      "$\\infty$"
+    ],
+    "answer": "C",
+    "marked": "D"
+  },
+  {
+    "id": "406016ea44-8",
+    "number": "5.65",
+    "year": 2013,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 64,
+    "text": "A second order system has $\\dfrac{C(s)}{R(s)}=\\dfrac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}$. Its frequency response will have maximum value at the frequency:",
+    "options": [
+      "$\\omega_n\\sqrt{1-\\xi^2}$",
+      "$\\omega_n\\xi$",
+      "$\\omega_n\\sqrt{1-2\\xi^2}$",
+      "zero"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "406016ea44-9",
+    "number": "5.66",
+    "year": 2013,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 64,
+    "text": "The transfer function of a system is $\\dfrac{10}{10+s}$. At a frequency of 0.1 rad/sec, the straight line Bode plot will have a magnitude of",
+    "options": [
+      "$10$ dB",
+      "$20$ dB",
+      "$0$ dB",
+      "$40$ dB"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "406016ea44-10",
+    "number": "5.67",
+    "year": 2013,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 64,
+    "text": "In control systems, excessive bandwidth is NOT employed because",
+    "options": [
+      "noise is proportional to bandwidth",
+      "it leads to low relative stability",
+      "it leads to slower response",
+      "noise is proportional to the square of the bandwidth"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "406016ea44-11",
+    "number": "5.68",
+    "year": 2014,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 64,
+    "text": "For a $3^{rd}$ order system given below, what is the phase crossover frequency? $$G(s)H(s)=\\dfrac{K}{s^3+6s^2+11s+6}$$",
+    "options": [
+      "$\\sqrt{6}$",
+      "$\\sqrt{11}$",
+      "$\\pm\\sqrt{11}$",
+      "$\\pm\\sqrt{6}$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-12",
+    "number": "5.69",
+    "year": 2015,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 64,
+    "text": "The Bode plot of the transfer function $G(s)=s$ is\n1. Constant magnitude\n2. $20$ dB/decade\n3. Constant phase shift angle\n4. Constant phase shift of $\\pi/2$\nWhich of these are correct?",
+    "options": [
+      "1 and 3",
+      "1 and 4",
+      "2 and 3",
+      "2 and 4"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "406016ea44-13",
+    "number": "5.70",
+    "year": 2015,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 65,
+    "text": "Which of the following statements are correct for Bode plots?\n1. Gain margin and phase margin can be easily determined.\n2. Absolute and relative stability of only minimum-phase systems can be determined.\n3. Gain margin is positive and system is stable, if magnitude of $L(j\\omega)$ at phase crossover is positive.",
+    "options": [
+      "1, 2 and 3",
+      "1 and 3 only",
+      "1 and 2 only",
+      "2 and 3 only"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "406016ea44-14",
+    "number": "5.71",
+    "year": 2015,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency Response Basics",
+    "page": 65,
+    "text": "The roots of the characteristic equation $1+G(s)H(s)=0$ are the same as the",
+    "options": [
+      "Poles of the closed loop transfer function",
+      "Poles of the open loop transfer function",
+      "Zeros of the closed loop transfer function",
+      "Zeros of the open loop transfer function"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-15",
+    "number": "5.72",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 65,
+    "text": "The transfer function $G(s)=\\dfrac{10(s-1)}{(s+10)}$ represents",
+    "options": [
+      "Unstable system",
+      "Minimum phase system",
+      "Non-minimum phase system",
+      "PID controller system"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "406016ea44-16",
+    "number": "5.73",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 65,
+    "text": "For a unity feedback system with open-loop transfer function $\\dfrac{25}{s(s+6)}$, the resonant peak at output $M_m$ and the corresponding resonant frequency $\\omega_m$ are respectively",
+    "options": [
+      "$2.6$ and $2.67$ r/s",
+      "$1.04$ and $2.67$ r/s",
+      "$2.6$ and $4.8$ r/s",
+      "$1.04$ and $4.8$ r/s"
+    ],
+    "answer": "B",
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-17",
+    "number": "5.74",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 65,
+    "text": "Consider the transfer function $$G(s)=\\dfrac{5(s^2+10s+100)}{s^2(s^2+15s+1)}$$ The corner frequencies in Bode's plot for this transfer function are as",
+    "options": [
+      "$10$ r/s and $10$ r/s",
+      "$100$ r/s and $10$ r/s",
+      "$10$ r/s and $1$ r/s",
+      "$100$ r/s and $1$ r/s"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "406016ea44-18",
+    "number": "5.75",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 65,
+    "text": "Consider the transfer function $(0.1+0.01s)$ for a PD controller. What is the frequency at which the magnitude is 20 dB (by using asymptotic Bode's plot)?",
+    "options": [
+      "$2000$ r/s",
+      "$1000$ r/s",
+      "$200$ r/s",
+      "$100$ r/s"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-19",
+    "number": "5.76",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 65,
+    "text": "The open-loop transfer function of a unity feedback system is $G(s)=\\dfrac{K}{s(s+5)}$. The gain $K$ that results in a phase margin of $45^\\circ$ is",
+    "options": [
+      "$35$",
+      "$30$",
+      "$25$",
+      "$20$"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "406016ea44-20",
+    "number": "5.77",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 65,
+    "text": "Consider the following statements: The Gain margin and Phase margin of an unstable system may respectively be\n1. Positive, negative\n2. Negative, positive\n3. Negative, negative\nWhich of the above statements is/are correct?",
+    "options": [
+      "3 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-21",
+    "number": "5.78",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 65,
+    "text": "The open-loop transfer function of a unity feedback system is $G(s)=\\dfrac{10(1+0.2s)}{(1+0.5s)}$. The phase shift at $\\omega=0$ and $\\omega=\\infty$, will be, respectively",
+    "options": [
+      "$-90^\\circ$ and $180^\\circ$",
+      "$0^\\circ$ and $180^\\circ$",
+      "$-90^\\circ$ and $90^\\circ$",
+      "$0^\\circ$ and $0^\\circ$"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "406016ea44-22",
+    "number": "5.79",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 65,
+    "text": "The Bode plot of the open-loop transfer function of a system is described as follows:\n- Slope $-40$ dB/decade; $\\omega<0.1$ rad/s\n- Slope $-20$ dB/decade; $0.1<\\omega<10$ rad/s\n- Slope $0$; $\\omega>10$ rad/s\nThe system described will have",
+    "options": [
+      "1 pole and 2 zeros",
+      "2 poles and 2 zeros",
+      "2 poles and 1 zero",
+      "1 pole and 1 zero"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "406016ea44-23",
+    "number": "5.80",
+    "year": 2016,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 65,
+    "text": "The transfer function of a control system is said to be 'All Pass System', if it has",
+    "options": [
+      "Unit magnitude at all frequencies with anti-symmetric pole-zero pattern",
+      "Unit magnitude at all frequencies with symmetric pole-zero pattern",
+      "Magnitude varying with frequency and with anti-symmetric pole-zero pattern",
+      "Unit magnitude at some frequencies with symmetric pole-zero pattern"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "66ee902682-1",
+    "number": "5.81",
+    "year": 2017,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 66,
+    "text": "Consider the following statements regarding 'relative stability': It is defined\n1. in terms of gain margin only\n2. in terms of phase margin and certain other parameters\n3. in terms of gain margin, phase margin and location of poles in s-plane\n4. in relation to another identified system\nWhich of the above statements are correct?",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "3 and 4",
+      "1 and 4"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "66ee902682-2",
+    "number": "5.82",
+    "year": 2017,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 66,
+    "text": "The magnitude plot for the open-loop transfer function of a control system is shown in the figure given below. Its open-loop transfer function, $G(s)H(s)$, is",
+    "figure": {
+      "type": "plot",
+      "w": 400,
+      "h": 240,
+      "x": [
+        -0.9,
+        5.2
+      ],
+      "y": [
+        -1.2,
+        3.6
+      ],
+      "xlabel": "\\omega\\ \\mathrm{rad/s}",
+      "ylabel": "|G(j\\omega)H(j\\omega)|\\ \\mathrm{dB}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 30,
+        "r": 70,
+        "t": 24,
+        "b": 22
+      },
+      "lines": [
+        {
+          "from": [
+            0,
+            2.8
+          ],
+          "to": [
+            1.2,
+            2.8
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            2.8
+          ],
+          "to": [
+            3.6,
+            0
+          ]
+        },
+        {
+          "from": [
+            3.6,
+            0
+          ],
+          "to": [
+            4.3,
+            -0.8
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            2.8
+          ],
+          "to": [
+            1.2,
+            2.6075
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            2.4499999999999997
+          ],
+          "to": [
+            1.2,
+            2.2575
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            2.0999999999999996
+          ],
+          "to": [
+            1.2,
+            1.9075
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            1.75
+          ],
+          "to": [
+            1.2,
+            1.5574999999999999
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            1.4
+          ],
+          "to": [
+            1.2,
+            1.2075
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            1.0499999999999998
+          ],
+          "to": [
+            1.2,
+            0.8574999999999999
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.7000000000000002
+          ],
+          "to": [
+            1.2,
+            0.5074999999999998
+          ]
+        },
+        {
+          "from": [
+            1.2,
+            0.3500000000000001
+          ],
+          "to": [
+            1.2,
+            0.1575000000000002
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "x": -0.35,
+          "y": 2.8,
+          "tex": "20",
+          "anchor": "end"
+        },
+        {
+          "x": -0.12,
+          "y": 0,
+          "tex": "0",
+          "anchor": "end"
+        },
+        {
+          "x": 1.2,
+          "y": -0.42,
+          "tex": "1"
+        },
+        {
+          "x": 3.5,
+          "y": 2.2,
+          "tex": "-20\\ \\mathrm{dB/dec}"
+        }
+      ],
+      "scale": 1
+    },
+    "options": [
+      "$10(s+1)$",
+      "$\\dfrac{1}{s+1}$",
+      "$\\dfrac{10}{s+1}$",
+      "$20(s+1)$"
+    ],
+    "answer": "C",
+    "marked": "C"
+  },
+  {
+    "id": "66ee902682-3",
+    "number": "5.83",
+    "year": 2017,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 66,
+    "text": "**Statement (I):** Elements with non-minimum phase transfer functions introduce large phase lags with increasing frequency resulting in complex compensation problems.\n**Statement (II):** Transportation lag commonly encountered in process control systems is a non-minimum phase element.",
+    "options": [
+      "Both Statement (I) and Statement (II) are individually true and Statement (II) is the correct explanation of Statement (I)",
+      "Both Statement (I) and Statement (II) are individually true but Statement (II) is not the correct explanation of Statement (I)",
+      "Statement (I) is true but Statement (II) is false",
+      "Statement (I) is false but Statement (II) is true"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "66ee902682-4",
+    "number": "5.84",
+    "year": 2018,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 66,
+    "text": "The low-frequency asymptote in the Bode plot of $$G(s)=\\dfrac{6(s^2+10s+100)}{s^2(50s^2+15s+1)}$$ has a slope of",
+    "options": [
+      "$-10$ dB/dec",
+      "$-20$ dB/dec",
+      "$-40$ dB/dec",
+      "$-60$ dB/dec"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "66ee902682-5",
+    "number": "5.85",
+    "year": 2018,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 66,
+    "text": "The open-loop transfer function $G(s)H(s)$ of the Bode plot as shown in the figure is",
+    "figure": {
+      "type": "plot",
+      "w": 420,
+      "h": 260,
+      "x": [
+        0,
+        6.4
+      ],
+      "y": [
+        -1.5,
+        3.4
+      ],
+      "xlabel": "\\omega\\,(\\mathrm{r/s})",
+      "ylabel": "G(j\\omega)H(j\\omega)\\ \\mathrm{dBs}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 14,
+        "r": 54,
+        "t": 24,
+        "b": 22
+      },
+      "lines": [
+        {
+          "from": [
+            0,
+            2.6
+          ],
+          "to": [
+            1.5,
+            1.6625
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            1.6625
+          ],
+          "to": [
+            3.1,
+            -0.3374999999999999
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            -0.3374999999999999
+          ],
+          "to": [
+            5,
+            -1.525
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            1.6625
+          ],
+          "to": [
+            1.5,
+            1.531875
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            1.425
+          ],
+          "to": [
+            1.5,
+            1.294375
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            1.1875
+          ],
+          "to": [
+            1.5,
+            1.0568750000000002
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            0.9500000000000001
+          ],
+          "to": [
+            1.5,
+            0.8193750000000001
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            0.7125000000000001
+          ],
+          "to": [
+            1.5,
+            0.5818749999999999
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            0.4750000000000001
+          ],
+          "to": [
+            1.5,
+            0.3443750000000001
+          ]
+        },
+        {
+          "from": [
+            1.5,
+            0.23750000000000004
+          ],
+          "to": [
+            1.5,
+            0.10687500000000005
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            -0.3374999999999999
+          ],
+          "to": [
+            3.1,
+            -0.3003749999999999
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            -0.2699999999999999
+          ],
+          "to": [
+            3.1,
+            -0.23287499999999994
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            -0.20249999999999993
+          ],
+          "to": [
+            3.1,
+            -0.16537499999999997
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            -0.13499999999999998
+          ],
+          "to": [
+            3.1,
+            -0.09787499999999999
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            -0.06749999999999995
+          ],
+          "to": [
+            3.1,
+            -0.03037500000000004
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "x": 1.5,
+          "y": 0.4,
+          "tex": "2"
+        },
+        {
+          "x": 3.1,
+          "y": 0.45,
+          "tex": "20",
+          "size": 13
+        },
+        {
+          "x": 0.9,
+          "y": 2.75,
+          "tex": "-20\\ \\mathrm{dB/dec}",
+          "anchor": "start",
+          "size": 12
+        },
+        {
+          "x": 2.5,
+          "y": 1.25,
+          "tex": "-40\\ \\mathrm{dB/dec}",
+          "anchor": "start",
+          "size": 12
+        },
+        {
+          "x": 3.5,
+          "y": -0.65,
+          "tex": "-20\\ \\mathrm{dB/dec}",
+          "anchor": "start",
+          "size": 12
+        }
+      ],
+      "scale": 1
+    },
+    "options": [
+      "$\\dfrac{Ks(s+2)}{s+20}$",
+      "$\\dfrac{K(s+20)}{s(s+2)}$",
+      "$\\dfrac{K(s+2)}{s(s+20)}$",
+      "$\\dfrac{Ks(s+20)}{s+2}$"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "66ee902682-6",
+    "number": "5.86",
+    "year": 2018,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 66,
+    "text": "Which one of the following transfer functions represents the Bode plot as shown in the figure (where $K$ is constant)?",
+    "figure": {
+      "type": "plot",
+      "w": 420,
+      "h": 260,
+      "x": [
+        -1.6,
+        6.4
+      ],
+      "y": [
+        -0.8,
+        3.4
+      ],
+      "xlabel": "\\omega\\,(\\mathrm{r/s})",
+      "ylabel": "G(j\\omega)H(j\\omega)\\ \\mathrm{dBs}",
+      "ylabelDx": 8,
+      "margin": {
+        "l": 14,
+        "r": 54,
+        "t": 24,
+        "b": 22
+      },
+      "lines": [
+        {
+          "from": [
+            1.2,
+            0.3
+          ],
+          "to": [
+            3.7,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            2.5
+          ],
+          "to": [
+            5.6,
+            0
+          ]
+        },
+        {
+          "from": [
+            0,
+            2.5
+          ],
+          "to": [
+            0.15500000000000003,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            0.28181818181818186,
+            2.5
+          ],
+          "to": [
+            0.4368181818181818,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            0.5636363636363637,
+            2.5
+          ],
+          "to": [
+            0.7186363636363636,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            0.8454545454545455,
+            2.5
+          ],
+          "to": [
+            1.0004545454545455,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            1.1272727272727274,
+            2.5
+          ],
+          "to": [
+            1.2822727272727272,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            1.4090909090909092,
+            2.5
+          ],
+          "to": [
+            1.564090909090909,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            1.690909090909091,
+            2.5
+          ],
+          "to": [
+            1.845909090909091,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            1.9727272727272727,
+            2.5
+          ],
+          "to": [
+            2.127727272727273,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            2.254545454545455,
+            2.5
+          ],
+          "to": [
+            2.4095454545454547,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            2.5363636363636366,
+            2.5
+          ],
+          "to": [
+            2.691363636363637,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            2.8181818181818183,
+            2.5
+          ],
+          "to": [
+            2.973181818181818,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            3.1,
+            2.5
+          ],
+          "to": [
+            3.2550000000000003,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            3.381818181818182,
+            2.5
+          ],
+          "to": [
+            3.5368181818181816,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            3.663636363636364,
+            2.5
+          ],
+          "to": [
+            3.8186363636363643,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            3.9454545454545453,
+            2.5
+          ],
+          "to": [
+            4.100454545454546,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            4.2272727272727275,
+            2.5
+          ],
+          "to": [
+            4.382272727272728,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            4.50909090909091,
+            2.5
+          ],
+          "to": [
+            4.664090909090909,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            4.790909090909091,
+            2.5
+          ],
+          "to": [
+            4.945909090909091,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            5.072727272727273,
+            2.5
+          ],
+          "to": [
+            5.2277272727272734,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            5.3545454545454545,
+            2.5
+          ],
+          "to": [
+            5.509545454545455,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            5.636363636363637,
+            2.5
+          ],
+          "to": [
+            5.791363636363636,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            5.918181818181819,
+            2.5
+          ],
+          "to": [
+            6.073181818181819,
+            2.5
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            2.5
+          ],
+          "to": [
+            3.7,
+            2.328125
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            2.1875
+          ],
+          "to": [
+            3.7,
+            2.015625
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            1.875
+          ],
+          "to": [
+            3.7,
+            1.703125
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            1.5625
+          ],
+          "to": [
+            3.7,
+            1.390625
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            1.25
+          ],
+          "to": [
+            3.7,
+            1.078125
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            0.9375
+          ],
+          "to": [
+            3.7,
+            0.765625
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            0.625
+          ],
+          "to": [
+            3.7,
+            0.453125
+          ]
+        },
+        {
+          "from": [
+            3.7,
+            0.3125
+          ],
+          "to": [
+            3.7,
+            0.140625
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "x": -0.15,
+          "y": 2.5,
+          "tex": "100\\ \\mathrm{dB}",
+          "anchor": "end"
+        },
+        {
+          "x": 3.7,
+          "y": -0.35,
+          "tex": "10"
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "tex": "40\\ \\mathrm{dB/dec}",
+          "anchor": "start",
+          "size": 12
+        },
+        {
+          "x": 4.4,
+          "y": 1.9,
+          "tex": "-60\\ \\mathrm{dB/dec}",
+          "anchor": "start",
+          "size": 12
+        }
+      ],
+      "scale": 1
+    },
+    "options": [
+      "$\\dfrac{Ks^2}{\\left(1+\\frac{s}{10}\\right)^3}$",
+      "$\\dfrac{Ks^2}{\\left(1+\\frac{s}{10}\\right)^4}$",
+      "$\\dfrac{Ks^2}{\\left(1+\\frac{s}{10}\\right)^5}$",
+      "$\\dfrac{Ks^2}{\\left(1+\\frac{s}{10}\\right)^2}$"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "66ee902682-7",
+    "number": "5.87",
+    "year": 2018,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 67,
+    "text": "The open-loop transfer function of a system has two poles on the imaginary axis, one in the left-half and the other in the right-half, together with a zero at the origin of coordinates and also two zeros in the left-half of the s-plane. The closed-loop response for unity feedback will be stable if the encirclement of the critical point $(-1, j0)$ is",
+    "options": [
+      "$-1$",
+      "$+1$",
+      "$-2$",
+      "$+2$"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "66ee902682-8",
+    "number": "5.88",
+    "year": 2018,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 67,
+    "text": "**Statement (I):** The transportation lag in a system can be easily handled by using Bode plot.\n**Statement (II):** The magnitude plot is unaffected, and only the phase plot shifts by $-\\omega T$ rad due to the presence of $e^{-sT}$.",
+    "options": [
+      "Both Statement (I) and Statement (II) are individually true and Statement (II) is the correct explanation of Statement (I)",
+      "Both Statement (I) and Statement (II) are individually true but Statement (II) is not the correct explanation of Statement (I)",
+      "Statement (I) is true but Statement (II) is false",
+      "Statement (I) is false but Statement (II) is true"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "66ee902682-9",
+    "number": "5.89",
+    "year": 2018,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency Response Basics",
+    "page": 67,
+    "text": "In case of high-pass filter, the transfer function should be with\n1. 1 pole and 1 zero\n2. 2 poles and 2 zeros\n3. 2 poles and 1 zero\nWhich of the above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "66ee902682-10",
+    "number": "5.90",
+    "year": 2019,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Frequency Response Basics",
+    "page": 67,
+    "text": "The magnitude and phase relationship between the sinusoidal input and the steady-state output of a system is called as",
+    "options": [
+      "magnitude response",
+      "transient response",
+      "steady-state response",
+      "frequency response"
+    ],
+    "answer": null,
+    "marked": "C"
+  },
+  {
+    "id": "66ee902682-11",
+    "number": "5.91",
+    "year": 2019,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Minimum / Non-minimum Phase",
+    "page": 67,
+    "text": "A transfer function having all its poles and zeros only in the left-half of the s-plane is called",
+    "options": [
+      "a minimum-phase function",
+      "a complex transfer function",
+      "an all-pass transfer function",
+      "a maximum-phase transfer function"
+    ],
+    "answer": "A",
+    "marked": "A"
+  },
+  {
+    "id": "66ee902682-12",
+    "number": "5.92",
+    "year": 2019,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 67,
+    "text": "The frequency where magnitude $M$ has a peak value in frequency response is known as",
+    "options": [
+      "normalized frequency",
+      "resonant frequency",
+      "peak frequency",
+      "tuned frequency"
+    ],
+    "answer": null,
+    "marked": "B"
+  },
+  {
+    "id": "66ee902682-13",
+    "number": "5.93",
+    "year": 2020,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 67,
+    "text": "**Statement (I):** For an unstable feedback system, the gain margin is negative or the phase margin is positive.\n**Statement (II):** For a stable feedback system, both gain margin and phase margin must be positive.",
+    "options": [
+      "Both Statement (I) and Statement (II) are individually true and Statement (II) is the correct explanation of Statement (I)",
+      "Both Statement (I) and Statement (II) are individually true but Statement (II) is not the correct explanation of Statement (I)",
+      "Statement (I) is true but Statement (II) is false",
+      "Statement (I) is false but Statement (II) is true"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "66ee902682-14",
+    "number": "5.94",
+    "year": 2021,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 67,
+    "text": "Which one of the following statements is correct regarding constant N circles?",
+    "options": [
+      "The locus of constant, closed-loop magnitude frequency response for unity feedback systems.",
+      "The locus of constant, closed-loop phase frequency response for unity feedback systems.",
+      "A subsystem inserted into the forward or feedback path for the purpose of improving the transient response or steady-state error.",
+      "A system that monitors its output and corrects for disturbances. It is characterized by feedback paths from the output."
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "66ee902682-15",
+    "number": "5.95",
+    "year": 2023,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 67,
+    "text": "A system has poles at 0.01 Hz, 1 Hz and 80 Hz; zeros at 5 Hz, 100 Hz and 200 Hz. The approximate phase of the system response at 20 Hz is",
+    "options": [
+      "$-90^\\circ$",
+      "$0^\\circ$",
+      "$90^\\circ$",
+      "$-180^\\circ$"
+    ],
+    "answer": null,
+    "marked": "A"
+  },
+  {
+    "id": "66ee902682-16",
+    "number": "5.96",
+    "year": 2023,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 67,
+    "text": "The magnitude of frequency response of an underdamped second-order system is 5 at 0 rad/sec and peaks at $\\dfrac{10}{\\sqrt{3}}$ at $5\\sqrt{2}$ rad/sec. The transfer function of the system is",
+    "options": [
+      "$\\dfrac{100}{s^2+10s+100}$",
+      "$\\dfrac{375}{s^2+5s+75}$",
+      "$\\dfrac{500}{s^2+12s+100}$",
+      "$\\dfrac{1125}{s^2+25s+225}$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "9202a80972-1",
+    "number": "5.97",
+    "year": 2023,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Resonant Peak & Bandwidth",
+    "page": 68,
+    "text": "By considering standard notations, the peak value of the magnitude in the resonant peak $M_r$ is",
+    "options": [
+      "$\\dfrac{2}{\\zeta\\sqrt{1-\\zeta^2}}$",
+      "$\\dfrac{1}{\\zeta\\sqrt{2-\\zeta^2}}$",
+      "$\\dfrac{1}{2\\zeta\\sqrt{1-\\zeta^2}}$",
+      "$\\dfrac{1}{\\zeta\\sqrt{1-\\zeta^2}}$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "9202a80972-2",
+    "number": "5.98",
+    "year": 2023,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 68,
+    "text": "The phase margin of a system having the loop transfer function $G(s)H(s)=\\dfrac{2\\sqrt{3}}{s(s+1)}$ is",
+    "options": [
+      "$45^\\circ$",
+      "$90^\\circ$",
+      "$30^\\circ$",
+      "$60^\\circ$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "9202a80972-3",
+    "number": "5.99",
+    "year": 2023,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Gain & Phase Margin",
+    "page": 68,
+    "text": "The phase margin of a system with the open-loop transfer function $G(s)H(s)=\\dfrac{1-s}{(s+1)(s+2)}$ is",
+    "options": [
+      "$0^\\circ$",
+      "$63.4^\\circ$",
+      "$90^\\circ$",
+      "$\\infty^\\circ$"
+    ],
+    "answer": null,
+    "marked": null
+  },
+  {
+    "id": "9202a80972-4",
+    "number": "5.100",
+    "year": 2023,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 68,
+    "text": "The Nyquist criterion for stability states that an amplifier is unstable if the Nyquist curve encloses the $-1+j0$ point, and the amplifier is stable if the curve does not enclose this point. If $A\\beta$",
+    "options": [
+      "extends outside this circle, the feedback is negative.",
+      "lies within this circle, then $|1+A\\beta|<1$, and the feedback is negative.",
+      "does not enclose the point $-1+j0$, i.e., $|1+A\\beta|>1$, then the amplifier is unstable and the feedback is negative for all frequencies.",
+      "extends inside this circle, the feedback is negative."
+    ],
+    "answer": "B",
+    "marked": null
+  },
+  {
+    "id": "9202a80972-5",
+    "number": "5.101",
+    "year": 2024,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--frequency-response",
+    "topic": "Bode Plot",
+    "page": 68,
+    "text": "Consider the following statements regarding the Bode plot for the type-2 system having transfer function of the form $$G(j\\omega)=\\dfrac{K}{(j\\omega)^2(1+j\\omega T)}$$\n1. The intercept of the low frequency slope of $-40$ dB/decade (or its extension) with the 0 dB axis occurs at a frequency $\\omega_x$, where $\\omega_x=K$\n2. The value on the low frequency slope of $-40$ dB/decade (or its extension) at the frequency $\\omega=1$, is equal to $40\\log(K)$.\n3. The gain $K$ is the static ramp error coefficient.\nWhich of the above statements is/are not correct?",
+    "options": [
+      "1 only",
+      "1 and 2",
+      "1 and 3",
+      "2 and 3"
+    ],
+    "answer": null,
+    "marked": "D"
+  },
+  {
+    "id": "9202a80972-6",
+    "number": "5.102",
+    "year": 2024,
+    "subjectId": "p2-control-systems",
+    "chapterId": "p2-control-systems--nyquist-stability",
+    "topic": "Nyquist Plot & Criterion",
+    "page": 68,
+    "text": "Consider the following statements:\n1. Gain margin is used to indicate the proximity of the intersection of the negative real axis made by the polar plot of $G(j\\omega)H(j\\omega)$ to the $(-1+j)$ point.\n2. Phase crossover point is the point in the $G(j\\omega)H(j\\omega)$ plane at which the polar $G(j\\omega)H(j\\omega)$ plot intersects the positive real axis.\n3. The phase crossover frequency is the frequency at the phase crossover point or where $\\angle\\{G(j\\omega)H(j\\omega)\\}=180^\\circ$.\nWhich of the above statements is/are not correct?",
+    "options": [
+      "2 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only"
+    ],
+    "answer": null,
+    "marked": "C"
   }
 ]

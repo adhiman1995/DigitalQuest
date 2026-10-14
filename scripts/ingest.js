@@ -12,6 +12,7 @@
 //   after?:  "text shown below the figure/table",
 //   answer?: "B"      // ONLY when verified against a printed answer key
 //   marked?: "B"      // pen mark seen on the source page (NOT a verified answer)
+//   folder?: "<chapter dir relative to question-bank/>"   // when a page mixes chapters, overrides the image's folder
 // }
 // Questions are never stored as images. The source image is only hashed, so it is never re-processed.
 const fs = require('fs');
@@ -36,14 +37,16 @@ for (const item of batch) {
   if (hashes.has(hash)) { skipped++; console.log(`skip (already processed): ${item.image}`); continue; }
 
   const ids = (item.questions || []).map((q, i) => {
+    const qf = q.folder ? byDir.get(q.folder) : folder;
+    if (!qf) { console.error(`question ${q.number}: unknown folder ${q.folder}`); process.exit(1); }
     if (!q.text || !Array.isArray(q.options)) { console.error(`question ${q.number}: text and options are required`); process.exit(1); }
     const id = `${hash.slice(0, 10)}-${i + 1}`;
     questions.push({
       id,
       number: q.number ?? null,
       year: q.year ?? null,
-      subjectId: folder.subject.id,
-      chapterId: folder.chapter.id,
+      subjectId: qf.subject.id,
+      chapterId: qf.chapter.id,
       topic: q.topic ?? null,
       page: q.page ?? null,
       text: q.text,

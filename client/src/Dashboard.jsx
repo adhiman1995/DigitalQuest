@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 import Icon from './Icons.jsx';
 import { score } from './examLogic.js';
 import { fmtDuration } from './util.js';
+import Calendar from './tools/Calendar.jsx';
+import { examDates, daysUntil, fmtLong } from './tools/examDates.js';
 
 const pctOf = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 
@@ -80,6 +82,7 @@ export default function Dashboard({ syllabus, questions, progress, user, go, ope
   const hour = new Date().getHours();
   const greet = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const session = state.session;
+  const next = examDates(state.prefs).find((e) => daysUntil(e.date) >= 0);
 
   return (
     <section className="dash">
@@ -102,6 +105,16 @@ export default function Dashboard({ syllabus, questions, progress, user, go, ope
             <span className="muted"> · {nameOf(session.subjectId)}{session.chapterId ? ` · ${chapterName(session.chapterId)}` : ' · random test'} · question {session.idx + 1} of {session.qids.length}</span>
           </div>
           <button className="primary" onClick={() => go('exam')}>Resume <Icon name="arrow" size={16} /></button>
+        </div>
+      )}
+
+      {next && (
+        <div className={`exam-banner ${next.tone}`}>
+          <div className="eb-days"><b>{daysUntil(next.date)}</b><span>{daysUntil(next.date) === 1 ? 'day' : 'days'} to go</span></div>
+          <div className="eb-text">
+            <strong>{next.label} {next.date.slice(0, 4)}</strong>
+            <span>{fmtLong(next.date)} · about {Math.max(0, Math.floor(daysUntil(next.date) / 7))} weeks left. {data.topics - data.done} topics still to cover{daysUntil(next.date) > 0 ? `, roughly ${Math.ceil((data.topics - data.done) / Math.max(1, daysUntil(next.date)))} a day` : ''}.</span>
+          </div>
         </div>
       )}
 
@@ -148,18 +161,9 @@ export default function Dashboard({ syllabus, questions, progress, user, go, ope
           </ul>
         </div>
 
-        <div className="panel wide">
-          <div className="panel-head"><h2>All subjects</h2><span className="muted">{data.subjects.length} subjects</span></div>
-          <div className="subj-table">
-            {data.subjects.map((s) => (
-              <button key={s.id} className="subj-row" onClick={() => openSubject(s.id)}>
-                <span className={`paper-tag ${s.paper}`}>{s.paper.toUpperCase()}</span>
-                <span className="subj-name">{s.name}</span>
-                <span className="bar"><span style={{ width: `${s.pct}%` }} /></span>
-                <span className="subj-pct">{s.pct}%</span>
-              </button>
-            ))}
-          </div>
+        <div className="panel">
+          <div className="panel-head"><h2>Exam calendar</h2><span className="muted">click a date</span></div>
+          <Calendar progress={progress} />
         </div>
 
         <div className="panel">
@@ -186,7 +190,21 @@ export default function Dashboard({ syllabus, questions, progress, user, go, ope
           </ul>
         </div>
 
-        <div className="panel">
+        <div className="panel wide">
+          <div className="panel-head"><h2>All subjects</h2><span className="muted">{data.subjects.length} subjects</span></div>
+          <div className="subj-table">
+            {data.subjects.map((s) => (
+              <button key={s.id} className="subj-row" onClick={() => openSubject(s.id)}>
+                <span className={`paper-tag ${s.paper}`}>{s.paper.toUpperCase()}</span>
+                <span className="subj-name">{s.name}</span>
+                <span className="bar"><span style={{ width: `${s.pct}%` }} /></span>
+                <span className="subj-pct">{s.pct}%</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="panel wide">
           <div className="panel-head"><h2>Your lists</h2></div>
           <div className="lists">
             <button onClick={() => go('library')}><Icon name="star" /><b>{Object.keys(state.bookmarks).length}</b><span>Bookmarked</span></button>

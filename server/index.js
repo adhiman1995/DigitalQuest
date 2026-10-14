@@ -40,7 +40,7 @@ const MAPS = ['done', 'solved', 'bookmarks', 'added', 'responses'];
 // Accept only the expected shape so a client can never store arbitrary junk.
 function clean(d) {
   if (!d || typeof d !== 'object') return null;
-  const out = { exams: [], session: null };
+  const out = { exams: [], session: null, prefs: {} };
   for (const k of MAPS) {
     const m = d[k];
     out[k] = {};
@@ -52,6 +52,10 @@ function clean(d) {
   }
   if (Array.isArray(d.exams)) out.exams = d.exams.filter((e) => e && typeof e.id === 'string' && Array.isArray(e.qids) && e.answers && typeof e.answers === 'object').slice(-200);
   if (d.session && typeof d.session === 'object' && Array.isArray(d.session.qids)) out.session = d.session;
+  // user settings: only exam dates (YYYY-MM-DD) for now
+  if (d.prefs && typeof d.prefs === 'object') {
+    for (const k of ['prelimsDate', 'mainsDate']) if (typeof d.prefs[k] === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d.prefs[k])) out.prefs[k] = d.prefs[k];
+  }
   return out;
 }
 

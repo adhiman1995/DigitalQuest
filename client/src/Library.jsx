@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import QuestionCard from './QuestionCard.jsx';
+import ToolDock from './tools/ToolDock.jsx';
 import { byNumber } from './util.js';
 
 export default function Library({ syllabus, questions: rawQuestions, progress }) {
@@ -70,6 +71,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
       {shown.map((x) => (
         <QuestionCard key={x.id} q={x} subjectName={subjectName(x.subjectId)} state={state} toggle={toggle} setResponse={setResponse} />
       ))}
+      <ToolDock progress={progress} />
     </section>
   );
 }

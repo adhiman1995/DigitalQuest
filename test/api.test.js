@@ -60,6 +60,14 @@ test('save and load progress; sanitises junk', async () => {
   assert.equal((await call(c, 'GET', '/api/me')).status, 200);
 });
 
+test('stores exam-date prefs and drops anything else in prefs', async () => {
+  const c = await login('prefs@example.com');
+  const r = await call(c, 'PUT', '/api/progress', { data: { prefs: { prelimsDate: '2027-01-31', mainsDate: 'soon', theme: 'x' } }, updatedAt: 1 });
+  assert.equal(r.status, 200);
+  const got = await (await call(c, 'GET', '/api/progress')).json();
+  assert.deepEqual(got.data.prefs, { prelimsDate: '2027-01-31' });
+});
+
 test('stale writes are rejected with the newer copy', async () => {
   const c = await login('b@example.com');
   assert.equal((await call(c, 'PUT', '/api/progress', { data: { solved: { q9: true } }, updatedAt: 5000 })).status, 200);

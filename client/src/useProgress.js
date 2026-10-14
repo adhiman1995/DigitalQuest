@@ -11,6 +11,7 @@ const EMPTY = {
   responses: {},  // question id -> 'A'..'D' (option chosen in practice mode)
   exams: [],      // finished exam attempts
   session: null,  // exam currently in progress
+  prefs: {},      // { prelimsDate, mainsDate } overrides (YYYY-MM-DD)
 };
 const MAPS = ['done', 'solved', 'bookmarks', 'added', 'responses'];
 
@@ -31,6 +32,7 @@ function merge(local, remote) {
   out.exams = [...byId.values()].sort((a, b) => a.finishedAt - b.finishedAt);
   const sessions = [local.session, remote.session].filter(Boolean);
   out.session = sessions.sort((a, b) => b.startedAt - a.startedAt)[0] || null;
+  out.prefs = { ...(remote.prefs || {}), ...(local.prefs || {}) };
   return out;
 }
 
@@ -170,6 +172,13 @@ export function useProgress(user) {
     });
   }, [update]);
 
+  const setPref = useCallback((key, value) => update((s) => {
+    const prefs = { ...s.prefs };
+    if (value) prefs[key] = value;
+    else delete prefs[key];
+    return { ...s, prefs };
+  }), [update]);
+
   const setSession = useCallback((session) => update((s) => ({ ...s, session })), [update]);
   const addExam = useCallback((exam) => update((s) => ({ ...s, exams: [...s.exams.filter((e) => e.id !== exam.id), exam] })), [update]);
   const deleteExam = useCallback((id) => update((s) => ({ ...s, exams: s.exams.filter((e) => e.id !== id) })), [update]);
@@ -200,5 +209,5 @@ export function useProgress(user) {
     setStateRaw({ ...EMPTY });
   }, [push]);
 
-  return { state, sync, toggle, setMany, setResponse, setSession, addExam, deleteExam, exportData, importData, clearLocalAfterFlush };
+  return { state, sync, toggle, setMany, setResponse, setPref, setSession, addExam, deleteExam, exportData, importData, clearLocalAfterFlush };
 }

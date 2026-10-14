@@ -1,8 +1,8 @@
 :root {
   --bg: #f4f5fb; --card: #ffffff; --card2: #f6f7fb; --text: #141a2e; --muted: #646b82; --line: #e3e6ef;
-  --accent: #0f766e; --accent-2: #14b8a6; --accent-soft: rgba(15, 118, 110, .1); --on-accent: #ffffff; --ok: #16a34a; --warn: #d97706; --bad: #e5484d;
+  --accent: #2563eb; --accent-2: #3b82f6; --accent-soft: rgba(37, 99, 235, .1); --on-accent: #ffffff; --ok: #16a34a; --warn: #d97706; --bad: #e5484d;
   --side: #ffffff; --shadow: 0 1px 2px rgba(20, 26, 46, .04), 0 4px 16px rgba(20, 26, 46, .05);
-  --fig-ink: #141a2e; --fig-fill: #ffffff; --fig-curve: #0f766e; --fig-font: ui-sans-serif, system-ui, sans-serif;
+  --fig-ink: #141a2e; --fig-fill: #ffffff; --fig-curve: #2563eb; --fig-font: ui-sans-serif, system-ui, sans-serif;
   --font: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
   --r: 14px;
@@ -10,16 +10,16 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0b0e17; --card: #131826; --card2: #10141f; --text: #e9ecf5; --muted: #8e95ab; --line: #232a3c;
-    --accent: #2dd4bf; --accent-2: #5eead4; --accent-soft: rgba(45, 212, 191, .14); --on-accent: #042f2b; --ok: #3fcf7f; --warn: #f2a43a; --bad: #ff6b6f;
+    --accent: #60a5fa; --accent-2: #93c5fd; --accent-soft: rgba(45, 212, 191, .14); --on-accent: #0b1b3a; --ok: #3fcf7f; --warn: #f2a43a; --bad: #ff6b6f;
     --side: #0f1320; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
-    --fig-ink: #e9ecf5; --fig-fill: #131826; --fig-curve: #2dd4bf; --prelims: #2dd4bf; --mains: #ff8a4c;
+    --fig-ink: #e9ecf5; --fig-fill: #131826; --fig-curve: #60a5fa; --prelims: #60a5fa; --mains: #ff8a4c;
   }
 }
 :root[data-theme="dark"] {
     --bg: #0b0e17; --card: #131826; --card2: #10141f; --text: #e9ecf5; --muted: #8e95ab; --line: #232a3c;
-    --accent: #2dd4bf; --accent-2: #5eead4; --accent-soft: rgba(45, 212, 191, .14); --on-accent: #042f2b; --ok: #3fcf7f; --warn: #f2a43a; --bad: #ff6b6f;
+    --accent: #60a5fa; --accent-2: #93c5fd; --accent-soft: rgba(45, 212, 191, .14); --on-accent: #0b1b3a; --ok: #3fcf7f; --warn: #f2a43a; --bad: #ff6b6f;
     --side: #0f1320; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
-    --fig-ink: #e9ecf5; --fig-fill: #131826; --fig-curve: #2dd4bf; --prelims: #2dd4bf; --mains: #ff8a4c;
+    --fig-ink: #e9ecf5; --fig-fill: #131826; --fig-curve: #60a5fa; --prelims: #60a5fa; --mains: #ff8a4c;
 }
 :root { color-scheme: light; }
 :root[data-theme="dark"] { color-scheme: dark; }
@@ -203,7 +203,7 @@ button:disabled { cursor: not-allowed; }
 .page-head .muted { margin-top: 4px; }
 
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); }
-.brand-mark { width: 34px; height: 34px; display: inline-block; filter: drop-shadow(0 4px 10px rgba(15, 118, 110, .35)); }
+.brand-mark { width: 34px; height: 34px; display: inline-block; filter: drop-shadow(0 4px 10px rgba(37, 99, 235, .35)); }
 .brand-name { font-size: 1.25rem; font-weight: 650; letter-spacing: -.02em; color: var(--text); }
 .brand-name b { font-weight: 800; color: var(--accent); }
 .brand.small .brand-mark { width: 30px; height: 30px; }
@@ -239,7 +239,7 @@ button.small { font-size: .8rem; padding: 3px 10px; }
 /* ---------------------------------------------------------------- login */
 .login { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); min-height: 100vh; }
 .login-hero { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 36px; padding: 44px 56px; color: #fff;
-  background: radial-gradient(1200px 600px at -10% -20%, #14b8a6 0%, transparent 55%), radial-gradient(900px 500px at 120% 120%, #0ea5e9 0%, transparent 55%), linear-gradient(160deg, #0f766e, #134e4a); }
+  background: radial-gradient(1200px 600px at -10% -20%, #60a5fa 0%, transparent 55%), radial-gradient(900px 500px at 120% 120%, #38bdf8 0%, transparent 55%), linear-gradient(160deg, #1d4ed8, #1e3a8a); }
 .login-hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .14;
   background-image: linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px); background-size: 40px 40px;
   mask-image: radial-gradient(ellipse at 30% 40%, #000 20%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at 30% 40%, #000 20%, transparent 70%); }
@@ -280,7 +280,7 @@ button.ghost { background: var(--card); }
 .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; }
 .kpi { display: flex; gap: 14px; align-items: flex-start; padding: 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); min-width: 0; }
 .kpi-ico { flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; }
-.kpi.t1 .kpi-ico { background: rgba(15, 118, 110, .12); color: var(--accent); }
+.kpi.t1 .kpi-ico { background: rgba(37, 99, 235, .12); color: var(--accent); }
 .kpi.t2 .kpi-ico { background: rgba(37, 99, 235, .12); color: #3b82f6; }
 .kpi.t3 .kpi-ico { background: rgba(22, 163, 74, .12); color: var(--ok); }
 .kpi.t4 .kpi-ico { background: rgba(217, 119, 6, .13); color: var(--warn); }
@@ -454,7 +454,7 @@ input.tick:indeterminate::before { transform: scale(1); clip-path: inset(40% 10%
 }
 
 /* ---------------------------------------------------------------- practice tools */
-:root { --prelims: #0f766e; --mains: #e8590c; }
+:root { --prelims: #2563eb; --mains: #e8590c; }
 
 .dock { position: fixed; right: 24px; bottom: 24px; z-index: 55; display: flex; gap: 4px; padding: 5px; border-radius: 16px; background: var(--card); border: 1px solid var(--line);
   box-shadow: 0 10px 30px rgba(20, 26, 46, .16), 0 2px 6px rgba(20, 26, 46, .08); }
@@ -571,7 +571,7 @@ input.tick:indeterminate::before { transform: scale(1); clip-path: inset(40% 10%
 
 /* dashboard countdown banner */
 .exam-banner { display: flex; align-items: center; gap: 18px; padding: 16px 20px; margin-bottom: 18px; border-radius: var(--r); color: #fff; box-shadow: var(--shadow);
-  background: radial-gradient(600px 200px at 0% 0%, #2dd4bf, transparent 60%), linear-gradient(120deg, #115e59, #0f766e 60%, #0d9488); }
+  background: radial-gradient(600px 200px at 0% 0%, #60a5fa, transparent 60%), linear-gradient(120deg, #1e40af, #2563eb 60%, #3b82f6); }
 .exam-banner.mains { background: linear-gradient(120deg, #c2410c, #ea580c 60%, #f59e0b); }
 .eb-days { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 92px; padding: 8px 12px; border-radius: 12px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.2); }
 .eb-days b { font-size: 2rem; font-weight: 800; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }

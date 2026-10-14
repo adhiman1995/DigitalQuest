@@ -12,7 +12,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
   const [topic, setTopic] = useState('');
   const [year, setYear] = useState('');
   const [q, setQ] = useState(() => decodeURIComponent((location.hash.split('/')[1] || '')));
-  const [only, setOnly] = useState(''); // '', 'added', 'marked', 'unsolved'
+  const [only, setOnly] = useState(''); // '', 'added', 'marked', 'notright'
 
   const subj = syllabus.subjects.find((s) => s.id === subject);
   const subjectName = (id) => syllabus.subjects.find((s) => s.id === id)?.name || '';
@@ -28,7 +28,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
     if (only === 'added' && !state.added[x.id]) return false;
     if (only === 'reattempt' && !state.reattempt[x.id]) return false;
     if (only === 'marked' && !state.bookmarks[x.id]) return false;
-    if (only === 'unsolved' && state.solved[x.id]) return false;
+    if (only === 'notright' && state.results[x.id]) return false;
     if (only === 'unattempted' && state.responses[x.id]) return false;
     if (q && !`${x.number} ${x.text} ${x.topic || ''}`.toLowerCase().includes(q.toLowerCase())) return false;
     return true;
@@ -56,7 +56,7 @@ export default function Library({ syllabus, questions: rawQuestions, progress })
         <input placeholder="Search questions…" value={q} onChange={(e) => setQ(e.target.value)} />
       </div>
       <div className="filters">
-        {[['', 'All'], ['unattempted', 'Not attempted'], ['unsolved', 'Unsolved'], ['reattempt', `Reattempt (${Object.keys(state.reattempt).length})`], ['marked', '★ Bookmarked'], ['added', `Practice set (${addedCount})`]].map(([k, label]) => (
+        {[['', 'All'], ['unattempted', 'Not attempted'], ['notright', 'Not correct yet'], ['reattempt', `Reattempt (${Object.keys(state.reattempt).length})`], ['marked', '★ Bookmarked'], ['added', `Practice set (${addedCount})`]].map(([k, label]) => (
           <button key={k} className={only === k ? 'on' : ''} onClick={() => setOnly(k)}>{label}</button>
         ))}
         <span className="muted" style={{ marginLeft: 'auto' }}>{shown.length} of {questions.length} questions</span>

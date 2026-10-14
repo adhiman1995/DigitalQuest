@@ -209,7 +209,7 @@ export default function Dashboard({ syllabus, questions, progress, user, go, ope
           <div className="lists">
             <button onClick={() => go('library')}><Icon name="star" /><b>{Object.keys(state.bookmarks).length}</b><span>Bookmarked</span></button>
             <button onClick={() => go('library')}><Icon name="list" /><b>{Object.keys(state.added).length}</b><span>Practice set</span></button>
-            <button onClick={() => go('library')}><Icon name="check" /><b>{Object.keys(state.solved).length}</b><span>Solved</span></button>
+            <button onClick={() => go('library')}><Icon name="check" /><b>{Object.keys(state.results).length}</b><span>Answered correctly</span></button>
           </div>
         </div>
       </div>

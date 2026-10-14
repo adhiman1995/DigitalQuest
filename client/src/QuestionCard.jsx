@@ -155,9 +155,6 @@ export default function QuestionCard({ q, subjectName, state, toggle, setRespons
           {selected && (
             <button className="linkbtn small" onClick={() => { setTried(false); setResponse(q.id, null); }}>clear</button>
           )}
-          <button className={`iconbtn ${state.solved[q.id] ? 'on' : ''}`} onClick={() => toggle('solved', q.id)}>
-            {state.solved[q.id] ? '✓ Solved' : 'Mark solved'}
-          </button>
           <button className={`iconbtn ${state.bookmarks[q.id] ? 'on' : ''}`} onClick={() => toggle('bookmarks', q.id)}>
             {state.bookmarks[q.id] ? '★' : '☆'}
           </button>

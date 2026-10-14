@@ -66,7 +66,7 @@ function Setup({ syllabus, questions, progress, onStart, onReview }) {
   return (
     <section>
       <div className="exam-setup card-plain">
-        <h2>Exam mode</h2>
+        <h2>New exam</h2>
         <ul className="rules">
           <li>Questions appear <strong>one at a time</strong>, each with a <strong>{SECONDS_PER_QUESTION / 60}-minute</strong> timer.</li>
           <li>You can only move on after you <strong>submit an answer</strong> or <strong>skip</strong>. There is no going back.</li>

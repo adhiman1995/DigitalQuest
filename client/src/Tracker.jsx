@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 const count = (topics, done) => topics.filter((t) => done[t.id]).length;
 
-export default function Tracker({ syllabus, progress }) {
+export default function Tracker({ syllabus, progress, initialSubject }) {
   const { state, toggle, setMany, exportData, importData } = progress;
-  const [paper, setPaper] = useState('p2');
-  const [activeId, setActiveId] = useState(null);
+  const [paper, setPaper] = useState(() => syllabus.subjects.find((s) => s.id === initialSubject)?.paper || 'p2');
+  const [activeId, setActiveId] = useState(initialSubject || null);
 
   const subjects = syllabus.subjects.filter((s) => s.paper === paper);
   const active = syllabus.subjects.find((s) => s.id === activeId);

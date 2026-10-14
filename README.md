@@ -1,4 +1,4 @@
-# ESE ECE Tracker
+# DigitalQuest (ESE ECE Tracker)
 
 Syllabus coverage tracker, a typeset previous-year question library, and a timed exam mode.
 React (Vite) frontend, Node/Express backend, Google sign-in, progress saved per account in Postgres.

@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import Icon from './Icons.jsx';
 
 const post = (url, body) =>
   fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body || {}) });
@@ -29,8 +30,10 @@ export function useAuth() {
   }, []);
 
   const devLogin = useCallback(async (email) => {
-    const r = await post('/api/auth/dev-login', { email });
-    if (r.ok) setUser((await r.json()).user);
+    setError('');
+    const r = await post('/api/auth/dev-login', { email }).catch(() => null);
+    if (r?.ok) setUser((await r.json()).user);
+    else setError('Dev sign-in failed.');
   }, []);
 
   const logout = useCallback(async () => {
@@ -42,7 +45,7 @@ export function useAuth() {
 }
 
 // Google's own sign-in button (Google Identity Services). It returns a signed ID token that the server verifies.
-function GoogleButton({ clientId, onCredential }) {
+export function GoogleButton({ clientId, onCredential, width = 300 }) {
   const box = useRef(null);
   const cb = useRef(onCredential);
   cb.current = onCredential;
@@ -52,7 +55,7 @@ function GoogleButton({ clientId, onCredential }) {
     const init = () => {
       if (cancelled || !window.google?.accounts?.id || !box.current) return;
       window.google.accounts.id.initialize({ client_id: clientId, callback: (resp) => cb.current(resp.credential), ux_mode: 'popup' });
-      window.google.accounts.id.renderButton(box.current, { theme: 'outline', size: 'large', text: 'signin_with', shape: 'pill', logo_alignment: 'left' });
+      window.google.accounts.id.renderButton(box.current, { theme: 'outline', size: 'large', text: 'continue_with', shape: 'pill', logo_alignment: 'center', width });
     };
     if (window.google?.accounts?.id) init();
     else {
@@ -68,42 +71,25 @@ function GoogleButton({ clientId, onCredential }) {
       s.addEventListener('load', init);
     }
     return () => { cancelled = true; };
-  }, [clientId]);
+  }, [clientId, width]);
 
   return <div ref={box} className="gbtn" />;
 }
 
-const SYNC_LABEL = { local: '', syncing: 'Saving…', saved: '✓ Saved', error: '⚠ Offline: will retry' };
+const SYNC_LABEL = { local: '', syncing: 'Saving…', saved: 'Synced', error: 'Offline: will retry' };
 
-export function AuthBar({ auth, sync, onLogout }) {
-  const { config, user, ready, error, loginWithGoogle, devLogin } = auth;
-  const [email, setEmail] = useState('');
-  if (!ready) return <div className="authbar" />;
-
-  if (user) {
-    return (
-      <div className="authbar">
-        {user.picture ? <img className="avatar" src={user.picture} alt="" referrerPolicy="no-referrer" /> : <span className="avatar ph">{(user.name || '?')[0].toUpperCase()}</span>}
-        <div className="who">
-          <strong title={user.email}>{user.name}</strong>
-          <span className={`sync ${sync}`}>{SYNC_LABEL[sync]}</span>
-        </div>
-        <button className="small" onClick={onLogout}>Sign out</button>
-      </div>
-    );
-  }
-
+// Account card at the bottom of the sidebar.
+export function UserCard({ user, sync, onLogout }) {
   return (
-    <div className="authbar col">
-      {config?.googleClientId && <GoogleButton clientId={config.googleClientId} onCredential={loginWithGoogle} />}
-      {!config?.googleClientId && config?.devLogin && (
-        <form className="devlogin" onSubmit={(e) => { e.preventDefault(); devLogin(email || 'dev@example.com'); }}>
-          <input placeholder="dev email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <button className="small">Dev sign-in</button>
-        </form>
-      )}
-      {!config?.googleClientId && !config?.devLogin && <span className="muted">Sign-in is not configured</span>}
-      {error && <span className="autherr">{error}</span>}
+    <div className="usercard">
+      {user.picture
+        ? <img className="avatar" src={user.picture} alt="" referrerPolicy="no-referrer" />
+        : <span className="avatar ph">{(user.name || '?')[0].toUpperCase()}</span>}
+      <div className="who">
+        <strong title={user.email}>{user.name}</strong>
+        <span className={`sync ${sync}`}><i className="sync-dot" />{SYNC_LABEL[sync]}</span>
+      </div>
+      <button className="iconbtn-sq" onClick={onLogout} title="Sign out" aria-label="Sign out"><Icon name="logout" /></button>
     </div>
   );
 }

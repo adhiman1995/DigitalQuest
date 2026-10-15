@@ -601,8 +601,11 @@ input.tick:indeterminate::before { transform: scale(1); clip-path: inset(40% 10%
 
 /* solution / concept (shown after a correct answer) and reattempt */
 .explain { margin: 12px 0 4px; display: grid; gap: 10px; }
-.concept, .solution { border: 1px solid var(--line); border-left: 4px solid var(--ok); border-radius: 10px; padding: 10px 14px; background: rgba(60, 207, 126, .07); }
+.concept, .solution, .points { border: 1px solid var(--line); border-left: 4px solid var(--ok); border-radius: 10px; padding: 10px 14px; background: rgba(60, 207, 126, .07); }
+.concept, .solution { white-space: pre-line; }
 .concept { border-left-color: var(--accent); background: var(--accent-soft); }
+.points { border-left-color: var(--warn); background: rgba(217, 119, 6, .08); }
+.points ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; list-style: disc; }
 .explain-title { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
 .verdict-note { font-size: .88rem; margin: 10px 0 0; }
 .verdict-note.bad { color: var(--bad); }

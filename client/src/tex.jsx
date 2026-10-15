@@ -18,8 +18,8 @@ export function TeX({ children, display = false }) {
   return <span dangerouslySetInnerHTML={{ __html: texHtml(children, display) }} />;
 }
 
-// Text with inline $math$, display $$math$$ and **bold**. Newlines are preserved by CSS.
-const TOKEN = /(\$\$[\s\S]+?\$\$|\$[^$]+?\$|\*\*[^*]+?\*\*)/g;
+// Text with inline $math$, display $$math$$, **bold** and *italic*. Newlines are preserved by CSS.
+const TOKEN = /(\$\$[\s\S]+?\$\$|\$[^$]+?\$|\*\*[^*]+?\*\*|\*[^*\s][^*\n]*?\*)/g;
 
 export function RichText({ text }) {
   const parts = useMemo(() => (text || '').split(TOKEN).filter((p) => p !== ''), [text]);
@@ -29,7 +29,8 @@ export function RichText({ text }) {
         if (p.startsWith('$$')) return <div key={i} className="math-block" dangerouslySetInnerHTML={{ __html: texHtml(p.slice(2, -2).trim(), true) }} />;
         if (p.startsWith('$') && /^\$[\d.,\s]+\$$/.test(p)) return <span key={i}>{p.slice(1, -1)}</span>;
         if (p.startsWith('$')) return <span key={i} dangerouslySetInnerHTML={{ __html: texHtml(p.slice(1, -1)) }} />;
-        if (p.startsWith('**')) return <strong key={i}>{p.slice(2, -2)}</strong>;
+        if (p.startsWith('**')) return <strong key={i}><RichText text={p.slice(2, -2)} /></strong>;
+        if (p.startsWith('*')) return <em key={i}><RichText text={p.slice(1, -1)} /></em>;
         return <React.Fragment key={i}>{p}</React.Fragment>;
       })}
     </>

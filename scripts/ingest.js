@@ -13,6 +13,7 @@
 //   answer?: "B"      // ONLY when verified against a printed answer key
 //   solution?: "worked solution, LaTeX/markdown; shown to the student only after a correct answer"
 //   concept?:  "the key idea/formula behind the question; shown only after a correct answer"
+//   points?:   ["pitfall or exam tip", ...]  // "Points to take care of", shown with the solution
 //   marked?: "B"      // pen mark seen on the source page (NOT a verified answer)
 //   folder?: "<chapter dir relative to question-bank/>"   // when a page mixes chapters, overrides the image's folder
 // }
@@ -59,6 +60,7 @@ for (const item of batch) {
       options: q.options,
       ...(q.solution && { solution: q.solution }),
       ...(q.concept && { concept: q.concept }),
+      ...(q.points && { points: q.points }),
       answer: q.answer || null,
       marked: q.marked || null,
     });

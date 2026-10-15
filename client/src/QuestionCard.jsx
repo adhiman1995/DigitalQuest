@@ -133,7 +133,18 @@ export default function QuestionCard({ q, subjectName, state, toggle, setRespons
               <RichText text={q.solution} />
             </div>
           )}
+          {q.points?.length > 0 && (
+            <div className="points">
+              <div className="explain-title">Points to take care of</div>
+              <ul>
+                {q.points.map((p, i) => <li key={i}><RichText text={p} /></li>)}
+              </ul>
+            </div>
+          )}
         </div>
+      )}
+      {showSolution && q.answerSource === 'corrected' && (
+        <p className="muted small-note">The source book's answer key gives ({q.printedAnswer.toLowerCase()}); it has been corrected here, as explained in the solution.</p>
       )}
       {showSolution && q.answerSource === 'derived' && (
         <p className="muted small-note">This answer was worked out in the solution above; the source book has no printed answer key for it.</p>
